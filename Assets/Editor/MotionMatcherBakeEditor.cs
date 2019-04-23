@@ -9,7 +9,7 @@ using UnityEditor.Animations;
 /// </summary>
 public class MotionMatcherBakeEditor : EditorWindow
 {
-    [MenuItem("Tools/Create GPU Animator")]
+    [MenuItem("Tools/BakeMotion")]
     static void MakeWindow()
     {
         window = GetWindow(typeof(MotionMatcherBakeEditor)) as MotionMatcherBakeEditor;
