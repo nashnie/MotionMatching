@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: dface388899c4dd409304c10aafb8e31
+labels:
+- Speed
+- Frame
+- screen
+- stats
+- msDelay
+- ms
+- CPU
+- GPU
+- Benchmark
+- AverageFPS
+- Profiling
+- Performance
+- DeviceInfo
+- DeviceInformation
+- Device
+- AdvancedFPSCounter
+- AFPSCounter
+- FPSCounter
+- Counters
+- Counter
+- Memory
+- Stats
+- MemoryUsage
+- FramesPerSecond
+- FPS
+- VRAM
+- framerate
+- monitor
+DefaultImporter:
+  userData: 
