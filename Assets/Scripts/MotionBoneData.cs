@@ -6,7 +6,7 @@ using UnityEngine;
 public class MotionBoneData
 {
     public Vector3 position;
-    public Vector3 rotation;
+    public Quaternion rotation;
     //Bone Velocity
     public Vector3 velocity;
 }

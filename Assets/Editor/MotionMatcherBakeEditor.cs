@@ -446,7 +446,6 @@ public class MotionMatcherBakeEditor : EditorWindow
                 {
                     AnimationClip animClip = clips[j];
                     MotionData meshAnim = meshAnimationList.motionDataList[j];
-
                     int bakeFrames = Mathf.CeilToInt(animClip.length * fps);
 
                     int frame = 0;
@@ -493,13 +492,26 @@ public class MotionMatcherBakeEditor : EditorWindow
                                 child.localRotation = rotation;
                             }
                         }
+                        MotionFrameData motionFrameData = meshAnim.motionFrameData[i];
+                        MotionFrameData lastMotionFrameData = i > 0 ? meshAnim.motionFrameData[i - 1] : null;
 
                         for (int k = 0; k < bonesMap.Count; k++)
                         {
                             Transform child = joints[k];
-                            //TODO
-                            //child.localRotation
-                            //child.localPosition
+                            MotionBoneData motionBoneData = motionFrameData.motionBoneDataList[k];
+                            MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[k];
+                            motionBoneData.position = child.localPosition;
+                            motionBoneData.rotation = child.localRotation;
+                            if (lastMotionFrameData != null)
+                            {
+                                MotionBoneData lastMotionBoneData = motionFrameData.motionBoneDataList[k];
+                                float frameSkipsTimeStep = frameSkips[animClip.name] / fps;
+                                motionBoneData.velocity = (motionBoneData.position - lastMotionBoneData.position) * frameSkipsTimeStep;
+                            }
+                            else
+                            {
+                                motionBoneData.velocity = Vector3.zero;
+                            }
                         }
                         frame++;
                     }
