@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInput
+public struct PlayerInput
 {
-    float velocity = 0;
-    float acceleration = 0;
-    float brake = 0;
-    float turn = 0;
-    bool jump = false;
-
+    public float velocity;
+    public float acceleration;
+    public float brake;
+    public float turn;
+    public bool jump;
+    public bool crouch;
 }
