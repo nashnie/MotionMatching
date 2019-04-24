@@ -42,8 +42,6 @@ public class MotionMatcherBakeEditor : EditorWindow
     [SerializeField]
     private int globalBake = 1;
     [SerializeField]
-    private int smoothMeshAngle = -1;
-    [SerializeField]
     private GameObject prefab;
     [SerializeField]
     private List<AnimationClip> customClips = new List<AnimationClip>();
@@ -389,6 +387,7 @@ public class MotionMatcherBakeEditor : EditorWindow
         }
 
         var sampleGO = GameObject.Instantiate(prefab, Vector3.zero, Quaternion.identity) as GameObject;
+        sampleGO.name = prefab.name;
 
         animator = sampleGO.GetComponent<Animator>();
         if (animator == null)
@@ -533,7 +532,7 @@ public class MotionMatcherBakeEditor : EditorWindow
             animCount++;
         }
 
-        AssetDatabase.CreateAsset(meshAnimationList, assetFolder + "_MotionField.asset");
+        AssetDatabase.CreateAsset(meshAnimationList, assetFolder + sampleGO.name + "_MotionField.asset");
 
         GameObject.DestroyImmediate(sampleGO);
         EditorUtility.ClearProgressBar();
