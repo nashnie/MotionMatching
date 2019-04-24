@@ -525,6 +525,8 @@ public class MotionMatcherBakeEditor : EditorWindow
                             }
                         }
 
+                        CaptureTrajectorySnapShot(animClip, motionFrameData, sampleGO, bakeFrames, i);
+
                         for (int ii = 0; ii < PredictionTrajectoryTimeList.Length; ii++)
                         {
                             float PredictionTrajectoryTime = PredictionTrajectoryTimeList[ii];
@@ -804,21 +806,22 @@ public class MotionMatcherBakeEditor : EditorWindow
         return name;
     }
 
-    private void CaptureSnapShot(AnimationClip animClip, float bakeFrames, MotionData meshAnim, GameObject sampleGO)
+    private void CaptureTrajectorySnapShot(AnimationClip animClip, MotionFrameData motionFrameData, GameObject sampleGO, float bakeFrames, float CurrentFrame)
     {
         float lastFrameTime = 0;
-        for (int i = 0; i <= bakeFrames; i += frameSkips[animClip.name])
+        for (int i = 0; i < PredictionTrajectoryTimeList.Length; i++)
         {
-            float bakeDelta = Mathf.Clamp01(((float)i / bakeFrames));
+            float PredictionTrajectoryTime = PredictionTrajectoryTimeList[i];
+            float bakeDelta = CurrentFrame / bakeFrames;
             EditorUtility.DisplayProgressBar("Baking Animation", string.Format("Processing: {0} Frame: {1}", animClip.name, i), bakeDelta);
-            float animationTime = bakeDelta * animClip.length;
+            float animationTime = bakeDelta * animClip.length + (PredictionTrajectoryTime * fps / bakeFrames) * animClip.length;
             if (requiresAnimator)
             {
                 float normalizedTime = animationTime / animClip.length;
                 animator.Play(animClip.name, 0, normalizedTime);
                 if (lastFrameTime == 0)
                 {
-                    float nextBakeDelta = Mathf.Clamp01(((float)(i += frameSkips[animClip.name]) / bakeFrames));
+                    float nextBakeDelta = Mathf.Clamp01(((float)(PredictionTrajectoryTime * fps / bakeFrames)));
                     float nextAnimationTime = nextBakeDelta * animClip.length;
                     lastFrameTime = animationTime - nextAnimationTime;
                 }
@@ -832,15 +835,24 @@ public class MotionMatcherBakeEditor : EditorWindow
                 if (animator && animator.gameObject != sampleObject)
                 {
                     sampleObject = animator.gameObject;
-                }               
+                }
                 else if (legacyAnimation && legacyAnimation.gameObject != sampleObject)
                 {
                     sampleObject = legacyAnimation.gameObject;
-                }       
+                }
                 animClip.SampleAnimation(sampleObject, animationTime);
             }
-            //MotionFrameData motionFrameData = meshAnim.motionFrameDataList[i];
-            //motionFrameData.motionTrajectoryDataList
+            MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[i];
+            motionTrajectoryData.position = animator.transform.position;
+            motionTrajectoryData.velocity = Vector3.zero;
+            motionTrajectoryData.direction = Vector3.zero;
+            MotionTrajectoryData lastMotionTrajectoryData = null;
+            if (i > 0)
+            {
+                lastMotionTrajectoryData = motionFrameData.motionTrajectoryDataList[i - 1];
+                lastMotionTrajectoryData.velocity = (motionTrajectoryData.position - lastMotionTrajectoryData.position) / PredictionTrajectoryTime;
+                lastMotionTrajectoryData.direction = lastMotionTrajectoryData.velocity.normalized;
+            }
         }
     }
 }
