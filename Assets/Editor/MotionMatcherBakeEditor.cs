@@ -502,15 +502,12 @@ public class MotionMatcherBakeEditor : EditorWindow
                             MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[k];
                             motionBoneData.position = child.localPosition;
                             motionBoneData.rotation = child.localRotation;
+                            motionBoneData.velocity = Vector3.zero;
                             if (lastMotionFrameData != null)
                             {
                                 MotionBoneData lastMotionBoneData = motionFrameData.motionBoneDataList[k];
                                 float frameSkipsTimeStep = frameSkips[animClip.name] / fps;
-                                motionBoneData.velocity = (motionBoneData.position - lastMotionBoneData.position) * frameSkipsTimeStep;
-                            }
-                            else
-                            {
-                                motionBoneData.velocity = Vector3.zero;
+                                lastMotionBoneData.velocity = (motionBoneData.position - lastMotionBoneData.position) * frameSkipsTimeStep;
                             }
                         }
                         frame++;
