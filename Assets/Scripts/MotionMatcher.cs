@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class MotionMatcher : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public MotionsData motionsData;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public string AcquireMatchedMotion()
     {
-        
+        return "";
+    }
+
+    private void CapturePlayingMotionSnapShot()
+    {
+
+    }
+
+    private string ComputeMotionsCost()
+    {
+        return "";
     }
 }

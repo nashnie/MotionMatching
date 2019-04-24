@@ -3,6 +3,7 @@
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(CapsuleCollider))]
 [RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(MotionMatcher))]
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] float m_MovingTurnSpeed = 360;
@@ -13,6 +14,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float m_MoveSpeedMultiplier = 1f;
     [SerializeField] float m_AnimSpeedMultiplier = 1f;
     [SerializeField] float m_GroundCheckDistance = 0.1f;
+
+    private MotionMatcher motionMatcher;
 
     Rigidbody m_Rigidbody;
     Animator m_Animator;
@@ -33,6 +36,8 @@ public class PlayerController : MonoBehaviour
         m_Animator = GetComponent<Animator>();
         m_Rigidbody = GetComponent<Rigidbody>();
         m_Capsule = GetComponent<CapsuleCollider>();
+        motionMatcher = GetComponent<MotionMatcher>();
+
         m_CapsuleHeight = m_Capsule.height;
         m_CapsuleCenter = m_Capsule.center;
 
@@ -119,6 +124,9 @@ public class PlayerController : MonoBehaviour
     {
         // update the animator parameters
         m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
+
+        string matchedMotionName = motionMatcher.AcquireMatchedMotion();
+        //play matchedMotion
     }
 
 
