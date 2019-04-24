@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   motionDataList:
   - motionFrameDataList:
-    - Velocity: 0
+    - Velocity: 4.741963
       motionBoneDataList:
       - position: {x: -0, y: 0, z: 0}
         rotation: {x: 0, y: -0, z: -0, w: 1}
@@ -503,7 +503,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.8061886
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -992,7 +992,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.8915105
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1481,7 +1481,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.9401655
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1970,7 +1970,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.9717846
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -2459,7 +2459,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.9864755
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -2948,7 +2948,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.9286723
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -3437,7 +3437,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.8158092
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -3926,7 +3926,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.729091
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -4415,7 +4415,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.7094893
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -4904,7 +4904,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.783596
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -5393,7 +5393,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.8466225
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -5882,7 +5882,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.9130177
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -6371,7 +6371,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.9734774
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -6860,7 +6860,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.9958076
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -7349,7 +7349,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 5.0429373
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -7838,7 +7838,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.9254217
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}
@@ -8327,7 +8327,7 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-    - Velocity: 0
+    - Velocity: 4.826589
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
         rotation: {x: -0, y: -0, z: -0, w: 1}

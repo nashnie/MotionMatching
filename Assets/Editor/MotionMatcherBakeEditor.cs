@@ -856,5 +856,12 @@ public class MotionMatcherBakeEditor : EditorWindow
                 lastMotionTrajectoryData.direction = lastMotionTrajectoryData.velocity.normalized;
             }
         }
+
+        if (motionFrameData.motionTrajectoryDataList.Length > 0)
+        {
+            Vector3 velocity = motionFrameData.motionTrajectoryDataList[0].velocity;
+            motionFrameData.Velocity = velocity.magnitude;
+        }
+  
     }
 }
