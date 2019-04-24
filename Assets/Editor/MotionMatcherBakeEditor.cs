@@ -30,7 +30,7 @@ public class MotionMatcherBakeEditor : EditorWindow
     Matrix4x4[] bindSkeletonPoses = null;
     const string positionPath = "m_LocalPosition";
     const string rotationPath = "m_LocalRotation";
-    const string RootBoneName = "Bip01";
+    const string RootBoneName = "EthanSkeleton";
     const string MotionMatcherSettingsPath = "Assets/Resources/MotionMatcherSettings.asset";
 
     [SerializeField]
@@ -364,183 +364,184 @@ public class MotionMatcherBakeEditor : EditorWindow
     private void CreateSnapshots()
     {
         UnityEditor.Animations.AnimatorController bakeController = null;
-        try
+
+        string assetPath = GetPrefabPath();
+        if (string.IsNullOrEmpty(assetPath))
         {
-            string assetPath = GetPrefabPath();
-            if (string.IsNullOrEmpty(assetPath))
+            EditorUtility.DisplayDialog("Mesh Animator", "Unable to locate the asset path for prefab: " + prefab.name, "OK");
+            return;
+        }
+
+        HashSet<string> allAssets = new HashSet<string>();
+
+        List<AnimationClip> clips = GetClips();
+        foreach (var clip in clips)
+        {
+            allAssets.Add(AssetDatabase.GetAssetPath(clip));
+        }
+
+        string[] split = assetPath.Split("/".ToCharArray());
+
+        string assetFolder = string.Empty;
+        for (int s = 0; s < split.Length - 1; s++)
+        {
+            assetFolder += split[s] + "/";
+        }
+
+        var sampleGO = GameObject.Instantiate(prefab, Vector3.zero, Quaternion.identity) as GameObject;
+
+        animator = sampleGO.GetComponent<Animator>();
+        if (animator == null)
+        {
+            animator = sampleGO.GetComponentInChildren<Animator>();
+        }
+        InitAnimationBones(sampleGO);
+        if (requiresAnimator)
+        {
+            bakeController = CreateBakeController();
+            if (animator == null)
             {
-                EditorUtility.DisplayDialog("Mesh Animator", "Unable to locate the asset path for prefab: " + prefab.name, "OK");
-                return;
-            }
-
-            HashSet<string> allAssets = new HashSet<string>();
-
-            List<AnimationClip> clips = GetClips();
-            foreach (var clip in clips)
-            {
-                allAssets.Add(AssetDatabase.GetAssetPath(clip));
-            }
-
-            string[] split = assetPath.Split("/".ToCharArray());
-
-            string assetFolder = string.Empty;
-            for (int s = 0; s < split.Length - 1; s++)
-            {
-                assetFolder += split[s] + "/";
-            }
-
-            var sampleGO = GameObject.Instantiate(prefab, Vector3.zero, Quaternion.identity) as GameObject;
-            if (meshFilters.Count(q => q) == 0 && skinnedRenderers.Count(q => q) == 0)
-            {
-                throw new System.Exception("Bake Error! No MeshFilter's or SkinnedMeshRender's found to bake!");
+                animator = sampleGO.AddComponent<Animator>();
+                animator.runtimeAnimatorController = bakeController;
+                animator.avatar = GetAvatar();
             }
             else
             {
-                animator = sampleGO.GetComponent<Animator>();
-                if (animator == null)
-                {
-                    animator = sampleGO.GetComponentInChildren<Animator>();
-                }
-                InitAnimationBones(sampleGO);
-                if (requiresAnimator)
-                {
-                    bakeController = CreateBakeController();
-                    if (animator == null)
-                    {
-                        animator = sampleGO.AddComponent<Animator>();
-                        animator.runtimeAnimatorController = bakeController;
-                        animator.avatar = GetAvatar();
-                    }
-                    else
-                    {
-                        animator.runtimeAnimatorController = bakeController;
-                        animator.avatar = GetAvatar();
-                    }
-                    animator.cullingMode = AnimatorCullingMode.AlwaysAnimate;
-                    animator.applyRootMotion = true;
-                }
-
-                MotionsData meshAnimationList = ScriptableObject.CreateInstance<MotionsData>();
-                meshAnimationList.motionDataList = new MotionData[clips.Count];
-
-                int startIndex = bonesMap.Count * 3;
-
-                Transform rootMotionBaker = new GameObject().transform;
-                for (int x = 0; x < clips.Count; x++)
-                {
-                    AnimationClip animClip = clips[x];
-                    InitAnimationClipHashPath(animClip);
-
-                    if (bakeAnims.ContainsKey(animClip.name) && bakeAnims[animClip.name] == false)
-                    {
-                        continue;
-                    }
-                    if (frameSkips.ContainsKey(animClip.name) == false)
-                    {
-                        Debug.LogWarningFormat("No animation with name {0} in frame skips", animClip.name);
-                        continue;
-                    }
-                    string meshAnimationPath = string.Format("{0}{1}.asset", assetFolder, FormatClipName(animClip.name));
-
-                    int bakeFrames = Mathf.CeilToInt(animClip.length * fps);
-                    MotionData meshAnim = meshAnimationList.motionDataList[x];
-                    meshAnim.motionFrameDataList = new MotionFrameData[bakeFrames];
-
-                    for (int i = 0; i < bakeFrames; i++)
-                    {
-                        meshAnim.motionFrameDataList[i].motionBoneDataList = new MotionBoneData[bonesMap.Count];
-                        meshAnim.motionFrameDataList[i].motionTrajectoryDataList = new MotionTrajectoryData[bonesMap.Count];
-                    }
-                }
-
-                int animCount = 0;
-                for (int j = 0; j < clips.Count; j++)
-                {
-                    AnimationClip animClip = clips[j];
-                    MotionData meshAnim = meshAnimationList.motionDataList[j];
-                    int bakeFrames = Mathf.CeilToInt(animClip.length * fps);
-
-                    int frame = 0;
-                    for (int i = 0; i <= bakeFrames; i += frameSkips[animClip.name])
-                    {
-                        float bakeDelta = Mathf.Clamp01(((float)i / bakeFrames));
-                        EditorUtility.DisplayProgressBar("Baking Animation", string.Format("Processing: {0} Frame: {1}", animClip.name, i), bakeDelta);
-                        float animationTime = bakeDelta * animClip.length;
-
-                        foreach (string path in positionPathHash)
-                        {
-                            string boneName = path.Substring(path.LastIndexOf("/") + 1);
-                            if (bonesMap.ContainsKey(boneName))
-                            {
-                                Transform child = joints[bonesMap[boneName]];
-                                float postionX = GetAnimationClipCurve(animClip, path, positionPath + ".x", bakeDelta);
-                                float postionY = GetAnimationClipCurve(animClip, path, positionPath + ".y", bakeDelta);
-                                float postionZ = GetAnimationClipCurve(animClip, path, positionPath + ".z", bakeDelta);
-                                child.localPosition = new Vector3(postionX, postionY, postionZ);
-                            }
-                        }
-
-                        foreach (string path in rotationPathHash)
-                        {
-                            string boneName = path.Substring(path.LastIndexOf("/") + 1);
-                            if (bonesMap.ContainsKey(boneName))
-                            {
-                                Transform child = joints[bonesMap[boneName]];
-                                float rotationX = GetAnimationClipCurve(animClip, path, rotationPath + ".x", bakeDelta);
-                                float rotationY = GetAnimationClipCurve(animClip, path, rotationPath + ".y", bakeDelta);
-                                float rotationZ = GetAnimationClipCurve(animClip, path, rotationPath + ".z", bakeDelta);
-                                float rotationW = GetAnimationClipCurve(animClip, path, rotationPath + ".w", bakeDelta);
-                                Quaternion rotation = new Quaternion(rotationX, rotationY, rotationZ, rotationW);
-                                float r = rotationX * rotationX + rotationY * rotationY + rotationZ * rotationZ + rotationW * rotationW;
-                                if (r >= .1f)
-                                {
-                                    r = 1.0f / Mathf.Sqrt(r);
-                                    rotation.x *= r;
-                                    rotation.y *= r;
-                                    rotation.z *= r;
-                                    rotation.w *= r;
-                                }
-
-                                child.localRotation = rotation;
-                            }
-                        }
-                        MotionFrameData motionFrameData = meshAnim.motionFrameDataList[i];
-                        MotionFrameData lastMotionFrameData = i > 0 ? meshAnim.motionFrameDataList[i - 1] : null;
-
-                        for (int k = 0; k < bonesMap.Count; k++)
-                        {
-                            Transform child = joints[k];
-                            MotionBoneData motionBoneData = motionFrameData.motionBoneDataList[k];
-                            MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[k];
-                            motionBoneData.position = child.localPosition;
-                            motionBoneData.rotation = child.localRotation;
-                            motionBoneData.velocity = Vector3.zero;
-
-                            //calc velocity
-                            if (lastMotionFrameData != null)
-                            {
-                                MotionBoneData lastMotionBoneData = motionFrameData.motionBoneDataList[k];
-                                float frameSkipsTimeStep = frameSkips[animClip.name] / fps;
-                                lastMotionBoneData.velocity = (motionBoneData.position - lastMotionBoneData.position) / frameSkipsTimeStep;
-                            }
-                        }
-
-                        CaptureTrajectorySnapShot(animClip, motionFrameData, sampleGO, bakeFrames, i);
-
-                        for (int ii = 0; ii < PredictionTrajectoryTimeList.Length; ii++)
-                        {
-                            float PredictionTrajectoryTime = PredictionTrajectoryTimeList[ii];
-                        }
-
-                        frame++;
-                    }
-                    animCount++;
-                }
-                AssetDatabase.CreateAsset(meshAnimationList, assetFolder + "_MotionField.asset");
+                animator.runtimeAnimatorController = bakeController;
+                animator.avatar = GetAvatar();
             }
-            GameObject.DestroyImmediate(sampleGO);
-            EditorUtility.ClearProgressBar();
-            EditorUtility.DisplayDialog("MotionField", string.Format("Baked {0} motionField {1} successfully!", clips.Count, clips.Count > 1 ? "s" : string.Empty), "OK");
+            animator.cullingMode = AnimatorCullingMode.AlwaysAnimate;
+            animator.applyRootMotion = true;
+        }
+
+        MotionsData meshAnimationList = ScriptableObject.CreateInstance<MotionsData>();
+        meshAnimationList.motionDataList = new MotionData[clips.Count];
+
+        Transform rootMotionBaker = new GameObject().transform;
+
+        for (int x = 0; x < clips.Count; x++)
+        {
+            AnimationClip animClip = clips[x];
+            InitAnimationClipHashPath(animClip);
+
+            if (bakeAnims.ContainsKey(animClip.name) && bakeAnims[animClip.name] == false)
+            {
+                continue;
+            }
+            if (frameSkips.ContainsKey(animClip.name) == false)
+            {
+                Debug.LogWarningFormat("No animation with name {0} in frame skips", animClip.name);
+                continue;
+            }
+            string meshAnimationPath = string.Format("{0}{1}.asset", assetFolder, FormatClipName(animClip.name));
+
+            int bakeFrames = Mathf.CeilToInt(animClip.length * fps);
+            meshAnimationList.motionDataList[x] = new MotionData();
+            MotionData motionData = meshAnimationList.motionDataList[x];
+            motionData.motionFrameDataList = new MotionFrameData[bakeFrames];
+
+            for (int i = 0; i < bakeFrames; i++)
+            {
+                motionData.motionFrameDataList[i] = new MotionFrameData();
+                motionData.motionFrameDataList[i].motionBoneDataList = new MotionBoneData[bonesMap.Count];
+                motionData.motionFrameDataList[i].motionTrajectoryDataList = new MotionTrajectoryData[bonesMap.Count];
+                for (int ii = 0; ii < bonesMap.Count; ii++)
+                {
+                    motionData.motionFrameDataList[i].motionBoneDataList[ii] = new MotionBoneData();
+                    motionData.motionFrameDataList[i].motionTrajectoryDataList[ii] = new MotionTrajectoryData();
+                }
+            }
+        }
+
+        int animCount = 0;
+        for (int j = 0; j < clips.Count; j++)
+        {
+            AnimationClip animClip = clips[j];
+            MotionData motionData = meshAnimationList.motionDataList[j];
+            int bakeFrames = Mathf.CeilToInt(animClip.length * fps);
+
+            int frame = 0;
+            for (int i = 0; i < bakeFrames; i += frameSkips[animClip.name])
+            {
+                float bakeDelta = Mathf.Clamp01(((float)i / bakeFrames));
+                EditorUtility.DisplayProgressBar("Baking Animation", string.Format("Processing: {0} Frame: {1}", animClip.name, i), bakeDelta);
+                float animationTime = bakeDelta * animClip.length;
+
+                foreach (string path in positionPathHash)
+                {
+                    string boneName = path.Substring(path.LastIndexOf("/") + 1);
+                    if (bonesMap.ContainsKey(boneName))
+                    {
+                        Transform child = joints[bonesMap[boneName]];
+                        float postionX = GetAnimationClipCurve(animClip, path, positionPath + ".x", bakeDelta);
+                        float postionY = GetAnimationClipCurve(animClip, path, positionPath + ".y", bakeDelta);
+                        float postionZ = GetAnimationClipCurve(animClip, path, positionPath + ".z", bakeDelta);
+                        child.localPosition = new Vector3(postionX, postionY, postionZ);
+                    }
+                }
+
+                foreach (string path in rotationPathHash)
+                {
+                    string boneName = path.Substring(path.LastIndexOf("/") + 1);
+                    if (bonesMap.ContainsKey(boneName))
+                    {
+                        Transform child = joints[bonesMap[boneName]];
+                        float rotationX = GetAnimationClipCurve(animClip, path, rotationPath + ".x", bakeDelta);
+                        float rotationY = GetAnimationClipCurve(animClip, path, rotationPath + ".y", bakeDelta);
+                        float rotationZ = GetAnimationClipCurve(animClip, path, rotationPath + ".z", bakeDelta);
+                        float rotationW = GetAnimationClipCurve(animClip, path, rotationPath + ".w", bakeDelta);
+                        Quaternion rotation = new Quaternion(rotationX, rotationY, rotationZ, rotationW);
+                        float r = rotationX * rotationX + rotationY * rotationY + rotationZ * rotationZ + rotationW * rotationW;
+                        if (r >= .1f)
+                        {
+                            r = 1.0f / Mathf.Sqrt(r);
+                            rotation.x *= r;
+                            rotation.y *= r;
+                            rotation.z *= r;
+                            rotation.w *= r;
+                        }
+
+                        child.localRotation = rotation;
+                    }
+                }
+
+                MotionFrameData motionFrameData = motionData.motionFrameDataList[i];
+                MotionFrameData lastMotionFrameData = i > 0 ? motionData.motionFrameDataList[i - 1] : null;
+
+                for (int k = 0; k < bonesMap.Count; k++)
+                {
+                    Transform child = joints[k];
+                    MotionBoneData motionBoneData = motionFrameData.motionBoneDataList[k];
+                    MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[k];
+                    motionBoneData.position = child.localPosition;
+                    motionBoneData.rotation = child.localRotation;
+                    motionBoneData.velocity = Vector3.zero;
+
+                    //calc velocity
+                    if (lastMotionFrameData != null)
+                    {
+                        MotionBoneData lastMotionBoneData = lastMotionFrameData.motionBoneDataList[k];
+                        float frameSkipsTimeStep = frameSkips[animClip.name] / (float)fps;
+                        lastMotionBoneData.velocity = (motionBoneData.position - lastMotionBoneData.position) / frameSkipsTimeStep;
+                    }
+                }
+
+                CaptureTrajectorySnapShot(animClip, motionFrameData, sampleGO, bakeFrames, i);
+
+                frame++;
+            }
+            animCount++;
+        }
+
+        AssetDatabase.CreateAsset(meshAnimationList, assetFolder + "_MotionField.asset");
+
+        GameObject.DestroyImmediate(sampleGO);
+        EditorUtility.ClearProgressBar();
+        EditorUtility.DisplayDialog("MotionField", string.Format("Baked {0} motionField {1} successfully!", clips.Count, clips.Count > 1 ? "s" : string.Empty), "OK");
+
+        try
+        {
+            //Wait
         }
         catch (System.Exception e)
         {
@@ -682,6 +683,7 @@ public class MotionMatcherBakeEditor : EditorWindow
             }
             bakeAnims.Clear();
             frameSkips.Clear();
+            InitSettings();
             AutoPopulateFiltersAndRenderers();
             AutoPopulateAnimatorAndController();
         }
