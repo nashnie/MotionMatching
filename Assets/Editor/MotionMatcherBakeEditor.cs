@@ -31,6 +31,7 @@ public class MotionMatcherBakeEditor : EditorWindow
     const string positionPath = "m_LocalPosition";
     const string rotationPath = "m_LocalRotation";
     const string RootBoneName = "Bip01";
+    const string MotionMatcherSettingsPath = "Assets/Resources/MotionMatcherSettings.asset";
 
     [SerializeField]
     private Vector2 scroll;
@@ -64,6 +65,8 @@ public class MotionMatcherBakeEditor : EditorWindow
     private Avatar animAvatar;
     [SerializeField]
     private bool requiresAnimator;
+
+    public float[] PredictionTrajectoryTimeList;
 
     private void OnEnable()
     {
@@ -300,6 +303,15 @@ public class MotionMatcherBakeEditor : EditorWindow
         GUILayout.EndScrollView();
     }
 
+    private void InitSettings()
+    {
+        MotionMatcherSettings motionMatcherSettings = AssetDatabase.LoadAssetAtPath(MotionMatcherSettingsPath, typeof(MotionMatcherSettings)) as MotionMatcherSettings;
+        if (motionMatcherSettings)
+        {
+            PredictionTrajectoryTimeList = motionMatcherSettings.PredictionTrajectoryTime;
+        }
+    }
+
     private void InitAnimationClipHashPath(AnimationClip clip)
     {
         positionPathHash.Clear();
@@ -432,12 +444,12 @@ public class MotionMatcherBakeEditor : EditorWindow
 
                     int bakeFrames = Mathf.CeilToInt(animClip.length * fps);
                     MotionData meshAnim = meshAnimationList.motionDataList[x];
-                    meshAnim.motionFrameData = new MotionFrameData[bakeFrames];
+                    meshAnim.motionFrameDataList = new MotionFrameData[bakeFrames];
 
                     for (int i = 0; i < bakeFrames; i++)
                     {
-                        meshAnim.motionFrameData[i].motionBoneDataList = new MotionBoneData[bonesMap.Count];
-                        meshAnim.motionFrameData[i].motionTrajectoryDataList = new MotionTrajectoryData[bonesMap.Count];
+                        meshAnim.motionFrameDataList[i].motionBoneDataList = new MotionBoneData[bonesMap.Count];
+                        meshAnim.motionFrameDataList[i].motionTrajectoryDataList = new MotionTrajectoryData[bonesMap.Count];
                     }
                 }
 
@@ -492,8 +504,8 @@ public class MotionMatcherBakeEditor : EditorWindow
                                 child.localRotation = rotation;
                             }
                         }
-                        MotionFrameData motionFrameData = meshAnim.motionFrameData[i];
-                        MotionFrameData lastMotionFrameData = i > 0 ? meshAnim.motionFrameData[i - 1] : null;
+                        MotionFrameData motionFrameData = meshAnim.motionFrameDataList[i];
+                        MotionFrameData lastMotionFrameData = i > 0 ? meshAnim.motionFrameDataList[i - 1] : null;
 
                         for (int k = 0; k < bonesMap.Count; k++)
                         {
@@ -503,23 +515,30 @@ public class MotionMatcherBakeEditor : EditorWindow
                             motionBoneData.position = child.localPosition;
                             motionBoneData.rotation = child.localRotation;
                             motionBoneData.velocity = Vector3.zero;
+
+                            //calc velocity
                             if (lastMotionFrameData != null)
                             {
                                 MotionBoneData lastMotionBoneData = motionFrameData.motionBoneDataList[k];
                                 float frameSkipsTimeStep = frameSkips[animClip.name] / fps;
-                                lastMotionBoneData.velocity = (motionBoneData.position - lastMotionBoneData.position) * frameSkipsTimeStep;
+                                lastMotionBoneData.velocity = (motionBoneData.position - lastMotionBoneData.position) / frameSkipsTimeStep;
                             }
                         }
+
+                        for (int ii = 0; ii < PredictionTrajectoryTimeList.Length; ii++)
+                        {
+                            float PredictionTrajectoryTime = PredictionTrajectoryTimeList[ii];
+                        }
+
                         frame++;
                     }
                     animCount++;
                 }
-                AssetDatabase.CreateAsset(meshAnimationList, assetFolder + "_AnimationConfig.asset");
+                AssetDatabase.CreateAsset(meshAnimationList, assetFolder + "_MotionField.asset");
             }
             GameObject.DestroyImmediate(sampleGO);
             EditorUtility.ClearProgressBar();
-            EditorUtility.DisplayDialog("GPU Animator", string.Format("Baked {0} animation{1} successfully!", clips.Count
-                , clips.Count > 1 ? "s" : string.Empty), "OK");
+            EditorUtility.DisplayDialog("MotionField", string.Format("Baked {0} motionField {1} successfully!", clips.Count, clips.Count > 1 ? "s" : string.Empty), "OK");
         }
         catch (System.Exception e)
         {
@@ -783,5 +802,45 @@ public class MotionMatcherBakeEditor : EditorWindow
             name = name.Replace(badChars[i], '_');
         }
         return name;
+    }
+
+    private void CaptureSnapShot(AnimationClip animClip, float bakeFrames, MotionData meshAnim, GameObject sampleGO)
+    {
+        float lastFrameTime = 0;
+        for (int i = 0; i <= bakeFrames; i += frameSkips[animClip.name])
+        {
+            float bakeDelta = Mathf.Clamp01(((float)i / bakeFrames));
+            EditorUtility.DisplayProgressBar("Baking Animation", string.Format("Processing: {0} Frame: {1}", animClip.name, i), bakeDelta);
+            float animationTime = bakeDelta * animClip.length;
+            if (requiresAnimator)
+            {
+                float normalizedTime = animationTime / animClip.length;
+                animator.Play(animClip.name, 0, normalizedTime);
+                if (lastFrameTime == 0)
+                {
+                    float nextBakeDelta = Mathf.Clamp01(((float)(i += frameSkips[animClip.name]) / bakeFrames));
+                    float nextAnimationTime = nextBakeDelta * animClip.length;
+                    lastFrameTime = animationTime - nextAnimationTime;
+                }
+                animator.Update(animationTime - lastFrameTime);
+                lastFrameTime = animationTime;
+            }
+            else
+            {
+                GameObject sampleObject = sampleGO;
+                Animation legacyAnimation = sampleObject.GetComponentInChildren<Animation>();
+                if (animator && animator.gameObject != sampleObject)
+                {
+                    sampleObject = animator.gameObject;
+                }               
+                else if (legacyAnimation && legacyAnimation.gameObject != sampleObject)
+                {
+                    sampleObject = legacyAnimation.gameObject;
+                }       
+                animClip.SampleAnimation(sampleObject, animationTime);
+            }
+            //MotionFrameData motionFrameData = meshAnim.motionFrameDataList[i];
+            //motionFrameData.motionTrajectoryDataList
+        }
     }
 }

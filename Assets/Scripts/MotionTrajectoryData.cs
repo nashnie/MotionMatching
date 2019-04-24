@@ -6,4 +6,6 @@ using UnityEngine;
 public class MotionTrajectoryData
 {
     public Vector3 position;
+    public Vector3 velocity;
+    public Vector3 direction;
 }

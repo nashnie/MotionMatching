@@ -5,5 +5,5 @@ using UnityEngine;
 [System.Serializable]
 public class MotionData
 {
-    public MotionFrameData[] motionFrameData;
+    public MotionFrameData[] motionFrameDataList;
 }
