@@ -17,16 +17,32 @@ public class MotionMatcher : MonoBehaviour
     private int bestMotionFrameIndex = -1;
     private string bestMotionName = "";
 
+    private float currentComputeTime;
+
     void Start()
     {
         currentMotionFrameData = new MotionFrameData();
         motionOwner = this.transform;
+        currentComputeTime = float.MaxValue;
+    }
+
+    private void Update()
+    {
+        currentComputeTime += Time.deltaTime;
     }
 
     public string AcquireMatchedMotion(float velocity, Vector3 direction, float acceleration, float brake)
     {
-        CapturePlayingMotionSnapShot(velocity, direction, acceleration, brake);
-        ComputeMotionsBestCost();
+        if (currentComputeTime >= motionMatcherSettings.ComputeMotionsBestCostGap)
+        {
+            velocity = 4.0f;
+            direction = motionOwner.forward;
+            currentComputeTime = 0;
+            CapturePlayingMotionSnapShot(velocity, direction, acceleration, brake);
+            ComputeMotionsBestCost();
+            Debug.LogFormat("AcquireMatchedMotion velocity {0} bestMotionName {1} ", velocity, bestMotionName);
+        }
+
         return bestMotionName;
     }
 
@@ -39,12 +55,13 @@ public class MotionMatcher : MonoBehaviour
         for (int i = 0; i < motionMatcherSettings.predictionTrajectoryTimeList.Length; i++)
         {
             float predictionTrajectoryTime = motionMatcherSettings.predictionTrajectoryTimeList[i];
-            LastPredictionTrajectoryTime = predictionTrajectoryTime;
             float deltaTime = predictionTrajectoryTime - LastPredictionTrajectoryTime;
+            currentMotionFrameData.motionTrajectoryDataList[i] = new MotionTrajectoryData();
             MotionTrajectoryData motionTrajectoryData = currentMotionFrameData.motionTrajectoryDataList[i];
             motionTrajectoryData.position = velocity * direction * deltaTime;
             motionTrajectoryData.velocity = velocity * direction;
             motionTrajectoryData.direction = direction;
+            LastPredictionTrajectoryTime = predictionTrajectoryTime;
         }
 
         currentMotionFrameData.motionBoneDataList = new MotionBoneData[motionMatcherSettings.captureBoneList.Length];
@@ -52,6 +69,7 @@ public class MotionMatcher : MonoBehaviour
         {
             string captureBone = motionMatcherSettings.captureBoneList[j];
             Transform bone = motionOwner.Find(captureBone);
+            currentMotionFrameData.motionBoneDataList[j] = new MotionBoneData();
             MotionBoneData motionBoneData = currentMotionFrameData.motionBoneDataList[j];
             motionBoneData.position = bone.position;
             motionBoneData.rotation = bone.rotation;
@@ -97,7 +115,9 @@ public class MotionMatcher : MonoBehaviour
                 }
 
                 rootMotionCost = (motionFrameData.velocity - currentMotionFrameData.velocity) * motionCostFactorSettings.rootMotionVelFactor;
-                motionCost = bonesCost + trajectorysCost + rootMotionCost; 
+                motionCost = bonesCost + trajectorysCost + rootMotionCost;
+
+                Debug.LogFormat("AcquireMatchedMotion motionName {0} motionCost {1} ", motionData.motionName, motionCost);
 
                 if (bestMotionCost > motionCost)
                 {

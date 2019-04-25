@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float m_GroundCheckDistance = 0.1f;
     [SerializeField] AnimationClip[] animationClips;
     private MotionMatcher motionMatcher;
+    private string matchedMotionName;
 
     Rigidbody m_Rigidbody;
     Animator m_Animator;
@@ -125,8 +126,13 @@ public class PlayerController : MonoBehaviour
         // update the animator parameters
         //m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
         string matchedMotionName = motionMatcher.AcquireMatchedMotion(move.magnitude, move.normalized, 0f, 0f);
-        float normalizedTime = 0.0f;//TODO frame index
-        m_Animator.Play(matchedMotionName, 0, normalizedTime);
+        if (this.matchedMotionName != matchedMotionName)
+        {
+            this.matchedMotionName = matchedMotionName;
+            float normalizedTime = 0.0f;//TODO frame index
+            m_Animator.Play(matchedMotionName, 0, normalizedTime);
+        }
+
     }
 
 

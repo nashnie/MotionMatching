@@ -340,14 +340,13 @@ public class MotionMatcherBakeEditor : EditorWindow
         bonesMap.Clear();
         Transform child = animationTarget.transform.Find(RootBoneName);
         joints = child.GetComponentsInChildren<Transform>();
-
-        for (int i = 0; i < joints.Length; i++)
+        List<Transform> jointList = joints.ToList();
+        for (int i = 0; i < captureBoneList.Length; i++)
         {
-            Transform joint = joints[i];
-            if (captureBoneList.Contains(joint.name))
-            {
-                bonesMap.Add(joint.name, i);
-            }
+            string boneName = captureBoneList[i];
+            Transform bone = animationTarget.transform.Find(boneName);
+            int index = jointList.IndexOf(bone);
+            bonesMap.Add(bone.name, index);
         }
     }
 
@@ -436,17 +435,22 @@ public class MotionMatcherBakeEditor : EditorWindow
             int bakeFrames = Mathf.CeilToInt(animClip.length * fps);
             meshAnimationList.motionDataList[x] = new MotionData();
             MotionData motionData = meshAnimationList.motionDataList[x];
+            motionData.motionName = animClip.name;
             motionData.motionFrameDataList = new MotionFrameData[bakeFrames];
 
             for (int i = 0; i < bakeFrames; i++)
             {
                 motionData.motionFrameDataList[i] = new MotionFrameData();
                 motionData.motionFrameDataList[i].motionBoneDataList = new MotionBoneData[bonesMap.Count];
-                motionData.motionFrameDataList[i].motionTrajectoryDataList = new MotionTrajectoryData[bonesMap.Count];
-                for (int ii = 0; ii < bonesMap.Count; ii++)
+                motionData.motionFrameDataList[i].motionTrajectoryDataList = new MotionTrajectoryData[predictionTrajectoryTimeList.Length];
+                for (int i1 = 0; i1 < bonesMap.Count; i1++)
                 {
-                    motionData.motionFrameDataList[i].motionBoneDataList[ii] = new MotionBoneData();
-                    motionData.motionFrameDataList[i].motionTrajectoryDataList[ii] = new MotionTrajectoryData();
+                    motionData.motionFrameDataList[i].motionBoneDataList[i1] = new MotionBoneData();
+                   
+                }
+                for (int i2 = 0; i2 < predictionTrajectoryTimeList.Length; i2++)
+                {
+                    motionData.motionFrameDataList[i].motionTrajectoryDataList[i2] = new MotionTrajectoryData();
                 }
             }
         }
@@ -506,24 +510,7 @@ public class MotionMatcherBakeEditor : EditorWindow
                 MotionFrameData motionFrameData = motionData.motionFrameDataList[i];
                 MotionFrameData lastMotionFrameData = i > 0 ? motionData.motionFrameDataList[i - 1] : null;
 
-                for (int k = 0; k < bonesMap.Count; k++)
-                {
-                    Transform child = joints[k];
-                    MotionBoneData motionBoneData = motionFrameData.motionBoneDataList[k];
-                    MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[k];
-                    motionBoneData.position = child.localPosition;
-                    motionBoneData.rotation = child.localRotation;
-                    motionBoneData.velocity = Vector3.zero;
-
-                    //calc velocity
-                    if (lastMotionFrameData != null)
-                    {
-                        MotionBoneData lastMotionBoneData = lastMotionFrameData.motionBoneDataList[k];
-                        float frameSkipsTimeStep = frameSkips[animClip.name] / (float)fps;
-                        lastMotionBoneData.velocity = (motionBoneData.position - lastMotionBoneData.position) / frameSkipsTimeStep;
-                    }
-                }
-
+                CaptureBoneSnapShot(animClip, motionFrameData, lastMotionFrameData, sampleGO, bakeFrames, i);
                 CaptureTrajectorySnapShot(animClip, motionFrameData, sampleGO, bakeFrames, i);
 
                 frame++;
@@ -804,6 +791,26 @@ public class MotionMatcherBakeEditor : EditorWindow
             name = name.Replace(badChars[i], '_');
         }
         return name;
+    }
+
+    private void CaptureBoneSnapShot(AnimationClip animClip, MotionFrameData motionFrameData, MotionFrameData lastMotionFrameData, GameObject sampleGO, float bakeFrames, float CurrentFrame)
+    {
+        for (int k = 0; k < bonesMap.Count; k++)
+        {
+            Transform child = joints[k];
+            MotionBoneData motionBoneData = motionFrameData.motionBoneDataList[k];
+            motionBoneData.position = child.localPosition;
+            motionBoneData.rotation = child.localRotation;
+            motionBoneData.velocity = Vector3.zero;
+
+            //calc velocity
+            if (lastMotionFrameData != null)
+            {
+                MotionBoneData lastMotionBoneData = lastMotionFrameData.motionBoneDataList[k];
+                float frameSkipsTimeStep = frameSkips[animClip.name] / (float)fps;
+                lastMotionBoneData.velocity = (motionBoneData.position - lastMotionBoneData.position) / frameSkipsTimeStep;
+            }
+        }
     }
 
     private void CaptureTrajectorySnapShot(AnimationClip animClip, MotionFrameData motionFrameData, GameObject sampleGO, float bakeFrames, float CurrentFrame)

@@ -72,7 +72,7 @@ public class PlayerInputController : MonoBehaviour
         playerInput.crouch = crouch;
         m_Character.Move(playerInput);
 
-        //m_Character.Move(m_Move, crouch, m_Jump);
+        m_Character.Move(m_Move, crouch, m_Jump);
 
         m_Jump = false;
     }
