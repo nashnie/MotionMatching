@@ -115,7 +115,7 @@ public class MotionMatcher : MonoBehaviour
                 rootMotionCost = (motionFrameData.velocity - currentMotionFrameData.velocity) * motionCostFactorSettings.rootMotionVelFactor;
                 motionCost = bonesCost + trajectorysCost + rootMotionCost;
 
-                Debug.LogFormat("AcquireMatchedMotion motionName {0} motionCost {1} ", motionData.motionName, motionCost);
+                Debug.LogFormat("ComputeMotionsBestCost motionName {0} motionCost {1} ", motionData.motionName, motionCost);
 
                 if (bestMotionCost > motionCost)
                 {
