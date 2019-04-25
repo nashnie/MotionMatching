@@ -26,8 +26,6 @@ public class MotionMatcherBakeEditor : EditorWindow
     HashSet<string> rotationPathHash = new HashSet<string>();
     Dictionary<string, int> bonesMap = new Dictionary<string, int>();
     Transform[] joints = null;
-    Matrix4x4[] skeletonPoses = null;
-    Matrix4x4[] bindSkeletonPoses = null;
     const string positionPath = "m_LocalPosition";
     const string rotationPath = "m_LocalRotation";
     const string RootBoneName = "EthanSkeleton";
@@ -64,7 +62,8 @@ public class MotionMatcherBakeEditor : EditorWindow
     [SerializeField]
     private bool requiresAnimator;
 
-    public float[] PredictionTrajectoryTimeList;
+    public float[] predictionTrajectoryTimeList;
+    public string[] captureBoneList;
 
     private void OnEnable()
     {
@@ -306,7 +305,8 @@ public class MotionMatcherBakeEditor : EditorWindow
         MotionMatcherSettings motionMatcherSettings = AssetDatabase.LoadAssetAtPath(MotionMatcherSettingsPath, typeof(MotionMatcherSettings)) as MotionMatcherSettings;
         if (motionMatcherSettings)
         {
-            PredictionTrajectoryTimeList = motionMatcherSettings.predictionTrajectoryTimeList;
+            predictionTrajectoryTimeList = motionMatcherSettings.predictionTrajectoryTimeList;
+            captureBoneList = motionMatcherSettings.captureBoneList;
         }
     }
 
@@ -340,15 +340,12 @@ public class MotionMatcherBakeEditor : EditorWindow
         bonesMap.Clear();
         Transform child = animationTarget.transform.Find(RootBoneName);
         joints = child.GetComponentsInChildren<Transform>();
-        skeletonPoses = new Matrix4x4[joints.Length];
-        bindSkeletonPoses = new Matrix4x4[joints.Length];
-   
-        for (int i = 0; i < joints.Length; i++)
+
+        for (int i = 0; i < captureBoneList.Length; i++)
         {
-            Transform bone = joints[i];
+            string boneName = captureBoneList[i];
+            Transform bone = child.Find(boneName);
             bonesMap.Add(bone.name, i);
-            skeletonPoses[i] = bone.transform.localToWorldMatrix;
-            bindSkeletonPoses[i] = bone.transform.worldToLocalMatrix;
         }
     }
 
@@ -810,9 +807,9 @@ public class MotionMatcherBakeEditor : EditorWindow
     private void CaptureTrajectorySnapShot(AnimationClip animClip, MotionFrameData motionFrameData, GameObject sampleGO, float bakeFrames, float CurrentFrame)
     {
         float lastFrameTime = 0;
-        for (int i = 0; i < PredictionTrajectoryTimeList.Length; i++)
+        for (int i = 0; i < predictionTrajectoryTimeList.Length; i++)
         {
-            float PredictionTrajectoryTime = PredictionTrajectoryTimeList[i];
+            float PredictionTrajectoryTime = predictionTrajectoryTimeList[i];
             float bakeDelta = CurrentFrame / bakeFrames;
             EditorUtility.DisplayProgressBar("Baking Animation", string.Format("Processing: {0} Frame: {1}", animClip.name, i), bakeDelta);
             float animationTime = bakeDelta * animClip.length + (PredictionTrajectoryTime * fps / bakeFrames) * animClip.length;
