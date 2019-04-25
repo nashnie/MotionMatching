@@ -341,11 +341,13 @@ public class MotionMatcherBakeEditor : EditorWindow
         Transform child = animationTarget.transform.Find(RootBoneName);
         joints = child.GetComponentsInChildren<Transform>();
 
-        for (int i = 0; i < captureBoneList.Length; i++)
+        for (int i = 0; i < joints.Length; i++)
         {
-            string boneName = captureBoneList[i];
-            Transform bone = child.Find(boneName);
-            bonesMap.Add(bone.name, i);
+            Transform joint = joints[i];
+            if (captureBoneList.Contains(joint.name))
+            {
+                bonesMap.Add(joint.name, i);
+            }
         }
     }
 

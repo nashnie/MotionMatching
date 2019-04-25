@@ -358,6 +358,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9579096, guid: 19d7e762c04167f47875fd8ec64ba0c1, type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19d7e762c04167f47875fd8ec64ba0c1, type: 3}
 --- !u!1 &1505213193 stripped
@@ -398,6 +402,8 @@ MonoBehaviour:
   m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.1
+  animationClips:
+  - {fileID: 7400000, guid: b1a5e04ae51004842aba06704a6c2903, type: 3}
 --- !u!114 &1505213196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,7 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf766d6585077ed41abe7c9d439cc594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motionsData: {fileID: 11400000, guid: 1361470b3c947154f9ecf5a622b1c715, type: 2}
+  motionsData: {fileID: 11400000, guid: 9f619a414851f534a96baadd5fe30574, type: 2}
   motionMatcherSettings: {fileID: 11400000, guid: 32a1b7ec0068cef4bb2dc00424de6dcd,
     type: 2}
   motionCostFactorSettings: {fileID: 11400000, guid: 1c5136eac59fc134e8033b5c94777ba9,
