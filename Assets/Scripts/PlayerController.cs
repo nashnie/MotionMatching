@@ -125,7 +125,7 @@ public class PlayerController : MonoBehaviour
         // update the animator parameters
         m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
 
-        string matchedMotionName = motionMatcher.AcquireMatchedMotion();
+        //string matchedMotionName = motionMatcher.AcquireMatchedMotion();
         //play matchedMotion
     }
 
