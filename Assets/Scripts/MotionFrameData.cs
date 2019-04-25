@@ -6,7 +6,14 @@ using UnityEngine;
 public class MotionFrameData
 {
     //RootMotion Velocity
-    public float Velocity;
+    public float velocity;
     public MotionBoneData[] motionBoneDataList;
     public MotionTrajectoryData[] motionTrajectoryDataList;
+
+    public void Clear()
+    {
+        velocity = 0;
+        motionBoneDataList = null;
+        motionTrajectoryDataList = null;
+    }
 }

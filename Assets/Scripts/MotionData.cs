@@ -5,6 +5,12 @@ using UnityEngine;
 [System.Serializable]
 public class MotionData
 {
-    public string AnimationName;
+    public string motionName;
     public MotionFrameData[] motionFrameDataList;
+
+    public void Clear()
+    {
+        motionName = "";
+        motionFrameDataList = null;
+    }
 }
