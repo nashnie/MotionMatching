@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float m_MoveSpeedMultiplier = 1f;
     [SerializeField] float m_AnimSpeedMultiplier = 1f;
     [SerializeField] float m_GroundCheckDistance = 0.1f;
-
+    [SerializeField] AnimationClip[] animationClips;
     private MotionMatcher motionMatcher;
 
     Rigidbody m_Rigidbody;
@@ -123,10 +123,10 @@ public class PlayerController : MonoBehaviour
     void UpdateAnimator(Vector3 move)
     {
         // update the animator parameters
-        m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
-
-        //string matchedMotionName = motionMatcher.AcquireMatchedMotion();
-        //play matchedMotion
+        //m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
+        string matchedMotionName = motionMatcher.AcquireMatchedMotion(move.magnitude, move.normalized, 0f, 0f);
+        float normalizedTime = 0.0f;//TODO frame index
+        m_Animator.Play(matchedMotionName, 0, normalizedTime);
     }
 
 
