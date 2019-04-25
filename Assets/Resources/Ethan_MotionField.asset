@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Ethan_MotionField
   m_EditorClassIdentifier: 
   motionDataList:
-  - motionFrameDataList:
+  - AnimationName: 
+    motionFrameDataList:
     - Velocity: 4.741963
       motionBoneDataList:
       - position: {x: -0, y: 0, z: 0}
@@ -8816,7 +8817,8 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-  - motionFrameDataList:
+  - AnimationName: 
+    motionFrameDataList:
     - Velocity: 0
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
@@ -44514,7 +44516,8 @@ MonoBehaviour:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-  - motionFrameDataList:
+  - AnimationName: 
+    motionFrameDataList:
     - Velocity: 1.3332802
       motionBoneDataList:
       - position: {x: 0, y: 0, z: 0}
