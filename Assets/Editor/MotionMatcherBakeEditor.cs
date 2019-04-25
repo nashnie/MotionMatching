@@ -436,22 +436,30 @@ public class MotionMatcherBakeEditor : EditorWindow
             meshAnimationList.motionDataList[x] = new MotionData();
             MotionData motionData = meshAnimationList.motionDataList[x];
             motionData.motionName = animClip.name;
-            motionData.motionFrameDataList = new MotionFrameData[bakeFrames];
 
-            for (int i = 0; i < bakeFrames; i++)
+            int totalFrame = 0;
+            for (int i = 0; i < bakeFrames; i += frameSkips[animClip.name])
             {
-                motionData.motionFrameDataList[i] = new MotionFrameData();
-                motionData.motionFrameDataList[i].motionBoneDataList = new MotionBoneData[bonesMap.Count];
-                motionData.motionFrameDataList[i].motionTrajectoryDataList = new MotionTrajectoryData[predictionTrajectoryTimeList.Length];
+                totalFrame++;
+            }
+            motionData.motionFrameDataList = new MotionFrameData[totalFrame];
+
+            int frame = 0;
+            for (int i = 0; i < bakeFrames; i += frameSkips[animClip.name])
+            {
+                motionData.motionFrameDataList[frame] = new MotionFrameData();
+                motionData.motionFrameDataList[frame].motionBoneDataList = new MotionBoneData[bonesMap.Count];
+                motionData.motionFrameDataList[frame].motionTrajectoryDataList = new MotionTrajectoryData[predictionTrajectoryTimeList.Length];
                 for (int i1 = 0; i1 < bonesMap.Count; i1++)
                 {
-                    motionData.motionFrameDataList[i].motionBoneDataList[i1] = new MotionBoneData();
-                   
+                    motionData.motionFrameDataList[frame].motionBoneDataList[i1] = new MotionBoneData();
+
                 }
                 for (int i2 = 0; i2 < predictionTrajectoryTimeList.Length; i2++)
                 {
-                    motionData.motionFrameDataList[i].motionTrajectoryDataList[i2] = new MotionTrajectoryData();
+                    motionData.motionFrameDataList[frame].motionTrajectoryDataList[i2] = new MotionTrajectoryData();
                 }
+                frame++;
             }
         }
 
@@ -507,8 +515,8 @@ public class MotionMatcherBakeEditor : EditorWindow
                     }
                 }
 
-                MotionFrameData motionFrameData = motionData.motionFrameDataList[i];
-                MotionFrameData lastMotionFrameData = i > 0 ? motionData.motionFrameDataList[i - 1] : null;
+                MotionFrameData motionFrameData = motionData.motionFrameDataList[frame];
+                MotionFrameData lastMotionFrameData = frame > 0 ? motionData.motionFrameDataList[frame - 1] : null;
 
                 CaptureBoneSnapShot(animClip, motionFrameData, lastMotionFrameData, sampleGO, bakeFrames, i);
                 CaptureTrajectorySnapShot(animClip, motionFrameData, sampleGO, bakeFrames, i);
