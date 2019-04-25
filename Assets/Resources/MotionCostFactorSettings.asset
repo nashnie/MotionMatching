@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49c32d83036e9ba4898865e7bf68aaa6, type: 3}
   m_Name: MotionCostFactorSettings
   m_EditorClassIdentifier: 
-  bonePosFactor: 1
-  boneRotFactor: 1
-  boneVelFactor: 1
-  precdictionTrajectoryFactor: 1
-  rootMotionVelFactor: 1
+  bonePosFactor: 0
+  boneRotFactor: 0
+  boneVelFactor: 0
+  rootMotionVelFactor: 0
+  predictionTrajectoryPosFactor: 1
+  predictionTrajectoryRotFactor: 0
+  predictionTrajectoryDirFactor: 0

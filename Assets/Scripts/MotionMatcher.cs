@@ -35,8 +35,6 @@ public class MotionMatcher : MonoBehaviour
     {
         if (currentComputeTime >= motionMatcherSettings.ComputeMotionsBestCostGap)
         {
-            velocity = 4.0f;
-            direction = motionOwner.forward;
             currentComputeTime = 0;
             CapturePlayingMotionSnapShot(velocity, direction, acceleration, brake);
             ComputeMotionsBestCost();
