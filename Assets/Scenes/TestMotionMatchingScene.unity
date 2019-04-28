@@ -416,11 +416,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf766d6585077ed41abe7c9d439cc594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motionsData: {fileID: 11400000, guid: 5e46f77fae4819046bf997f71bc444d8, type: 2}
+  motionsData: {fileID: 11400000, guid: bcd839be3b68ab34f8966a00545e14ac, type: 2}
   motionMatcherSettings: {fileID: 11400000, guid: 32a1b7ec0068cef4bb2dc00424de6dcd,
     type: 2}
   motionCostFactorSettings: {fileID: 11400000, guid: 1c5136eac59fc134e8033b5c94777ba9,
     type: 2}
+  bestMotionFrameIndex: -1
+  bestMotionName: HumanoidWalk
 --- !u!1 &1976117354
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,4 +505,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2113952710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2113952711}
+  m_Layer: 0
+  m_Name: New Game Object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2113952711
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113952710}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

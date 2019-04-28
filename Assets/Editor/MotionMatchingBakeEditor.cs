@@ -424,7 +424,6 @@ public class MotionMatchingBakeEditor : EditorWindow
                 for (int i1 = 0; i1 < bonesMap.Count; i1++)
                 {
                     motionData.motionFrameDataList[frame].motionBoneDataList[i1] = new MotionBoneData();
-
                 }
                 for (int i2 = 0; i2 < predictionTrajectoryTimeList.Length; i2++)
                 {
@@ -771,7 +770,9 @@ public class MotionMatchingBakeEditor : EditorWindow
             Transform child = joints[boneIndex];
             MotionBoneData motionBoneData = motionFrameData.motionBoneDataList[index];
             motionBoneData.position = child.position;
+            motionBoneData.localPosition = child.localPosition;
             motionBoneData.rotation = child.rotation;
+            motionBoneData.localRotation = child.localRotation;
             motionBoneData.velocity = Vector3.zero;
             motionBoneData.boneName = child.name;
             motionBoneData.boneIndex = boneIndex;

@@ -17,81 +17,111 @@ MonoBehaviour:
     motionFrameDataList:
     - velocity: 0
       motionBoneDataList:
-      - position: {x: 0.00000042162256, y: 0.7787106, z: -0.033025585}
-        rotation: {x: -0.49999934, y: 0.49999934, z: -0.50000066, w: 0.50000066}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.19204545, y: 0.018119216, z: 0.19916719}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.07436246, y: 0.77871054, z: -0.033025675}
-        rotation: {x: 0.46973756, y: 0.52732074, z: -0.4960472, w: -0.5051897}
+        position: {x: 0.00000042162256, y: 0.7787106, z: -0.033025585}
+        rotation: {x: -0.49999934, y: 0.49999934, z: -0.50000066, w: 0.50000066}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.19204615, y: 0.018846989, z: 0.19914569}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.091631636, y: 0.4220909, z: -0.009132072}
-        rotation: {x: 0.55199426, y: 0.4404802, z: -0.5741915, w: -0.41422638}
+        position: {x: -0.07436246, y: 0.77871054, z: -0.033025675}
+        rotation: {x: 0.46973756, y: 0.52732074, z: -0.4960472, w: -0.5051897}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.117892325, y: 0.024516284, z: 0.20678005}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.10739849, y: 0.10235894, z: -0.098533556}
-        rotation: {x: 0.5416768, y: 0.541676, z: -0.45451772, w: -0.4545186}
+        position: {x: -0.091631636, y: 0.4220909, z: -0.009132072}
+        rotation: {x: 0.55199426, y: 0.4404802, z: -0.5741915, w: -0.41422638}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.043763332, y: 0.08044332, z: 0.08467551}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.07436337, y: 0.7787107, z: -0.033025496}
-        rotation: {x: 0.49604848, y: 0.50518966, z: -0.4697362, w: -0.5273208}
+        position: {x: -0.10739849, y: 0.10235894, z: -0.098533556}
+        rotation: {x: 0.5416768, y: 0.541676, z: -0.45451772, w: -0.4545186}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.19204478, y: 0.017391443, z: 0.19918865}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.09163354, y: 0.42209116, z: -0.009131834}
-        rotation: {x: 0.5741925, y: 0.4142267, z: -0.5519926, w: -0.44048107}
+        position: {x: 0.07436337, y: 0.7787107, z: -0.033025496}
+        rotation: {x: 0.49604848, y: 0.50518966, z: -0.4697362, w: -0.5273208}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.16131476, y: 0.025119185, z: 0.29451126}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.10740151, y: 0.102359295, z: -0.0985333}
-        rotation: {x: 0.45451945, y: 0.45451888, z: -0.5416752, w: -0.5416758}
+        position: {x: 0.09163354, y: 0.42209116, z: -0.009131834}
+        rotation: {x: 0.5741925, y: 0.4142267, z: -0.5519926, w: -0.44048107}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.057384558, y: 0.10378063, z: 0.08441113}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.1408867, y: 1.1755093, z: -0.06380438}
-        rotation: {x: 0.6500258, y: 0.19031385, z: 0.22838184, w: 0.69934887}
+        position: {x: 0.10740151, y: 0.102359295, z: -0.0985333}
+        rotation: {x: 0.45451945, y: 0.45451888, z: -0.5416752, w: -0.5416758}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.13180405, y: -0.08875251, z: 0.23920535}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.34349015, y: 1.0360043, z: -0.056244306}
-        rotation: {x: 0.67632866, y: 0.036502257, z: 0.3823694, w: 0.6285227}
+        position: {x: 0.1408867, y: 1.1755093, z: -0.06380438}
+        rotation: {x: 0.6500258, y: 0.19031385, z: 0.22838184, w: 0.69934887}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.75350803, y: -0.54593265, z: -0.20420755}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.45740196, y: 0.9503535, z: 0.019920655}
-        rotation: {x: 0.8933481, y: 0.37537876, z: 0.24673021, w: -0.012003496}
+        position: {x: 0.34349015, y: 1.0360043, z: -0.056244306}
+        rotation: {x: 0.67632866, y: 0.036502257, z: 0.3823694, w: 0.6285227}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -1.2328866, y: -0.92043847, z: -0.6014879}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.14088687, y: 1.175509, z: -0.06380473}
-        rotation: {x: 0.2283817, y: 0.6993484, z: 0.6500259, w: 0.19031568}
+        position: {x: 0.45740196, y: 0.9503535, z: 0.019920655}
+        rotation: {x: 0.8933481, y: 0.37537876, z: 0.24673021, w: -0.012003496}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.23395129, y: -0.04266143, z: 0.28831804}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.34349015, y: 1.0360036, z: -0.05624514}
-        rotation: {x: 0.38236934, y: 0.6285221, z: 0.67632914, w: 0.036503837}
+        position: {x: -0.14088687, y: 1.175509, z: -0.06380473}
+        rotation: {x: 0.2283817, y: 0.6993484, z: 0.6500259, w: 0.19031568}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 1.0587668, y: -0.54649115, z: 0.062105265}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.457402, y: 0.9503525, z: 0.019919522}
-        rotation: {x: 0.24672852, y: -0.012005672, z: 0.89334786, w: 0.3753805}
+        position: {x: -0.34349015, y: 1.0360036, z: -0.05624514}
+        rotation: {x: 0.38236934, y: 0.6285221, z: 0.67632914, w: 0.036503837}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 1.5314943, y: -0.9202501, z: -0.30375078}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: -0.00000010552523, y: 1.2288766, z: -0.068537004}
-        rotation: {x: -0.5418559, y: 0.4543049, z: -0.5418555, w: 0.45430365}
+        position: {x: -0.457402, y: 0.9503525, z: 0.019919522}
+        rotation: {x: 0.24672852, y: -0.012005672, z: 0.89334786, w: 0.3753805}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.19956885, y: 0.020695925, z: 0.32932985}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.000000097564424, y: 1.3253098, z: -0.04385744}
-        rotation: {x: -0.49999982, y: 0.50000095, z: -0.49999958, w: 0.49999964}
+        position: {x: -0.00000010552523, y: 1.2288766, z: -0.068537004}
+        rotation: {x: -0.5418559, y: 0.4543049, z: -0.5418555, w: 0.45430365}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.20948948, y: 0.0034213066, z: 0.38338464}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.000000097564424, y: 1.3253098, z: -0.04385744}
+        rotation: {x: -0.49999982, y: 0.50000095, z: -0.49999958, w: 0.49999964}
       motionTrajectoryDataList:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
@@ -113,81 +143,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
       motionBoneDataList:
-      - position: {x: 0.038409512, y: 0.78233445, z: 0.0068078516}
-        rotation: {x: -0.5050136, y: 0.4949053, z: -0.5060116, w: 0.49394572}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.087645106, y: -0.0010922551, z: 0.014617029}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.035953227, y: 0.78247994, z: 0.006803463}
-        rotation: {x: 0.45805743, y: 0.49227104, z: -0.50456935, w: -0.5415374}
+        position: {x: 0.038409512, y: 0.78233445, z: 0.0068078516}
+        rotation: {x: -0.5050136, y: 0.4949053, z: -0.5060116, w: 0.49394572}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.08748738, y: -0.0010845065, z: 0.025468277}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.06805317, y: 0.42699414, z: 0.032223936}
-        rotation: {x: 0.52493745, y: 0.42576474, z: -0.561609, w: -0.47724286}
+        position: {x: -0.035953227, y: 0.78247994, z: 0.006803463}
+        rotation: {x: 0.45805743, y: 0.49227104, z: -0.50456935, w: -0.5415374}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.03631361, y: -0.006085038, z: 0.008650776}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.116151154, y: 0.1184476, z: -0.08159845}
-        rotation: {x: 0.56450796, y: 0.5573747, z: -0.41025972, w: -0.44983545}
+        position: {x: -0.06805317, y: 0.42699414, z: 0.032223936}
+        rotation: {x: 0.52493745, y: 0.42576474, z: -0.561609, w: -0.47724286}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.0037433952, y: -0.008858442, z: 0.00071469694}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.11277233, y: 0.782189, z: 0.0068122325}
-        rotation: {x: 0.49498028, y: 0.4598674, z: -0.4997527, w: -0.542}
+        position: {x: -0.116151154, y: 0.1184476, z: -0.08159845}
+        rotation: {x: 0.56450796, y: 0.5573747, z: -0.41025972, w: -0.44983545}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.08780282, y: -0.0011000037, z: 0.0037657423}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.123896495, y: 0.427115, z: 0.04977042}
-        rotation: {x: 0.47135764, y: 0.37574545, z: -0.58480996, w: -0.5428029}
+        position: {x: 0.11277233, y: 0.782189, z: 0.0068122325}
+        rotation: {x: 0.49498028, y: 0.4598674, z: -0.4997527, w: -0.542}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.042240098, y: -0.00072851777, z: -0.010248255}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.0959246, y: 0.12311542, z: -0.08165108}
-        rotation: {x: 0.32231674, y: 0.34697363, z: -0.6129179, w: -0.63249767}
+        position: {x: 0.123896495, y: 0.427115, z: 0.04977042}
+        rotation: {x: 0.47135764, y: 0.37574545, z: -0.58480996, w: -0.5428029}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.02103217, y: -0.0143790245, z: 0.011405051}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.1672475, y: 1.1577588, z: -0.015963312}
-        rotation: {x: 0.7998102, y: -0.13858308, z: -0.06396588, w: 0.580523}
+        position: {x: 0.0959246, y: 0.12311542, z: -0.08165108}
+        rotation: {x: 0.32231674, y: 0.34697363, z: -0.6129179, w: -0.63249767}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.09519294, y: -0.005018115, z: -0.027642408}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.19278854, y: 0.9268178, z: -0.09708582}
-        rotation: {x: 0.7984853, y: -0.20671904, z: -0.011121255, w: 0.5653008}
+        position: {x: 0.1672475, y: 1.1577588, z: -0.015963312}
+        rotation: {x: 0.7998102, y: -0.13858308, z: -0.06396588, w: 0.580523}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.12373343, y: -0.011022687, z: -0.018380694}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.21082464, y: 0.7662658, z: -0.10037692}
-        rotation: {x: 0.97092485, y: -0.099443436, z: 0.018330395, w: -0.21697986}
+        position: {x: 0.19278854, y: 0.9268178, z: -0.09708582}
+        rotation: {x: 0.7984853, y: -0.20671904, z: -0.011121255, w: 0.5653008}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.13258196, y: -0.012122989, z: -0.0065773353}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.094096616, y: 1.1669767, z: -0.0061411234}
-        rotation: {x: 0.04566185, y: 0.6149925, z: 0.75527835, w: -0.22193344}
+        position: {x: 0.21082464, y: 0.7662658, z: -0.10037692}
+        rotation: {x: 0.97092485, y: -0.099443436, z: 0.018330395, w: -0.21697986}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.09120248, y: 0.0005823374, z: 0.02625111}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.13173679, y: 0.92670536, z: -0.043824088}
-        rotation: {x: 0.10804331, y: 0.53111315, z: 0.79104567, w: -0.2837125}
+        position: {x: -0.094096616, y: 1.1669767, z: -0.0061411234}
+        rotation: {x: 0.04566185, y: 0.6149925, z: 0.75527835, w: -0.22193344}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.104829, y: -0.0018879771, z: 0.058964882}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.15110312, y: 0.76630247, z: -0.04083064}
-        rotation: {x: 0.13475744, y: -0.13223664, z: 0.98200995, w: -0.0033234656}
+        position: {x: -0.13173679, y: 0.92670536, z: -0.043824088}
+        rotation: {x: 0.10804331, y: 0.53111315, z: 0.79104567, w: -0.2837125}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.10215804, y: -0.0014400482, z: 0.08211437}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: 0.039913666, y: 1.2330158, z: -0.002671036}
-        rotation: {x: -0.52558136, y: 0.49647525, z: -0.50409645, w: 0.47240198}
+        position: {x: -0.15110312, y: 0.76630247, z: -0.04083064}
+        rotation: {x: 0.13475744, y: -0.13223664, z: 0.98200995, w: -0.0033234656}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.090379156, y: -0.0011229515, z: -0.007760655}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.041897994, y: 1.325994, z: 0.032819487}
-        rotation: {x: -0.56950754, y: 0.5834953, z: -0.42766953, w: 0.39024833}
+        position: {x: 0.039913666, y: 1.2330158, z: -0.002671036}
+        rotation: {x: -0.52558136, y: 0.49647525, z: -0.50409645, w: 0.47240198}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.08159259, y: 0.0010806322, z: -0.014380077}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.041897994, y: 1.325994, z: 0.032819487}
+        rotation: {x: -0.56950754, y: 0.5834953, z: -0.42766953, w: 0.39024833}
       motionTrajectoryDataList:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
@@ -209,81 +269,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
       motionBoneDataList:
-      - position: {x: 0.02088049, y: 0.782116, z: 0.009731257}
-        rotation: {x: -0.51356345, y: 0.5008142, z: -0.49977958, w: 0.48544642}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.1012598, y: -0.0009021163, z: 0.0036856811}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.053450704, y: 0.78226304, z: 0.011897119}
-        rotation: {x: 0.44243073, y: 0.49499562, z: -0.5143751, w: -0.5428197}
+        position: {x: 0.02088049, y: 0.782116, z: 0.009731257}
+        rotation: {x: -0.51356345, y: 0.5008142, z: -0.49977958, w: 0.48544642}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.10078687, y: -0.0010949373, z: 0.014508208}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.07531589, y: 0.42577714, z: 0.03395409}
-        rotation: {x: 0.51730984, y: 0.4337632, z: -0.56732804, w: -0.47157133}
+        position: {x: -0.053450704, y: 0.78226304, z: 0.011897119}
+        rotation: {x: 0.44243073, y: 0.49499562, z: -0.5143751, w: -0.5428197}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.043004677, y: -0.0038291514, z: 0.012402609}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.115402475, y: 0.11667591, z: -0.081455514}
-        rotation: {x: 0.5664375, y: 0.556586, z: -0.41025716, w: -0.44838637}
+        position: {x: -0.07531589, y: 0.42577714, z: 0.03395409}
+        rotation: {x: 0.51730984, y: 0.4337632, z: -0.56732804, w: -0.47157133}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.020715743, y: -0.006057322, z: -0.000102482736}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.09521177, y: 0.781969, z: 0.007565381}
-        rotation: {x: 0.4855045, y: 0.46609983, z: -0.506337, w: -0.5391285}
+        position: {x: -0.115402475, y: 0.11667591, z: -0.081455514}
+        rotation: {x: 0.5664375, y: 0.556586, z: -0.41025716, w: -0.44838637}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.10173272, y: -0.0007092953, z: -0.007136846}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.115448475, y: 0.4269693, z: 0.047720768}
-        rotation: {x: 0.4734309, y: 0.3836414, z: -0.59332854, w: -0.5259698}
+        position: {x: 0.09521177, y: 0.781969, z: 0.007565381}
+        rotation: {x: 0.4855045, y: 0.46609983, z: -0.506337, w: -0.5391285}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.042919964, y: 0.0017732382, z: -0.024190173}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.100131035, y: 0.120239615, z: -0.07937007}
-        rotation: {x: 0.3208953, y: 0.35130242, z: -0.61615956, w: -0.62766284}
+        position: {x: 0.115448475, y: 0.4269693, z: 0.047720768}
+        rotation: {x: 0.4734309, y: 0.3836414, z: -0.59332854, w: -0.5259698}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.028336383, y: -0.009824932, z: -0.00023327768}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.14820892, y: 1.1567552, z: -0.021491794}
-        rotation: {x: 0.79403746, y: -0.1306634, z: -0.082919806, w: 0.5878403}
+        position: {x: 0.100131035, y: 0.120239615, z: -0.07937007}
+        rotation: {x: 0.3208953, y: 0.35130242, z: -0.61615956, w: -0.62766284}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.10659009, y: 0.0039839745, z: -0.01634256}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.16804186, y: 0.92461324, z: -0.10076196}
-        rotation: {x: 0.79178876, y: -0.20085208, z: -0.026497757, w: 0.5762178}
+        position: {x: 0.14820892, y: 1.1567552, z: -0.021491794}
+        rotation: {x: 0.79403746, y: -0.1306634, z: -0.082919806, w: 0.5878403}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.116185844, y: -0.0004684925, z: -0.005413182}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.18430825, y: 0.7638412, z: -0.101692386}
-        rotation: {x: 0.9741163, y: -0.10148364, z: 0.007140398, w: -0.20186102}
+        position: {x: 0.16804186, y: 0.92461324, z: -0.10076196}
+        rotation: {x: 0.79178876, y: -0.20085208, z: -0.026497757, w: 0.5762178}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.11416316, y: -0.0001680851, z: -0.013801865}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.11233711, y: 1.1670932, z: -0.0008909013}
-        rotation: {x: 0.06982578, y: 0.61527026, z: 0.74847066, w: -0.23740028}
+        position: {x: 0.18430825, y: 0.7638412, z: -0.101692386}
+        rotation: {x: 0.9741163, y: -0.10148364, z: 0.007140398, w: -0.20186102}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.10565974, y: -0.003477931, z: 0.014291508}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.15270258, y: 0.92632776, z: -0.03203111}
-        rotation: {x: 0.13976577, y: 0.5282372, z: 0.781027, w: -0.30237088}
+        position: {x: -0.11233711, y: 1.1670932, z: -0.0008909013}
+        rotation: {x: 0.06982578, y: 0.61527026, z: 0.74847066, w: -0.23740028}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.1040636, y: -0.0053596497, z: 0.027338006}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.17153473, y: 0.76601446, z: -0.024407765}
-        rotation: {x: 0.17661276, y: -0.1273762, z: 0.97583175, w: -0.018338889}
+        position: {x: -0.15270258, y: 0.92632776, z: -0.03203111}
+        rotation: {x: 0.13976577, y: 0.5282372, z: 0.781027, w: -0.30237088}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.10153741, y: -0.005221367, z: 0.03551754}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: 0.021837834, y: 1.2327912, z: -0.004223167}
-        rotation: {x: -0.5381287, y: 0.503775, z: -0.49708182, w: 0.45775366}
+        position: {x: -0.17153473, y: 0.76601446, z: -0.024407765}
+        rotation: {x: 0.17661276, y: -0.1273762, z: 0.97583175, w: -0.018338889}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.10753073, y: -0.0008517504, z: -0.0007209275}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.025579475, y: 1.3262101, z: 0.029943472}
-        rotation: {x: -0.58050835, y: 0.5835354, z: -0.42082873, w: 0.3813137}
+        position: {x: 0.021837834, y: 1.2327912, z: -0.004223167}
+        rotation: {x: -0.5381287, y: 0.503775, z: -0.49708182, w: 0.45775366}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.10550338, y: 0.000056624413, z: -0.0034620147}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.025579475, y: 1.3262101, z: 0.029943472}
+        rotation: {x: -0.58050835, y: 0.5835354, z: -0.42082873, w: 0.3813137}
       motionTrajectoryDataList:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
@@ -305,81 +395,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
       motionBoneDataList:
-      - position: {x: 0.00062853034, y: 0.7819356, z: 0.010468394}
-        rotation: {x: -0.52098155, y: 0.50763583, z: -0.49217755, w: 0.47816885}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.0836628, y: -0.0004002452, z: -0.0029503088}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.07360808, y: 0.78204405, z: 0.01479876}
-        rotation: {x: 0.4320085, y: 0.5002189, z: -0.5243449, w: -0.53685427}
+        position: {x: 0.00062853034, y: 0.7819356, z: 0.010468394}
+        rotation: {x: -0.52098155, y: 0.50763583, z: -0.49217755, w: 0.47816885}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.08338846, y: -0.00060111284, z: 0.0013317261}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.08391683, y: 0.4250113, z: 0.036434613}
-        rotation: {x: 0.5112775, y: 0.4479738, z: -0.57111514, w: -0.46015507}
+        position: {x: -0.07360808, y: 0.78204405, z: 0.01479876}
+        rotation: {x: 0.4320085, y: 0.5002189, z: -0.5243449, w: -0.53685427}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.034415312, y: -0.0006105006, z: 0.012808256}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.11125933, y: 0.11546445, z: -0.08147601}
-        rotation: {x: 0.5644342, y: 0.5582748, z: -0.41346386, w: -0.4458604}
+        position: {x: -0.08391683, y: 0.4250113, z: 0.036434613}
+        rotation: {x: 0.5112775, y: 0.4479738, z: -0.57111514, w: -0.46015507}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.028552711, y: 0.0010815263, z: -0.0026684254}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.07486522, y: 0.78182715, z: 0.006138012}
-        rotation: {x: 0.47308794, y: 0.47344846, z: -0.51520354, w: -0.53535026}
+        position: {x: -0.11125933, y: 0.11546445, z: -0.08147601}
+        rotation: {x: 0.5644342, y: 0.5582748, z: -0.41346386, w: -0.4458604}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.08393712, y: -0.00019967556, z: -0.007232344}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.10686448, y: 0.42732394, z: 0.042882733}
-        rotation: {x: 0.47287259, y: 0.3916953, z: -0.60446674, w: -0.50753003}
+        position: {x: 0.07486522, y: 0.78182715, z: 0.006138012}
+        rotation: {x: 0.47308794, y: 0.47344846, z: -0.51520354, w: -0.53535026}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.030249506, y: 0.0018495321, z: -0.04619647}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.10579831, y: 0.11827463, z: -0.07941672}
-        rotation: {x: 0.31641594, y: 0.35464737, z: -0.6200287, w: -0.6242362}
+        position: {x: 0.10686448, y: 0.42732394, z: 0.042882733}
+        rotation: {x: 0.47287259, y: 0.3916953, z: -0.60446674, w: -0.50753003}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.05275827, y: -0.01011759, z: -0.009847693}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.1268909, y: 1.157552, z: -0.024760306}
-        rotation: {x: 0.7895849, y: -0.12377974, z: -0.092002496, w: 0.5939446}
+        position: {x: 0.10579831, y: 0.11827463, z: -0.07941672}
+        rotation: {x: 0.31641594, y: 0.35464737, z: -0.6200287, w: -0.6242362}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.08843139, y: 0.01522243, z: -0.0031000283}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.14480469, y: 0.92451954, z: -0.101844594}
-        rotation: {x: 0.7940208, y: -0.19294423, z: -0.03569683, w: 0.5753518}
+        position: {x: 0.1268909, y: 1.157552, z: -0.024760306}
+        rotation: {x: 0.7895849, y: -0.12377974, z: -0.092002496, w: 0.5939446}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.072435066, y: 0.011482835, z: 0.01259353}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.16147561, y: 0.7638076, z: -0.10445276}
-        rotation: {x: 0.9775184, y: -0.08613928, z: -0.0020625293, w: -0.1924434}
+        position: {x: 0.14480469, y: 0.92451954, z: -0.101844594}
+        rotation: {x: 0.7940208, y: -0.19294423, z: -0.03569683, w: 0.5753518}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.06924644, y: 0.012254715, z: -0.0038490072}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.13346906, y: 1.1663976, z: 0.0019674003}
-        rotation: {x: 0.075768776, y: 0.6165104, z: 0.74497855, w: -0.24327217}
+        position: {x: 0.16147561, y: 0.7638076, z: -0.10445276}
+        rotation: {x: 0.9775184, y: -0.08613928, z: -0.0020625293, w: -0.1924434}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.09193823, y: -0.0083220005, z: 0.009985464}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.1735153, y: 0.92525584, z: -0.02656351}
-        rotation: {x: 0.1481969, y: 0.528414, z: 0.7771841, w: -0.30789784}
+        position: {x: -0.13346906, y: 1.1663976, z: 0.0019674003}
+        rotation: {x: 0.075768776, y: 0.6165104, z: 0.74497855, w: -0.24327217}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.08560717, y: -0.008682013, z: 0.0043958146}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.19184221, y: 0.7649702, z: -0.017304257}
-        rotation: {x: 0.18990533, y: -0.12105347, z: 0.9742982, w: -0.005047098}
+        position: {x: -0.1735153, y: 0.92525584, z: -0.02656351}
+        rotation: {x: 0.1481969, y: 0.528414, z: 0.7771841, w: -0.30789784}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.08148074, y: -0.009530783, z: -0.002888022}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: 0.0003316887, y: 1.2326208, z: -0.0043673525}
-        rotation: {x: -0.5459766, y: 0.5067291, z: -0.4911271, w: 0.45158562}
+        position: {x: -0.19184221, y: 0.7649702, z: -0.017304257}
+        rotation: {x: 0.18990533, y: -0.12105347, z: 0.9742982, w: -0.005047098}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.096025296, y: -0.0002169609, z: 0.010197856}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.004478799, y: 1.3262215, z: 0.029251069}
-        rotation: {x: -0.5366062, y: 0.53993046, z: -0.47869426, w: 0.4374714}
+        position: {x: 0.0003316887, y: 1.2326208, z: -0.0043673525}
+        rotation: {x: -0.5459766, y: 0.5067291, z: -0.4911271, w: 0.45158562}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.10061669, y: -0.0014221668, z: 0.014009252}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.004478799, y: 1.3262215, z: 0.029251069}
+        rotation: {x: -0.5366062, y: 0.53993046, z: -0.47869426, w: 0.4374714}
       motionTrajectoryDataList:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
@@ -401,81 +521,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
       motionBoneDataList:
-      - position: {x: -0.01610403, y: 0.7818555, z: 0.009878332}
-        rotation: {x: -0.5229361, y: 0.51128465, z: -0.48808926, w: 0.47633478}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.053130135, y: 0.001051724, z: -0.0072251773}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.09028577, y: 0.78192383, z: 0.015065106}
-        rotation: {x: 0.42894045, y: 0.5067544, z: -0.5316079, w: -0.52593076}
+        position: {x: -0.01610403, y: 0.7818555, z: 0.009878332}
+        rotation: {x: -0.5229361, y: 0.51128465, z: -0.48808926, w: 0.47633478}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.05322788, y: -0.00009775162, z: -0.008673756}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.09079989, y: 0.4248892, z: 0.038996264}
-        rotation: {x: 0.50747657, y: 0.4633748, z: -0.5715739, w: -0.44839114}
+        position: {x: -0.09028577, y: 0.78192383, z: 0.015065106}
+        rotation: {x: 0.42894045, y: 0.5067544, z: -0.5316079, w: -0.52593076}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.021819659, y: 0.0017979741, z: 0.014001355}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.105548784, y: 0.115680754, z: -0.082009695}
-        rotation: {x: 0.5609821, y: 0.56193453, z: -0.41626024, w: -0.44300827}
+        position: {x: -0.09079989, y: 0.4248892, z: 0.038996264}
+        rotation: {x: 0.50747657, y: 0.4633748, z: -0.5715739, w: -0.44839114}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.029226094, y: 0.0043332577, z: 0.003549233}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.058077797, y: 0.7817872, z: 0.004691543}
-        rotation: {x: 0.46183097, y: 0.48908216, z: -0.51584363, w: -0.5304872}
+        position: {x: -0.105548784, y: 0.115680754, z: -0.082009695}
+        rotation: {x: 0.5609821, y: 0.56193453, z: -0.41626024, w: -0.44300827}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.05303243, y: 0.0022014976, z: -0.005776561}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.10081458, y: 0.42769384, z: 0.03364344}
-        rotation: {x: 0.4768186, y: 0.40108746, z: -0.6145122, w: -0.48388833}
+        position: {x: 0.058077797, y: 0.7817872, z: 0.004691543}
+        rotation: {x: 0.46183097, y: 0.48908216, z: -0.51584363, w: -0.5304872}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.0082131475, y: 0.0052799284, z: -0.047184564}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.116349965, y: 0.11625111, z: -0.08138626}
-        rotation: {x: 0.3120539, y: 0.35804224, z: -0.6271461, w: -0.6173462}
+        position: {x: 0.10081458, y: 0.42769384, z: 0.03364344}
+        rotation: {x: 0.4768186, y: 0.40108746, z: -0.6145122, w: -0.48388833}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.063832775, y: -0.0029787421, z: -0.009272285}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.10920462, y: 1.1605965, z: -0.025380312}
-        rotation: {x: 0.78748417, y: -0.12816167, z: -0.08068654, w: 0.5974392}
+        position: {x: 0.116349965, y: 0.11625111, z: -0.08138626}
+        rotation: {x: 0.3120539, y: 0.35804224, z: -0.6271461, w: -0.6173462}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.06419286, y: 0.020563006, z: 0.012482954}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.13031767, y: 0.9268161, z: -0.09932589}
-        rotation: {x: 0.8014375, y: -0.19925591, z: -0.025920816, w: 0.56331515}
+        position: {x: 0.10920462, y: 1.1605965, z: -0.025380312}
+        rotation: {x: 0.78748417, y: -0.12816167, z: -0.08068654, w: 0.5974392}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.026440695, y: 0.020341277, z: 0.026140474}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.14762633, y: 0.76625854, z: -0.10522256}
-        rotation: {x: 0.9799196, y: -0.076213926, z: 0.0047925413, w: -0.18419212}
+        position: {x: 0.13031767, y: 0.9268161, z: -0.09932589}
+        rotation: {x: 0.8014375, y: -0.19925591, z: -0.025920816, w: 0.56331515}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.005398467, y: 0.02347827, z: 0.0130729005}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.1518567, y: 1.1647332, z: 0.003964493}
-        rotation: {x: 0.07661988, y: 0.61325747, z: 0.7457318, w: -0.24885616}
+        position: {x: 0.14762633, y: 0.76625854, z: -0.10522256}
+        rotation: {x: 0.9799196, y: -0.076213926, z: 0.0047925413, w: -0.18419212}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.0699912, y: -0.010499954, z: 0.0010551}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.19063674, y: 0.92351943, z: -0.025684347}
-        rotation: {x: 0.14936668, y: 0.52319705, z: 0.7783985, w: -0.31313056}
+        position: {x: -0.1518567, y: 1.1647332, z: 0.003964493}
+        rotation: {x: 0.07661988, y: 0.61325747, z: 0.7457318, w: -0.24885616}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.049699917, y: -0.011129975, z: -0.017772363}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.20813836, y: 0.763064, z: -0.017881861}
-        rotation: {x: 0.19264787, y: -0.13260446, z: 0.97215027, w: -0.015091285}
+        position: {x: -0.19063674, y: 0.92351943, z: -0.025684347}
+        rotation: {x: 0.14936668, y: 0.52319705, z: 0.7783985, w: -0.31313056}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.03564, y: -0.013059676, z: -0.030628415}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: -0.018873371, y: 1.2325774, z: -0.0023277812}
-        rotation: {x: -0.54820037, y: 0.50669473, z: -0.48506197, w: 0.45546934}
+        position: {x: -0.20813836, y: 0.763064, z: -0.017881861}
+        rotation: {x: 0.19264787, y: -0.13260446, z: 0.97215027, w: -0.015091285}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.075415745, y: 0.000859499, z: 0.014621667}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: -0.01564454, y: 1.325937, z: 0.03205292}
-        rotation: {x: -0.5224818, y: 0.5157955, z: -0.48563522, w: 0.47447512}
+        position: {x: -0.018873371, y: 1.2325774, z: -0.0023277812}
+        rotation: {x: -0.54820037, y: 0.50669473, z: -0.48506197, w: 0.45546934}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.08537372, y: -0.0011992455, z: 0.020737108}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: -0.01564454, y: 1.325937, z: 0.03205292}
+        rotation: {x: -0.5224818, y: 0.5157955, z: -0.48563522, w: 0.47447512}
       motionTrajectoryDataList:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
@@ -497,81 +647,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
       motionBoneDataList:
-      - position: {x: -0.026730057, y: 0.78206587, z: 0.008433296}
-        rotation: {x: -0.52115375, y: 0.51119953, z: -0.48685056, w: 0.47963578}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.011406578, y: 0.0029745698, z: -0.01088554}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.10093135, y: 0.7819043, z: 0.013330354}
-        rotation: {x: 0.4326949, y: 0.5127259, z: -0.5354406, w: -0.51302147}
+        position: {x: -0.026730057, y: 0.78206587, z: 0.008433296}
+        rotation: {x: -0.52115375, y: 0.51119953, z: -0.48685056, w: 0.47963578}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.011765957, y: 0.001205802, z: -0.017295014}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.09516382, y: 0.4252488, z: 0.041796535}
-        rotation: {x: 0.5062377, y: 0.476024, z: -0.57035995, w: -0.43796632}
+        position: {x: -0.10093135, y: 0.7819043, z: 0.013330354}
+        rotation: {x: 0.4326949, y: 0.5127259, z: -0.5354406, w: -0.51302147}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.008555353, y: 0.0028719008, z: 0.0016247667}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.099703565, y: 0.116547406, z: -0.08129985}
-        rotation: {x: 0.5578442, y: 0.56488305, z: -0.4196429, w: -0.44001955}
+        position: {x: -0.09516382, y: 0.4252488, z: 0.041796535}
+        rotation: {x: 0.5062377, y: 0.476024, z: -0.57035995, w: -0.43796632}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.012323633, y: 0.005837083, z: -0.006170012}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.04747131, y: 0.7822275, z: 0.003536231}
-        rotation: {x: 0.453307, y: 0.50698143, z: -0.51197857, w: -0.5247484}
+        position: {x: -0.099703565, y: 0.116547406, z: -0.08129985}
+        rotation: {x: 0.5578442, y: 0.56488305, z: -0.4196429, w: -0.44001955}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.011047199, y: 0.0047433376, z: -0.0044760667}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.09917195, y: 0.42874983, z: 0.024206527}
-        rotation: {x: 0.48218384, y: 0.408919, z: -0.62199444, w: -0.4619602}
+        position: {x: 0.04747131, y: 0.7822275, z: 0.003536231}
+        rotation: {x: 0.453307, y: 0.50698143, z: -0.51197857, w: -0.5247484}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.004930645, y: 0.0059486926, z: 0.00053944066}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.12911652, y: 0.11565536, z: -0.08324072}
-        rotation: {x: 0.30628303, y: 0.36137506, z: -0.63556784, w: -0.6096332}
+        position: {x: 0.09917195, y: 0.42874983, z: 0.024206527}
+        rotation: {x: 0.48218384, y: 0.408919, z: -0.62199444, w: -0.4619602}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.0135768205, y: 0.009881556, z: -0.01307454}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.09636605, y: 1.1647091, z: -0.02288372}
-        rotation: {x: 0.7874085, y: -0.12774494, z: -0.061912626, w: 0.59986365}
+        position: {x: 0.12911652, y: 0.11565536, z: -0.08324072}
+        rotation: {x: 0.30628303, y: 0.36137506, z: -0.63556784, w: -0.6096332}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.015996099, y: 0.0140708685, z: 0.030922014}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.12502953, y: 0.93088436, z: -0.09409779}
-        rotation: {x: 0.8097773, y: -0.19779083, z: -0.008391978, w: 0.5523313}
+        position: {x: 0.09636605, y: 1.1647091, z: -0.02288372}
+        rotation: {x: 0.7874085, y: -0.12774494, z: -0.061912626, w: 0.59986365}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.012103394, y: 0.018856525, z: 0.027675368}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.14654663, y: 0.7709542, z: -0.10260798}
-        rotation: {x: 0.9826025, y: -0.051096708, z: 0.015740633, w: -0.17786026}
+        position: {x: 0.12502953, y: 0.93088436, z: -0.09409779}
+        rotation: {x: 0.8097773, y: -0.19779083, z: -0.008391978, w: 0.5523313}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.023841709, y: 0.021254718, z: 0.015666746}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.16585495, y: 1.1626332, z: 0.004175513}
-        rotation: {x: 0.068061754, y: 0.60886073, z: 0.7484133, w: -0.25403577}
+        position: {x: 0.14654663, y: 0.7709542, z: -0.10260798}
+        rotation: {x: 0.9826025, y: -0.051096708, z: 0.015740633, w: -0.17786026}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.020529404, y: -0.005019903, z: -0.009580497}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.20057672, y: 0.92129344, z: -0.02923882}
-        rotation: {x: 0.14091818, y: 0.51893806, z: 0.779938, w: -0.3202229}
+        position: {x: -0.16585495, y: 1.1626332, z: 0.004175513}
+        rotation: {x: 0.068061754, y: 0.60886073, z: 0.7484133, w: -0.25403577}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.004434809, y: -0.0045484304, z: -0.027930904}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.21526636, y: 0.7604521, z: -0.024007544}
-        rotation: {x: 0.18833287, y: -0.13942495, z: 0.97168744, w: -0.030257657}
+        position: {x: -0.20057672, y: 0.92129344, z: -0.02923882}
+        rotation: {x: 0.14091818, y: 0.51893806, z: 0.779938, w: -0.3202229}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.0037111342, y: -0.005545616, z: -0.039609987}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: -0.03395652, y: 1.2327493, z: 0.00059655216}
-        rotation: {x: -0.5464563, y: 0.5023584, z: -0.48137638, w: 0.46615326}
+        position: {x: -0.21526636, y: 0.7604521, z: -0.024007544}
+        rotation: {x: 0.18833287, y: -0.13942495, z: 0.97168744, w: -0.030257657}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.024481826, y: 0.0026738644, z: 0.016529791}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: -0.032719284, y: 1.3256972, z: 0.03620034}
-        rotation: {x: -0.52846134, y: 0.5130827, z: -0.47968704, w: 0.47683942}
+        position: {x: -0.03395652, y: 1.2327493, z: 0.00059655216}
+        rotation: {x: -0.5464563, y: 0.5023584, z: -0.48137638, w: 0.46615326}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.035643894, y: 0.000166893, z: 0.0229772}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: -0.032719284, y: 1.3256972, z: 0.03620034}
+        rotation: {x: -0.52846134, y: 0.5130827, z: -0.47968704, w: 0.47683942}
       motionTrajectoryDataList:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
@@ -593,81 +773,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
       motionBoneDataList:
-      - position: {x: -0.029011372, y: 0.7826608, z: 0.0062561883}
-        rotation: {x: -0.5156528, y: 0.5083397, z: -0.48779482, w: 0.48759538}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.034715123, y: 0.0057789683, z: 0.0027406611}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.10328454, y: 0.78214544, z: 0.0098713515}
-        rotation: {x: 0.44066942, y: 0.5168858, z: -0.5338417, w: -0.50363946}
+        position: {x: -0.029011372, y: 0.7826608, z: 0.0062561883}
+        rotation: {x: -0.5156528, y: 0.5083397, z: -0.48779482, w: 0.48759538}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.03433548, y: 0.0060924888, z: -0.008544731}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.09687489, y: 0.42582318, z: 0.04212149}
-        rotation: {x: 0.5069276, y: 0.48239136, z: -0.5676372, w: -0.43371812}
+        position: {x: -0.10328454, y: 0.78214544, z: 0.0098713515}
+        rotation: {x: 0.44066942, y: 0.5168858, z: -0.5338417, w: -0.50363946}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.0011087954, y: 0.0064463913, z: -0.0016062334}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.09723884, y: 0.11771482, z: -0.08253385}
-        rotation: {x: 0.5544604, y: 0.56676203, z: -0.42103654, w: -0.44054887}
+        position: {x: -0.09687489, y: 0.42582318, z: 0.04212149}
+        rotation: {x: 0.5069276, y: 0.48239136, z: -0.5676372, w: -0.43371812}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.011014715, y: 0.0076833367, z: -0.0045005977}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.04526187, y: 0.7831762, z: 0.0026410175}
-        rotation: {x: 0.45288572, y: 0.5065915, z: -0.5139584, w: -0.52355194}
+        position: {x: -0.09723884, y: 0.11771482, z: -0.08253385}
+        rotation: {x: 0.5544604, y: 0.56676203, z: -0.42103654, w: -0.44054887}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.035094768, y: 0.005465448, z: 0.014026055}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.09818582, y: 0.42993957, z: 0.024314415}
-        rotation: {x: 0.47571108, y: 0.40755826, z: -0.6241769, w: -0.4669034}
+        position: {x: 0.04526187, y: 0.7831762, z: 0.0026410175}
+        rotation: {x: 0.45288572, y: 0.5065915, z: -0.5139584, w: -0.52355194}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.004977584, y: 0.0016583502, z: 0.021025464}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.12640116, y: 0.117631674, z: -0.085855626}
-        rotation: {x: 0.30636486, y: 0.35662097, z: -0.6338054, w: -0.6142095}
+        position: {x: 0.09818582, y: 0.42993957, z: 0.024314415}
+        rotation: {x: 0.47571108, y: 0.40755826, z: -0.6241769, w: -0.4669034}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.018521696, y: 0.0052660704, z: 0.005512573}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.09316683, y: 1.1675233, z: -0.016699318}
-        rotation: {x: 0.79172295, y: -0.13524805, z: -0.04281833, w: 0.59417963}
+        position: {x: 0.12640116, y: 0.117631674, z: -0.085855626}
+        rotation: {x: 0.30636486, y: 0.35662097, z: -0.6338054, w: -0.6142095}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.040531382, y: 0.0024062395, z: 0.028246716}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.12745021, y: 0.93465567, z: -0.08856272}
-        rotation: {x: 0.81651473, y: -0.20226052, z: 0.00730028, w: 0.5406862}
+        position: {x: 0.09316683, y: 1.1675233, z: -0.016699318}
+        rotation: {x: 0.79172295, y: -0.13524805, z: -0.04281833, w: 0.59417963}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.044717863, y: 0.004695654, z: 0.022897534}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.15131497, y: 0.77520514, z: -0.09947463}
-        rotation: {x: 0.98143625, y: -0.03615555, z: 0.024418503, w: -0.18676051}
+        position: {x: 0.12745021, y: 0.93465567, z: -0.08856272}
+        rotation: {x: 0.81651473, y: -0.20226052, z: 0.00730028, w: 0.5406862}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.043769553, y: 0.004260838, z: 0.02737213}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.16996083, y: 1.1616292, z: 0.0022594137}
-        rotation: {x: 0.054358095, y: 0.6078367, z: 0.7515366, w: -0.25054434}
+        position: {x: 0.15131497, y: 0.77520514, z: -0.09947463}
+        rotation: {x: 0.98143625, y: -0.03615555, z: 0.024418503, w: -0.18676051}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.039194375, y: 0.0074118376, z: -0.015385036}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.20146368, y: 0.92038375, z: -0.034825}
-        rotation: {x: 0.12625223, y: 0.51888824, z: 0.78311014, w: -0.31867546}
+        position: {x: -0.16996083, y: 1.1616292, z: 0.0022594137}
+        rotation: {x: 0.054358095, y: 0.6078367, z: 0.7515366, w: -0.25054434}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.03673479, y: 0.009299815, z: -0.025285445}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.21452413, y: 0.75934297, z: -0.03192954}
-        rotation: {x: 0.1727109, y: -0.1462126, z: 0.9731935, w: -0.041077703}
+        position: {x: -0.20146368, y: 0.92038375, z: -0.034825}
+        rotation: {x: 0.12625223, y: 0.51888824, z: 0.78311014, w: -0.31867546}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.028377995, y: 0.00991255, z: -0.033920147}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: -0.038852885, y: 1.2332841, z: 0.0039025103}
-        rotation: {x: -0.5384857, y: 0.49504986, z: -0.48370048, w: 0.480617}
+        position: {x: -0.21452413, y: 0.75934297, z: -0.03192954}
+        rotation: {x: 0.1727109, y: -0.1462126, z: 0.9731935, w: -0.041077703}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.03946228, y: 0.0056940317, z: 0.007139812}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: -0.039848063, y: 1.3257306, z: 0.04079578}
-        rotation: {x: -0.5381445, y: 0.51766187, z: -0.4762444, w: 0.4643471}
+        position: {x: -0.038852885, y: 1.2332841, z: 0.0039025103}
+        rotation: {x: -0.5384857, y: 0.49504986, z: -0.48370048, w: 0.480617}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.034666006, y: 0.0050520897, z: 0.008550733}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: -0.039848063, y: 1.3257306, z: 0.04079578}
+        rotation: {x: -0.5381445, y: 0.51766187, z: -0.4762444, w: 0.4643471}
       motionTrajectoryDataList:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
@@ -689,81 +899,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
       motionBoneDataList:
-      - position: {x: -0.022068348, y: 0.7838166, z: 0.0068043205}
-        rotation: {x: -0.50778234, y: 0.5012863, z: -0.49558708, w: 0.49523982}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.09078525, y: 0.007470846, z: 0.018290712}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.09641744, y: 0.78336394, z: 0.008162405}
-        rotation: {x: 0.45350778, y: 0.5197568, z: -0.5242007, w: -0.49939683}
+        position: {x: -0.022068348, y: 0.7838166, z: 0.0068043205}
+        rotation: {x: -0.50778234, y: 0.5012863, z: -0.49558708, w: 0.49523982}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.09076357, y: 0.00703454, z: 0.006225724}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.09665313, y: 0.42711246, z: 0.041800242}
-        rotation: {x: 0.51299405, y: 0.48226207, z: -0.5613707, w: -0.43488333}
+        position: {x: -0.09641744, y: 0.78336394, z: 0.008162405}
+        rotation: {x: 0.45350778, y: 0.5197568, z: -0.5242007, w: -0.49939683}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.030687228, y: 0.0067305565, z: -0.008812863}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.09944178, y: 0.11925149, z: -0.08343397}
-        rotation: {x: 0.5529647, y: 0.5688931, z: -0.4197908, w: -0.44087034}
+        position: {x: -0.09665313, y: 0.42711246, z: 0.041800242}
+        rotation: {x: 0.51299405, y: 0.48226207, z: -0.5613707, w: -0.43488333}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.025728568, y: 0.007288456, z: -0.0063827634}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.052280825, y: 0.7842693, z: 0.0054462287}
-        rotation: {x: 0.4623665, y: 0.50805736, z: -0.505441, w: -0.5221346}
+        position: {x: -0.09944178, y: 0.11925149, z: -0.08343397}
+        rotation: {x: 0.5529647, y: 0.5688931, z: -0.4197908, w: -0.44087034}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.090806946, y: 0.007907152, z: 0.030355697}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.09918134, y: 0.43027124, z: 0.028519507}
-        rotation: {x: 0.47723207, y: 0.40743855, z: -0.61787045, w: -0.47379285}
+        position: {x: 0.052280825, y: 0.7842693, z: 0.0054462287}
+        rotation: {x: 0.4623665, y: 0.50805736, z: -0.505441, w: -0.5221346}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.024684295, y: 0.00019669533, z: 0.027227197}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.12269682, y: 0.11868489, z: -0.08475311}
-        rotation: {x: 0.30963945, y: 0.3545796, z: -0.6324588, w: -0.6151364}
+        position: {x: 0.09918134, y: 0.43027124, z: 0.028519507}
+        rotation: {x: 0.47723207, y: 0.40743855, z: -0.61787045, w: -0.47379285}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.026568621, y: 0.0062152743, z: 0.002904646}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.101273105, y: 1.1680045, z: -0.011049975}
-        rotation: {x: 0.79417634, y: -0.14201948, z: -0.03621914, w: 0.58974814}
+        position: {x: 0.12269682, y: 0.11868489, z: -0.08475311}
+        rotation: {x: 0.30963945, y: 0.3545796, z: -0.6324588, w: -0.6151364}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.10161482, y: -0.0022476912, z: 0.0234426}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.13639379, y: 0.9355948, z: -0.08398321}
-        rotation: {x: 0.81540686, y: -0.20834062, z: 0.014639538, w: 0.53990024}
+        position: {x: 0.101273105, y: 1.1680045, z: -0.011049975}
+        rotation: {x: 0.79417634, y: -0.14201948, z: -0.03621914, w: 0.58974814}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.09383947, y: -0.002655983, z: 0.021089092}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.16006888, y: 0.7760573, z: -0.094000205}
-        rotation: {x: 0.9801976, y: -0.030941993, z: 0.036741793, w: -0.19210905}
+        position: {x: 0.13639379, y: 0.9355948, z: -0.08398321}
+        rotation: {x: 0.81540686, y: -0.20834062, z: 0.014639538, w: 0.53990024}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.08205883, y: -0.005002916, z: 0.03363587}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.16212195, y: 1.1631116, z: -0.00081759365}
-        rotation: {x: 0.04379528, y: 0.6101662, z: 0.75440854, w: -0.23800716}
+        position: {x: 0.16006888, y: 0.7760573, z: -0.094000205}
+        rotation: {x: 0.9801976, y: -0.030941993, z: 0.036741793, w: -0.19210905}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.101733506, y: 0.015261769, z: -0.010297687}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.19411673, y: 0.9222437, z: -0.03988209}
-        rotation: {x: 0.11508842, y: 0.5201297, z: 0.7886644, w: -0.3069666}
+        position: {x: -0.16212195, y: 1.1631116, z: -0.00081759365}
+        rotation: {x: 0.04379528, y: 0.6101662, z: 0.75440854, w: -0.23800716}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.0971137, y: 0.015561581, z: -0.008296836}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.20884854, y: 0.7613255, z: -0.03871357}
-        rotation: {x: 0.15595405, y: -0.15370075, z: 0.9749923, w: -0.038013697}
+        position: {x: -0.19411673, y: 0.9222437, z: -0.03988209}
+        rotation: {x: 0.11508842, y: 0.5201297, z: 0.7886644, w: -0.3069666}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.089843795, y: 0.01628369, z: -0.005625654}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: -0.03096043, y: 1.2344229, z: 0.0053304727}
-        rotation: {x: -0.52923924, y: 0.4888256, z: -0.4919332, w: 0.48883283}
+        position: {x: -0.20884854, y: 0.7613255, z: -0.03871357}
+        rotation: {x: 0.15595405, y: -0.15370075, z: 0.9749923, w: -0.038013697}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.1048883, y: 0.007813573, z: 0.0042041764}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: -0.032914862, y: 1.326741, z: 0.042505927}
-        rotation: {x: -0.5509279, y: 0.52601844, z: -0.4659472, w: 0.4501964}
+        position: {x: -0.03096043, y: 1.2344229, z: 0.0053304727}
+        rotation: {x: -0.52923924, y: 0.4888256, z: -0.4919332, w: 0.48883283}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.10576806, y: 0.0088226795, z: 0.0017247722}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: -0.032914862, y: 1.326741, z: 0.042505927}
+        rotation: {x: -0.5509279, y: 0.52601844, z: -0.4659472, w: 0.4501964}
       motionTrajectoryDataList:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
@@ -785,81 +1025,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
       motionBoneDataList:
-      - position: {x: -0.003911298, y: 0.78531075, z: 0.010462463}
-        rotation: {x: -0.5012368, y: 0.49159753, z: -0.5047655, w: 0.5023001}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.081550345, y: 0.0010064244, z: 0.004595206}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.07826473, y: 0.78477085, z: 0.00940755}
-        rotation: {x: 0.46435955, y: 0.5189048, z: -0.509982, w: -0.5050016}
+        position: {x: -0.003911298, y: 0.78531075, z: 0.010462463}
+        rotation: {x: -0.5012368, y: 0.49159753, z: -0.5047655, w: 0.5023001}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.08176271, y: -0.00013113022, z: -0.0034807762}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.09051569, y: 0.42845857, z: 0.04003767}
-        rotation: {x: 0.52014, y: 0.471807, z: -0.5554168, w: -0.445382}
+        position: {x: -0.07826473, y: 0.78477085, z: 0.00940755}
+        rotation: {x: 0.46435955, y: 0.5189048, z: -0.509982, w: -0.5050016}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.026640072, y: 0.0035229325, z: 0.0066765584}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.104587495, y: 0.12070918, z: -0.08471052}
-        rotation: {x: 0.5528258, y: 0.56930095, z: -0.4163128, w: -0.44380656}
+        position: {x: -0.09051569, y: 0.42845857, z: 0.04003767}
+        rotation: {x: 0.52014, y: 0.471807, z: -0.5554168, w: -0.445382}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.002072826, y: 0.007818937, z: 0.000028274953}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.070442215, y: 0.7858507, z: 0.011517368}
-        rotation: {x: 0.47685027, y: 0.5079995, z: -0.488555, w: -0.5252282}
+        position: {x: -0.104587495, y: 0.12070918, z: -0.08471052}
+        rotation: {x: 0.5528258, y: 0.56930095, z: -0.4163128, w: -0.44380656}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.08133799, y: 0.002143979, z: 0.012671226}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.1041182, y: 0.43031058, z: 0.033964947}
-        rotation: {x: 0.48172262, y: 0.40503606, z: -0.60533047, w: -0.48730323}
+        position: {x: 0.070442215, y: 0.7858507, z: 0.011517368}
+        rotation: {x: 0.47685027, y: 0.5079995, z: -0.488555, w: -0.5252282}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.030040294, y: -0.00039443374, z: 0.03536692}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.11738309, y: 0.11992794, z: -0.08417218}
-        rotation: {x: 0.310929, y: 0.35472256, z: -0.6312908, w: -0.61560327}
+        position: {x: 0.1041182, y: 0.43031058, z: 0.033964947}
+        rotation: {x: 0.48172262, y: 0.40503606, z: -0.60533047, w: -0.48730323}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.025637262, y: 0.012414455, z: -0.00067647547}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.12159607, y: 1.167555, z: -0.0063614547}
-        rotation: {x: 0.794936, y: -0.1518921, z: -0.033220008, w: 0.5864319}
+        position: {x: 0.11738309, y: 0.11992794, z: -0.08417218}
+        rotation: {x: 0.310929, y: 0.35472256, z: -0.6312908, w: -0.61560327}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.0850603, y: -0.0061422586, z: 0.0034940476}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.15516168, y: 0.9350636, z: -0.079765394}
-        rotation: {x: 0.8099724, y: -0.21905796, z: 0.018532874, w: 0.5437053}
+        position: {x: 0.12159607, y: 1.167555, z: -0.0063614547}
+        rotation: {x: 0.794936, y: -0.1518921, z: -0.033220008, w: 0.5864319}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.07779211, y: -0.009520054, z: 0.0110357255}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.17648065, y: 0.7750567, z: -0.08727303}
-        rotation: {x: 0.9794115, y: -0.032548487, z: 0.045339733, w: -0.19400617}
+        position: {x: 0.15516168, y: 0.9350636, z: -0.079765394}
+        rotation: {x: 0.8099724, y: -0.21905796, z: 0.018532874, w: 0.5437053}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.068991035, y: -0.011018515, z: 0.020141825}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.14177525, y: 1.1661639, z: -0.002877131}
-        rotation: {x: 0.036357306, y: 0.61533266, z: 0.7542732, w: -0.22608875}
+        position: {x: 0.17648065, y: 0.7750567, z: -0.08727303}
+        rotation: {x: 0.9794115, y: -0.032548487, z: 0.045339733, w: -0.19400617}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.08591261, y: 0.0047183037, z: -0.025768293}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.17469399, y: 0.92535603, z: -0.041541457}
-        rotation: {x: 0.10548398, y: 0.52709705, z: 0.79008794, w: -0.29462412}
+        position: {x: -0.14177525, y: 1.1661639, z: -0.002877131}
+        rotation: {x: 0.036357306, y: 0.61533266, z: 0.7542732, w: -0.22608875}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.08988865, y: 0.003991127, z: -0.024580564}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.19087978, y: 0.7645822, z: -0.0398387}
-        rotation: {x: 0.1376464, y: -0.15393871, z: 0.97803646, w: -0.028308988}
+        position: {x: -0.17469399, y: 0.92535603, z: -0.041541457}
+        rotation: {x: 0.10548398, y: 0.52709705, z: 0.79008794, w: -0.29462412}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.09050302, y: 0.00392735, z: -0.024731029}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: -0.00998277, y: 1.2359856, z: 0.006171308}
-        rotation: {x: -0.5215709, y: 0.4847167, z: -0.5023418, w: 0.49057767}
+        position: {x: -0.19087978, y: 0.7645822, z: -0.0398387}
+        rotation: {x: 0.1376464, y: -0.15393871, z: 0.97803646, w: -0.028308988}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.08731311, y: 0.00027954578, z: -0.013096865}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: -0.01176125, y: 1.3285055, z: 0.04285088}
-        rotation: {x: -0.545376, y: 0.5270736, z: -0.4688068, w: 0.452746}
+        position: {x: -0.00998277, y: 1.2359856, z: 0.006171308}
+        rotation: {x: -0.5215709, y: 0.4847167, z: -0.5023418, w: 0.49057767}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.08628314, y: 0.0012362003, z: -0.015584957}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: -0.01176125, y: 1.3285055, z: 0.04285088}
+        rotation: {x: -0.545376, y: 0.5270736, z: -0.4688068, w: 0.452746}
       motionTrajectoryDataList:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
@@ -881,81 +1151,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
       motionBoneDataList:
-      - position: {x: 0.012398772, y: 0.78551203, z: 0.011381504}
-        rotation: {x: -0.49950117, y: 0.48222893, z: -0.51258206, w: 0.5051866}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.07978744, y: -0.002592802, z: -0.0123148365}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.061912186, y: 0.7847446, z: 0.008711395}
-        rotation: {x: 0.48112383, y: 0.51801807, z: -0.49758235, w: -0.50258255}
+        position: {x: 0.012398772, y: 0.78551203, z: 0.011381504}
+        rotation: {x: -0.49950117, y: 0.48222893, z: -0.51258206, w: 0.5051866}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.08000329, y: -0.004737079, z: -0.016784849}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.08518767, y: 0.42916316, z: 0.04137298}
-        rotation: {x: 0.52919775, y: 0.46958566, z: -0.5452183, w: -0.44964015}
+        position: {x: -0.061912186, y: 0.7847446, z: 0.008711395}
+        rotation: {x: 0.48112383, y: 0.51801807, z: -0.49758235, w: -0.50258255}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.02211079, y: 0.00392586, z: 0.021328796}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.10500206, y: 0.12227297, z: -0.08470487}
-        rotation: {x: 0.55180186, y: 0.5719125, z: -0.4143719, w: -0.44353935}
+        position: {x: -0.08518767, y: 0.42916316, z: 0.04137298}
+        rotation: {x: 0.52919775, y: 0.46958566, z: -0.5452183, w: -0.44964015}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.01912754, y: 0.0149565935, z: 0.0026821718}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.08670981, y: 0.7862795, z: 0.014051613}
-        rotation: {x: 0.48922274, y: 0.50050247, z: -0.48210186, w: -0.5270069}
+        position: {x: -0.10500206, y: 0.12227297, z: -0.08470487}
+        rotation: {x: 0.55180186, y: 0.5719125, z: -0.4143719, w: -0.44353935}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.079571605, y: -0.00044882298, z: -0.007844861}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.11012626, y: 0.4302317, z: 0.04103833}
-        rotation: {x: 0.47984433, y: 0.4019249, z: -0.59478664, w: -0.5044156}
+        position: {x: 0.08670981, y: 0.7862795, z: 0.014051613}
+        rotation: {x: 0.48922274, y: 0.50050247, z: -0.48210186, w: -0.5270069}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.026008263, y: -0.00080123544, z: 0.020399112}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.11225564, y: 0.122410834, z: -0.08430748}
-        rotation: {x: 0.31371087, y: 0.35302767, z: -0.6283311, w: -0.61818856}
+        position: {x: 0.11012626, y: 0.4302317, z: 0.04103833}
+        rotation: {x: 0.47984433, y: 0.4019249, z: -0.59478664, w: -0.5044156}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.048717894, y: 0.0135833025, z: -0.010797866}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.13860813, y: 1.1663265, z: -0.005662645}
-        rotation: {x: 0.7931022, y: -0.16153641, z: -0.029529711, w: 0.586535}
+        position: {x: 0.11225564, y: 0.122410834, z: -0.08430748}
+        rotation: {x: 0.31371087, y: 0.35302767, z: -0.6283311, w: -0.61818856}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.07888116, y: -0.009424686, z: 0.00093844254}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.1707201, y: 0.9331596, z: -0.07755825}
-        rotation: {x: 0.805812, y: -0.2256801, z: 0.019784935, w: 0.54712373}
+        position: {x: 0.13860813, y: 1.1663265, z: -0.005662645}
+        rotation: {x: 0.7931022, y: -0.16153641, z: -0.029529711, w: 0.586535}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.07007532, y: -0.010154247, z: -0.0005160272}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.19027886, y: 0.772853, z: -0.08324467}
-        rotation: {x: 0.97806084, y: -0.055116832, z: 0.04843086, w: -0.19497186}
+        position: {x: 0.1707201, y: 0.9331596, z: -0.07755825}
+        rotation: {x: 0.805812, y: -0.2256801, z: 0.019784935, w: 0.54712373}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.064435005, y: -0.010929704, z: 0.0026899576}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.12459273, y: 1.1671076, z: -0.00803079}
-        rotation: {x: 0.03061591, y: 0.6182367, z: 0.7534916, w: -0.22157817}
+        position: {x: 0.19027886, y: 0.772853, z: -0.08324467}
+        rotation: {x: 0.97806084, y: -0.055116832, z: 0.04843086, w: -0.19497186}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.08068286, y: 0.00091671944, z: -0.022146882}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.15671626, y: 0.92615426, z: -0.04645757}
-        rotation: {x: 0.09961651, y: 0.52980727, z: 0.79036736, w: -0.29103366}
+        position: {x: -0.12459273, y: 1.1671076, z: -0.00803079}
+        rotation: {x: 0.03061591, y: 0.6182367, z: 0.7534916, w: -0.22157817}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.08292869, y: 0.002783537, z: -0.03526097}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.17277917, y: 0.7653677, z: -0.044784907}
-        rotation: {x: 0.12666568, y: -0.16180204, z: 0.9780644, w: -0.03415543}
+        position: {x: -0.15671626, y: 0.92615426, z: -0.04645757}
+        rotation: {x: 0.09961651, y: 0.52980727, z: 0.79036736, w: -0.29103366}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.078170076, y: 0.0032302737, z: -0.04405221}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: 0.007479852, y: 1.2360415, z: 0.0035519348}
-        rotation: {x: -0.5156293, y: 0.47971484, z: -0.5108449, w: 0.49298865}
+        position: {x: -0.17277917, y: 0.7653677, z: -0.044784907}
+        rotation: {x: 0.12666568, y: -0.16180204, z: 0.9780644, w: -0.03415543}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.08174847, y: -0.0035488605, z: -0.008855644}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.005495379, y: 1.3287528, z: 0.03973389}
-        rotation: {x: -0.5365105, y: 0.5276123, z: -0.4730763, w: 0.45823646}
+        position: {x: 0.007479852, y: 1.2360415, z: 0.0035519348}
+        rotation: {x: -0.5156293, y: 0.47971484, z: -0.5108449, w: 0.49298865}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.08129229, y: -0.004352331, z: -0.0068345107}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.005495379, y: 1.3287528, z: 0.03973389}
+        rotation: {x: -0.5365105, y: 0.5276123, z: -0.4730763, w: 0.45823646}
       motionTrajectoryDataList:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
@@ -977,81 +1277,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
       motionBoneDataList:
-      - position: {x: 0.02835626, y: 0.78499347, z: 0.008918537}
-        rotation: {x: -0.4992378, y: 0.4762318, z: -0.5156541, w: 0.50800174}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.05831544, y: -0.007008612, z: -0.033924446}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.04591153, y: 0.7837972, z: 0.005354425}
-        rotation: {x: 0.49979636, y: 0.50989693, z: -0.490896, w: -0.4992293}
+        position: {x: 0.02835626, y: 0.78499347, z: 0.008918537}
+        rotation: {x: -0.4992378, y: 0.4762318, z: -0.5156541, w: 0.50800174}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.058371387, y: -0.002990067, z: -0.035877727}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.080765516, y: 0.42994833, z: 0.04563874}
-        rotation: {x: 0.5366584, y: 0.4666466, z: -0.53274953, w: -0.45871198}
+        position: {x: -0.04591153, y: 0.7837972, z: 0.005354425}
+        rotation: {x: 0.49979636, y: 0.50989693, z: -0.490896, w: -0.4992293}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.0055542216, y: 0.0144174695, z: 0.046717655}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.10882757, y: 0.12526429, z: -0.084168434}
-        rotation: {x: 0.5508057, y: 0.5748453, z: -0.40933233, w: -0.44566038}
+        position: {x: -0.080765516, y: 0.42994833, z: 0.04563874}
+        rotation: {x: 0.5366584, y: 0.4666466, z: -0.53274953, w: -0.45871198}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.0208449, y: 0.024908483, z: 0.028672107}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.10262413, y: 0.78618973, z: 0.012482641}
-        rotation: {x: 0.49973845, y: 0.4876448, z: -0.479342, w: -0.53169125}
+        position: {x: -0.10882757, y: 0.12526429, z: -0.084168434}
+        rotation: {x: 0.5508057, y: 0.5748453, z: -0.40933233, w: -0.44566038}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.05825948, y: -0.011026859, z: -0.031971164}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.11532791, y: 0.43007144, z: 0.045118153}
-        rotation: {x: 0.47688958, y: 0.39332196, z: -0.58483714, w: -0.5252047}
+        position: {x: 0.10262413, y: 0.78618973, z: 0.012482641}
+        rotation: {x: 0.49973845, y: 0.4876448, z: -0.479342, w: -0.53169125}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.028514229, y: -0.006684065, z: 0.016909037}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.10251206, y: 0.1251275, z: -0.08646705}
-        rotation: {x: 0.31664625, y: 0.350341, z: -0.6222631, w: -0.624328}
+        position: {x: 0.11532791, y: 0.43007144, z: 0.045118153}
+        rotation: {x: 0.47688958, y: 0.39332196, z: -0.58483714, w: -0.5252047}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.051480606, y: 0.005258918, z: 0.0021595508}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.15438436, y: 1.1644416, z: -0.0054749567}
-        rotation: {x: 0.7929954, y: -0.16662303, z: -0.030337151, w: 0.5852138}
+        position: {x: 0.10251206, y: 0.1251275, z: -0.08646705}
+        rotation: {x: 0.31664625, y: 0.350341, z: -0.6222631, w: -0.624328}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.06784119, y: -0.013029575, z: -0.009785905}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.18473516, y: 0.93112874, z: -0.077661455}
-        rotation: {x: 0.8040056, y: -0.2298482, z: 0.020128801, w: 0.548033}
+        position: {x: 0.15438436, y: 1.1644416, z: -0.0054749567}
+        rotation: {x: 0.7929954, y: -0.16662303, z: -0.030337151, w: 0.5852138}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.06969258, y: -0.005441308, z: -0.032722168}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.20316586, y: 0.7706671, z: -0.082706675}
-        rotation: {x: 0.975412, y: -0.06917597, z: 0.05689624, w: -0.20136872}
+        position: {x: 0.18473516, y: 0.93112874, z: -0.077661455}
+        rotation: {x: 0.8040056, y: -0.2298482, z: 0.020128801, w: 0.548033}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.07538684, y: -0.004404187, z: -0.04237365}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.10845616, y: 1.1672909, z: -0.012460167}
-        rotation: {x: 0.019563384, y: 0.6188004, z: 0.75634366, w: -0.21130098}
+        position: {x: 0.20316586, y: 0.7706671, z: -0.082706675}
+        rotation: {x: 0.975412, y: -0.06917597, z: 0.05689624, w: -0.20136872}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.0694922, y: -0.0029957294, z: -0.00008409377}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.14013052, y: 0.92671096, z: -0.053509764}
-        rotation: {x: 0.08633709, y: 0.5315747, z: 0.7947561, w: -0.27988872}
+        position: {x: -0.10845616, y: 1.1672909, z: -0.012460167}
+        rotation: {x: 0.019563384, y: 0.6188004, z: 0.75634366, w: -0.21130098}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.067366734, y: 0.0004172325, z: -0.017655548}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.15714516, y: 0.76601374, z: -0.05359535}
-        rotation: {x: 0.11119756, y: -0.16990271, z: 0.9786635, w: -0.03141348}
+        position: {x: -0.14013052, y: 0.92671096, z: -0.053509764}
+        rotation: {x: 0.08633709, y: 0.5315747, z: 0.7947561, w: -0.27988872}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.06137766, y: 0.0011244416, z: -0.02627084}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: 0.023829546, y: 1.2353318, z: 0.0017808061}
-        rotation: {x: -0.5089254, y: 0.47825783, z: -0.51528555, w: 0.49673513}
+        position: {x: -0.15714516, y: 0.76601374, z: -0.05359535}
+        rotation: {x: 0.11119756, y: -0.16990271, z: 0.9786635, w: -0.03141348}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.07190862, y: -0.007171631, z: -0.0024238985}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.021753836, y: 1.3278823, z: 0.03836699}
-        rotation: {x: -0.5412802, y: 0.5364656, z: -0.4663958, w: 0.4491058}
+        position: {x: 0.023829546, y: 1.2353318, z: 0.0017808061}
+        rotation: {x: -0.5089254, y: 0.47825783, z: -0.51528555, w: 0.49673513}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.07553395, y: -0.009702444, z: 0.0040180795}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.021753836, y: 1.3278823, z: 0.03836699}
+        rotation: {x: -0.5412802, y: 0.5364656, z: -0.4663958, w: 0.4491058}
       motionTrajectoryDataList:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
@@ -1073,81 +1403,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
       motionBoneDataList:
-      - position: {x: 0.04001935, y: 0.78359175, z: 0.0021336477}
-        rotation: {x: -0.49278808, y: 0.48017538, z: -0.5170477, w: 0.5091691}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.022231378, y: -0.0035360456, z: 0.012338717}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.03423725, y: 0.7831992, z: -0.0018211205}
-        rotation: {x: 0.52297163, y: 0.49500617, z: -0.49200177, w: -0.48928916}
+        position: {x: 0.04001935, y: 0.78359175, z: 0.0021336477}
+        rotation: {x: -0.49278808, y: 0.48017538, z: -0.5170477, w: 0.5091691}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.021984652, y: -0.0020244718, z: 0.017575096}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.07965467, y: 0.43283182, z: 0.05498227}
-        rotation: {x: 0.54148936, y: 0.46588996, z: -0.52282286, w: -0.4651798}
+        position: {x: -0.03423725, y: 0.7831992, z: -0.0018211205}
+        rotation: {x: 0.52297163, y: 0.49500617, z: -0.49200177, w: -0.48928916}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.040731765, y: -0.0180161, z: -0.08604267}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.11299655, y: 0.13024598, z: -0.07843401}
-        rotation: {x: 0.53025126, y: 0.59054166, z: -0.4034974, w: -0.4552848}
+        position: {x: -0.07965467, y: 0.43283182, z: 0.05498227}
+        rotation: {x: 0.54148936, y: 0.46588996, z: -0.52282286, w: -0.4651798}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.0056338683, y: -0.036960542, z: -0.026995726}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.11427603, y: 0.78398436, z: 0.0060884086}
-        rotation: {x: 0.50548947, y: 0.46879596, z: -0.48757842, w: -0.53570354}
+        position: {x: -0.11299655, y: 0.13024598, z: -0.07843401}
+        rotation: {x: 0.53025126, y: 0.59054166, z: -0.4034974, w: -0.4552848}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.022478104, y: -0.0050476193, z: 0.007102336}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.121030755, y: 0.42873463, z: 0.04849996}
-        rotation: {x: 0.47153044, y: 0.37894478, z: -0.58005434, w: -0.5455246}
+        position: {x: 0.11427603, y: 0.78398436, z: 0.0060884086}
+        rotation: {x: 0.50548947, y: 0.46879596, z: -0.48757842, w: -0.53570354}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.016741864, y: -0.0037890673, z: 0.01818424}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.09221594, y: 0.12617928, z: -0.08603514}
-        rotation: {x: 0.31977352, y: 0.3458764, z: -0.61610854, w: -0.6312884}
+        position: {x: 0.121030755, y: 0.42873463, z: 0.04849996}
+        rotation: {x: 0.47153044, y: 0.37894478, z: -0.58005434, w: -0.5455246}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.010219663, y: -0.000011026859, z: 0.016015172}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.1679526, y: 1.1618357, z: -0.0074321376}
-        rotation: {x: 0.79839647, y: -0.15883613, z: -0.03629481, w: 0.57966965}
+        position: {x: 0.09221594, y: 0.12617928, z: -0.08603514}
+        rotation: {x: 0.31977352, y: 0.3458764, z: -0.61610854, w: -0.6312884}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.028238595, y: -0.012798309, z: -0.017225448}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.19867368, y: 0.9300405, z: -0.08420589}
-        rotation: {x: 0.80782217, y: -0.222925, z: 0.015247304, w: 0.5454317}
+        position: {x: 0.1679526, y: 1.1618357, z: -0.0074321376}
+        rotation: {x: 0.79839647, y: -0.15883613, z: -0.03629481, w: 0.57966965}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.02620466, y: -0.007787347, z: -0.032812245}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.21824323, y: 0.76978624, z: -0.091181405}
-        rotation: {x: 0.97266555, y: -0.07245681, z: 0.053412884, w: -0.21405493}
+        position: {x: 0.19867368, y: 0.9300405, z: -0.08420589}
+        rotation: {x: 0.80782217, y: -0.222925, z: 0.015247304, w: 0.5454317}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.036300793, y: -0.0062939525, z: -0.037052073}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.09455772, y: 1.1666918, z: -0.012476985}
-        rotation: {x: 0.0135205835, y: 0.6157322, z: 0.76081103, w: -0.20459218}
+        position: {x: 0.21824323, y: 0.76978624, z: -0.091181405}
+        rotation: {x: 0.97266555, y: -0.07245681, z: 0.053412884, w: -0.21405493}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.03060881, y: 0.0037497282, z: 0.010437849}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.12665717, y: 0.9267944, z: -0.057040874}
-        rotation: {x: 0.073956236, y: 0.53309643, z: 0.79902756, w: -0.26813063}
+        position: {x: -0.09455772, y: 1.1666918, z: -0.012476985}
+        rotation: {x: 0.0135205835, y: 0.6157322, z: 0.76081103, w: -0.20459218}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.022192784, y: 0.0040858984, z: 0.014897902}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.14486963, y: 0.76623863, z: -0.058849517}
-        rotation: {x: 0.09738429, y: -0.16481915, z: 0.9814535, w: -0.01001586}
+        position: {x: -0.12665717, y: 0.9267944, z: -0.057040874}
+        rotation: {x: 0.073956236, y: 0.53309643, z: 0.79902756, w: -0.26813063}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.02028972, y: 0.004262626, z: 0.020058919}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: 0.03821127, y: 1.2338974, z: 0.0012960264}
-        rotation: {x: -0.5061541, y: 0.48485512, z: -0.51135147, w: 0.49723577}
+        position: {x: -0.14486963, y: 0.76623863, z: -0.058849517}
+        rotation: {x: 0.09738429, y: -0.16481915, z: 0.9814535, w: -0.01001586}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.03531264, y: -0.0022655725, z: -0.008588572}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.036860626, y: 1.3259418, z: 0.039170604}
-        rotation: {x: -0.5449025, y: 0.5530801, z: -0.45151582, w: 0.43967882}
+        position: {x: 0.03821127, y: 1.2338974, z: 0.0012960264}
+        rotation: {x: -0.5061541, y: 0.48485512, z: -0.51135147, w: 0.49723577}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.044220593, y: -0.00029563904, z: -0.013339948}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.036860626, y: 1.3259418, z: 0.039170604}
+        rotation: {x: -0.5449025, y: 0.5530801, z: -0.45151582, w: 0.43967882}
       motionTrajectoryDataList:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
@@ -1169,81 +1529,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
       motionBoneDataList:
-      - position: {x: 0.044465624, y: 0.78288454, z: 0.004601391}
-        rotation: {x: -0.4953611, y: 0.4848376, z: -0.5145112, w: 0.5048049}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.02984032, y: 0.7827943, z: 0.0016938988}
-        rotation: {x: 0.49323192, y: 0.49931493, z: -0.48962954, w: -0.5173682}
+        position: {x: 0.044465624, y: 0.78288454, z: 0.004601391}
+        rotation: {x: -0.4953611, y: 0.4848376, z: -0.5145112, w: 0.5048049}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.07150832, y: 0.4292286, z: 0.037773736}
-        rotation: {x: 0.53946644, y: 0.44332156, z: -0.54020417, w: -0.46970367}
+        position: {x: -0.02984032, y: 0.7827943, z: 0.0016938988}
+        rotation: {x: 0.49323192, y: 0.49931493, z: -0.48962954, w: -0.5173682}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.11412332, y: 0.122853875, z: -0.08383316}
-        rotation: {x: 0.55431503, y: 0.56926376, z: -0.40882245, w: -0.4489301}
+        position: {x: -0.07150832, y: 0.4292286, z: 0.037773736}
+        rotation: {x: 0.53946644, y: 0.44332156, z: -0.54020417, w: -0.46970367}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.11877165, y: 0.78297484, z: 0.007508876}
-        rotation: {x: 0.50393015, y: 0.46072724, z: -0.49236703, w: -0.5397776}
+        position: {x: -0.11412332, y: 0.122853875, z: -0.08383316}
+        rotation: {x: 0.55431503, y: 0.56926376, z: -0.40882245, w: -0.4489301}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.12437913, y: 0.42797682, z: 0.05213681}
-        rotation: {x: 0.46981528, y: 0.3735418, z: -0.57882017, w: -0.5520032}
+        position: {x: 0.11877165, y: 0.78297484, z: 0.007508876}
+        rotation: {x: 0.50393015, y: 0.46072724, z: -0.49236703, w: -0.5397776}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.09017201, y: 0.12617707, z: -0.082832105}
-        rotation: {x: 0.32193217, y: 0.34449357, z: -0.6134105, w: -0.6335707}
+        position: {x: 0.12437913, y: 0.42797682, z: 0.05213681}
+        rotation: {x: 0.46981528, y: 0.3735418, z: -0.57882017, w: -0.5520032}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.17360032, y: 1.159276, z: -0.010877227}
-        rotation: {x: 0.80077165, y: -0.14201127, z: -0.049721826, w: 0.5797632}
+        position: {x: 0.09017201, y: 0.12617707, z: -0.082832105}
+        rotation: {x: 0.32193217, y: 0.34449357, z: -0.6134105, w: -0.6335707}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.20391461, y: 0.928483, z: -0.09076834}
-        rotation: {x: 0.8093477, y: -0.20377648, z: 0.0000046174973, w: 0.5508463}
+        position: {x: 0.17360032, y: 1.159276, z: -0.010877227}
+        rotation: {x: 0.80077165, y: -0.14201127, z: -0.049721826, w: 0.5797632}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.22550339, y: 0.76852745, z: -0.09859182}
-        rotation: {x: 0.97061276, y: -0.077851444, z: 0.029557168, w: -0.22577952}
+        position: {x: 0.20391461, y: 0.928483, z: -0.09076834}
+        rotation: {x: 0.8093477, y: -0.20377648, z: 0.0000046174973, w: 0.5508463}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.088435955, y: 1.1674417, z: -0.010389416}
-        rotation: {x: 0.02189771, y: 0.614182, z: 0.7606637, w: -0.2090261}
+        position: {x: 0.22550339, y: 0.76852745, z: -0.09859182}
+        rotation: {x: 0.97061276, y: -0.077851444, z: 0.029557168, w: -0.22577952}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.12221862, y: 0.9276116, z: -0.054061294}
-        rotation: {x: 0.08309266, y: 0.531955, z: 0.79743904, w: -0.2724162}
+        position: {x: -0.088435955, y: 1.1674417, z: -0.010389416}
+        rotation: {x: 0.02189771, y: 0.614182, z: 0.7606637, w: -0.2090261}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.14081168, y: 0.76709116, z: -0.054837734}
-        rotation: {x: 0.10978772, y: -0.13893035, z: 0.9839605, w: 0.021614999}
+        position: {x: -0.12221862, y: 0.9276116, z: -0.054061294}
+        rotation: {x: 0.08309266, y: 0.531955, z: 0.79743904, w: -0.2724162}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: 0.0452738, y: 1.2334443, z: -0.00042168796}
-        rotation: {x: -0.51213944, y: 0.49038652, z: -0.5105087, w: 0.48643115}
+        position: {x: -0.14081168, y: 0.76709116, z: -0.054837734}
+        rotation: {x: 0.10978772, y: -0.13893035, z: 0.9839605, w: 0.021614999}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.045704745, y: 1.3258827, z: 0.036502615}
-        rotation: {x: -0.54878277, y: 0.5709034, z: -0.44273657, w: 0.42058444}
+        position: {x: 0.0452738, y: 1.2334443, z: -0.00042168796}
+        rotation: {x: -0.51213944, y: 0.49038652, z: -0.5105087, w: 0.48643115}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.045704745, y: 1.3258827, z: 0.036502615}
+        rotation: {x: -0.54878277, y: 0.5709034, z: -0.44273657, w: 0.42058444}
       motionTrajectoryDataList:
       - position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
@@ -1267,81 +1657,111 @@ MonoBehaviour:
     motionFrameDataList:
     - velocity: 1.333253
       motionBoneDataList:
-      - position: {x: 0.040190756, y: 0.78238684, z: 0.006437673}
-        rotation: {x: -0.5030352, y: 0.49358296, z: -0.5075294, w: 0.49572715}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.07243127, y: -0.45668304, z: 13.814041}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.034170277, y: 0.7825563, z: 0.005942276}
-        rotation: {x: 0.46218598, y: 0.49339387, z: -0.5019297, w: -0.5394566}
+        position: {x: 0.040190756, y: 0.78238684, z: 0.006437673}
+        rotation: {x: -0.5030352, y: 0.49358296, z: -0.5075294, w: 0.49572715}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.0681882, y: -0.5126047, z: 13.760864}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.06787241, y: 0.4272635, z: 0.031979024}
-        rotation: {x: 0.5268008, y: 0.42694277, z: -0.5592815, w: -0.4768701}
+        position: {x: -0.034170277, y: 0.7825563, z: 0.005942276}
+        rotation: {x: 0.46218598, y: 0.49339387, z: -0.5019297, w: -0.5394566}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.07598765, y: -0.13338566, z: 15.11708}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.11595197, y: 0.11895025, z: -0.08248097}
-        rotation: {x: 0.5629727, y: 0.55884504, z: -0.40992284, w: -0.4502415}
+        position: {x: -0.06787241, y: 0.4272635, z: 0.031979024}
+        rotation: {x: 0.5268008, y: 0.42694277, z: -0.5592815, w: -0.4768701}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.48782095, y: 1.6989571, z: 13.183432}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.11455187, y: 0.78221744, z: 0.006933062}
-        rotation: {x: 0.49663723, y: 0.45990697, z: -0.49832082, w: -0.54176897}
+        position: {x: -0.11595197, y: 0.11895025, z: -0.08248097}
+        rotation: {x: 0.5629727, y: 0.55884504, z: -0.40992284, w: -0.4502415}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.07667437, y: -0.40076137, z: 13.867218}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.12453624, y: 0.42714268, z: 0.050163712}
-        rotation: {x: 0.47102156, y: 0.37550116, z: -0.5834697, w: -0.5447025}
+        position: {x: 0.11455187, y: 0.78221744, z: 0.006933062}
+        rotation: {x: 0.49663723, y: 0.45990697, z: -0.49832082, w: -0.54176897}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.43721125, y: -0.07661402, z: 14.959955}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.09534584, y: 0.12362689, z: -0.08210826}
-        rotation: {x: 0.32232732, y: 0.34645674, z: -0.61281353, w: -0.6328765}
+        position: {x: 0.12453624, y: 0.42714268, z: 0.050163712}
+        rotation: {x: 0.47102156, y: 0.37550116, z: -0.5834697, w: -0.5447025}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.4100733, y: -0.05799532, z: 14.912505}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.16908775, y: 1.1580343, z: -0.015072303}
-        rotation: {x: 0.8005161, y: -0.13899523, z: -0.061137553, w: 0.57975596}
+        position: {x: 0.09534584, y: 0.12362689, z: -0.08210826}
+        rotation: {x: 0.32232732, y: 0.34645674, z: -0.61281353, w: -0.6328765}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.09964198, y: -0.37071943, z: 14.116165}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.19568796, y: 0.92726237, z: -0.096335754}
-        rotation: {x: 0.80035925, y: -0.20671025, z: -0.00861049, w: 0.56269187}
+        position: {x: 0.16908775, y: 1.1580343, z: -0.015072303}
+        rotation: {x: 0.8005161, y: -0.13899523, z: -0.061137553, w: 0.57975596}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.16346708, y: -0.25130928, z: 13.85213}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.21431571, y: 0.7667951, z: -0.100375235}
-        rotation: {x: 0.9707534, y: -0.09643534, z: 0.020509273, w: -0.21890227}
+        position: {x: 0.19568796, y: 0.92726237, z: -0.096335754}
+        rotation: {x: 0.80035925, y: -0.20671025, z: -0.00861049, w: 0.56269187}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.11301741, y: -0.25467336, z: 13.808417}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.092371404, y: 1.166939, z: -0.0067471876}
-        rotation: {x: 0.040109977, y: 0.6153832, z: 0.75634533, w: -0.2182584}
+        position: {x: 0.21431571, y: 0.7667951, z: -0.100375235}
+        rotation: {x: 0.9707534, y: -0.09643534, z: 0.020509273, w: -0.21890227}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.08615911, y: -0.25420427, z: 13.937125}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.12930554, y: 0.92674565, z: -0.04560636}
-        rotation: {x: 0.10222614, y: 0.53178376, z: 0.79271877, w: -0.27991676}
+        position: {x: -0.092371404, y: 1.166939, z: -0.0067471876}
+        rotation: {x: 0.040109977, y: 0.6153832, z: 0.75634533, w: -0.2182584}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.3015241, y: -0.21635294, z: 13.970839}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.14880934, y: 0.7663467, z: -0.043397322}
-        rotation: {x: 0.13014533, y: -0.13037175, z: 0.98287296, w: 0.0051804185}
+        position: {x: -0.12930554, y: 0.92674565, z: -0.04560636}
+        rotation: {x: 0.10222614, y: 0.53178376, z: 0.79271877, w: -0.27991676}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.41401014, y: -0.11219263, z: 14.46571}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: 0.04156573, y: 1.233064, z: -0.0022124085}
-        rotation: {x: -0.5237167, y: 0.49543065, z: -0.50486, w: 0.4747485}
+        position: {x: -0.14880934, y: 0.7663467, z: -0.043397322}
+        rotation: {x: 0.13014533, y: -0.13037175, z: 0.98287296, w: 0.0051804185}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.012607947, y: -0.47602296, z: 13.970646}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.0432536, y: 1.3259579, z: 0.03351376}
-        rotation: {x: -0.5670157, y: 0.5818976, z: -0.4306823, w: 0.3929396}
+        position: {x: 0.04156573, y: 1.233064, z: -0.0022124085}
+        rotation: {x: -0.5237167, y: 0.49543065, z: -0.50486, w: 0.4747485}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.051498078, y: -0.49655557, z: 14.016538}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.0432536, y: 1.3259579, z: 0.03351376}
+        rotation: {x: -0.5670157, y: 0.5818976, z: -0.4306823, w: 0.3929396}
       motionTrajectoryDataList:
       - position: {x: 0.026420329, y: 0, z: 0.06355616}
         velocity: {x: 0.022867918, y: 0, z: 1.3330569}
@@ -1363,81 +1783,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.2849197
       motionBoneDataList:
-      - position: {x: 0.03294763, y: 0.73671854, z: 1.3878418}
-        rotation: {x: -0.49839792, y: 0.46099138, z: -0.5010978, w: 0.53664464}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.08318223, y: 0.09086192, z: 13.636407}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.040989097, y: 0.7312958, z: 1.3820287}
-        rotation: {x: 0.59290105, y: 0.43457225, z: -0.5632117, w: -0.3773698}
+        position: {x: 0.03294763, y: 0.73671854, z: 1.3878418}
+        rotation: {x: -0.49839792, y: 0.46099138, z: -0.5010978, w: 0.53664464}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.0807469, y: 0.093008876, z: 13.694076}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.07547118, y: 0.41392493, z: 1.5436871}
-        rotation: {x: 0.35446212, y: 0.66838944, z: -0.2812541, w: -0.5903461}
+        position: {x: -0.040989097, y: 0.7312958, z: 1.3820287}
+        rotation: {x: 0.59290105, y: 0.43457225, z: -0.5632117, w: -0.3773698}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.04575111, y: 0.48508823, z: 14.296262}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.067169875, y: 0.28884596, z: 1.2358623}
-        rotation: {x: 0.28482974, y: 0.6922838, z: -0.0240781, w: -0.66259766}
+        position: {x: -0.07547118, y: 0.41392493, z: 1.5436871}
+        rotation: {x: 0.35446212, y: 0.66838944, z: -0.2812541, w: -0.5903461}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.00048227608, y: -0.8886993, z: 15.335603}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.106884435, y: 0.7421413, z: 1.393655}
-        rotation: {x: 0.6265717, y: 0.39721116, z: -0.51049566, w: -0.43477052}
+        position: {x: -0.067169875, y: 0.28884596, z: 1.2358623}
+        rotation: {x: 0.28482974, y: 0.6922838, z: -0.0240781, w: -0.66259766}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.0856176, y: 0.08871496, z: 13.578738}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.080815114, y: 0.41948128, z: 1.5461593}
-        rotation: {x: 0.57619286, y: 0.41849214, z: -0.47642767, w: -0.51563835}
+        position: {x: 0.106884435, y: 0.7421413, z: 1.393655}
+        rotation: {x: 0.6265717, y: 0.39721116, z: -0.51049566, w: -0.43477052}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.12326725, y: -0.17528355, z: 12.809102}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.054338507, y: 0.117827356, z: 1.4091423}
-        rotation: {x: 0.4580457, y: 0.45492822, z: -0.5203831, w: -0.5589597}
+        position: {x: 0.080815114, y: 0.41948128, z: 1.5461593}
+        rotation: {x: 0.57619286, y: 0.41849214, z: -0.47642767, w: -0.51563835}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.003497824, y: 0.07870138, z: 12.37318}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.17905195, y: 1.1209624, z: 1.3965442}
-        rotation: {x: 0.83761334, y: -0.1673179, z: -0.034964018, w: 0.5188316}
+        position: {x: 0.054338507, y: 0.117827356, z: 1.4091423}
+        rotation: {x: 0.4580457, y: 0.45492822, z: -0.5203831, w: -0.5589597}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.07622555, y: 0.12641191, z: 13.634951}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.21203467, y: 0.90213144, z: 1.2888772}
-        rotation: {x: 0.80544376, y: -0.28755635, z: 0.069432646, w: 0.5135671}
+        position: {x: 0.17905195, y: 1.1209624, z: 1.3965442}
+        rotation: {x: 0.83761334, y: -0.1673179, z: -0.034964018, w: 0.5188316}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.14911115, y: -0.0159657, z: 14.031608}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.22561745, y: 0.74132776, z: 1.2804664}
-        rotation: {x: 0.9476052, y: 0.016929954, z: 0.19330925, w: -0.25375152}
+        position: {x: 0.21203467, y: 0.90213144, z: 1.2888772}
+        rotation: {x: 0.80544376, y: -0.28755635, z: 0.069432646, w: 0.5135671}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.13649538, y: 0.025599003, z: 14.49293}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.100987315, y: 1.1415186, z: 1.3869653}
-        rotation: {x: 0.023220167, y: 0.6431192, z: 0.75467974, w: -0.12773813}
+        position: {x: 0.22561745, y: 0.74132776, z: 1.2804664}
+        rotation: {x: 0.9476052, y: 0.016929954, z: 0.19330925, w: -0.25375152}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.0620237, y: 0.09097576, z: 13.588035}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.15945795, y: 0.90511036, z: 1.3514775}
-        rotation: {x: 0.15437908, y: 0.6505403, z: 0.70809364, w: -0.22708598}
+        position: {x: -0.100987315, y: 1.1415186, z: 1.3869653}
+        rotation: {x: 0.023220167, y: 0.6431192, z: 0.75467974, w: -0.12773813}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.12567729, y: 0.17538309, z: 13.175916}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.19021036, y: 0.75512743, z: 1.4031737}
-        rotation: {x: 0.21662444, y: -0.010580823, z: 0.97102106, w: 0.1004017}
+        position: {x: -0.15945795, y: 0.90511036, z: 1.3514775}
+        rotation: {x: 0.15437908, y: 0.6505403, z: 0.70809364, w: -0.22708598}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.15109941, y: 0.10114372, z: 12.891414}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: 0.042826526, y: 1.1854618, z: 1.3948522}
-        rotation: {x: -0.4713024, y: 0.5064283, z: -0.5327427, w: 0.48743188}
+        position: {x: -0.19021036, y: 0.75512743, z: 1.4031737}
+        rotation: {x: 0.21662444, y: -0.010580823, z: 0.97102106, w: 0.1004017}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.060138963, y: 0.09357095, z: 13.62422}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.04840341, y: 1.2763023, z: 1.4351676}
-        rotation: {x: -0.44716567, y: 0.5530219, z: -0.47151676, w: 0.521423}
+        position: {x: 0.042826526, y: 1.1854618, z: 1.3948522}
+        rotation: {x: -0.4713024, y: 0.5064283, z: -0.5327427, w: 0.48743188}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.040589646, y: 0.0888443, z: 13.636877}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.04840341, y: 1.2763023, z: 1.4351676}
+        rotation: {x: -0.44716567, y: 0.5530219, z: -0.47151676, w: 0.521423}
       motionTrajectoryDataList:
       - position: {x: 0.03387984, y: 0, z: 1.4271108}
         velocity: {x: 0.01364585, y: 0, z: 1.2848473}
@@ -1459,81 +1909,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.3335522
       motionBoneDataList:
-      - position: {x: 0.041265853, y: 0.7458047, z: 2.7514825}
-        rotation: {x: -0.51688135, y: 0.48220584, z: -0.48214144, w: 0.5175431}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.021525696, y: -0.08191466, z: 14.608502}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.032914408, y: 0.7405967, z: 2.7514362}
-        rotation: {x: 0.6260467, y: 0.36313832, z: -0.6057589, w: -0.3305334}
+        position: {x: 0.041265853, y: 0.7458047, z: 2.7514825}
+        rotation: {x: -0.51688135, y: 0.48220584, z: -0.48214144, w: 0.5175431}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.021827668, y: -0.08057535, z: 14.633169}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.07089607, y: 0.46243376, z: 2.9733133}
-        rotation: {x: 0.49605566, y: 0.56790996, z: -0.44489008, w: -0.48319754}
+        position: {x: -0.032914408, y: 0.7405967, z: 2.7514362}
+        rotation: {x: 0.6260467, y: 0.36313832, z: -0.6057589, w: -0.3305334}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.12509823, y: -0.16032457, z: 14.545293}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.06712165, y: 0.19997603, z: 2.7694225}
-        rotation: {x: 0.5025083, y: 0.6199035, z: -0.26007408, w: -0.54366034}
+        position: {x: -0.07089607, y: 0.46243376, z: 2.9733133}
+        rotation: {x: 0.49605566, y: 0.56790996, z: -0.44489008, w: -0.48319754}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.14108665, y: -0.8550936, z: 16.745539}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.115446195, y: 0.7510128, z: 2.7515287}
-        rotation: {x: 0.5572186, y: 0.43617356, z: -0.478531, w: -0.51987326}
+        position: {x: -0.06712165, y: 0.19997603, z: 2.7694225}
+        rotation: {x: 0.5025083, y: 0.6199035, z: -0.26007408, w: -0.54366034}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.02122365, y: -0.08325398, z: 14.583836}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.09314184, y: 0.40195292, z: 2.8270695}
-        rotation: {x: 0.5326276, y: 0.43809238, z: -0.44502756, w: -0.5712562}
+        position: {x: 0.115446195, y: 0.7510128, z: 2.7515287}
+        rotation: {x: 0.5572186, y: 0.43617356, z: -0.478531, w: -0.51987326}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.010299385, y: -0.1593399, z: 13.659045}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.053988725, y: 0.1256975, z: 2.6464603}
-        rotation: {x: 0.45882377, y: 0.44647148, z: -0.51325995, w: -0.5715841}
+        position: {x: 0.09314184, y: 0.40195292, z: 2.8270695}
+        rotation: {x: 0.5326276, y: 0.43809238, z: -0.44502756, w: -0.5712562}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.040926598, y: 0.04277289, z: 13.392682}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.1866745, y: 1.1336036, z: 2.7600393}
-        rotation: {x: 0.79290056, y: -0.1740103, z: 0.001003074, w: 0.58397657}
+        position: {x: 0.053988725, y: 0.1256975, z: 2.6464603}
+        rotation: {x: 0.45882377, y: 0.44647148, z: -0.51325995, w: -0.5715841}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.004722178, y: -0.05242467, z: 14.6535015}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.22694579, y: 0.90053487, z: 2.692038}
-        rotation: {x: 0.7218393, y: -0.29467863, z: 0.13972437, w: 0.61040163}
+        position: {x: 0.1866745, y: 1.1336036, z: 2.7600393}
+        rotation: {x: 0.79290056, y: -0.1740103, z: 0.001003074, w: 0.58397657}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.10390639, y: -0.107159615, z: 14.995046}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.23926699, y: 0.74388766, z: 2.7297595}
-        rotation: {x: 0.9605984, y: 0.06330076, z: 0.2593731, w: -0.07726534}
+        position: {x: 0.22694579, y: 0.90053487, z: 2.692038}
+        rotation: {x: 0.7218393, y: -0.29467863, z: 0.13972437, w: 0.61040163}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.10727435, y: 0.025260448, z: 15.351846}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.094784945, y: 1.1506162, z: 2.7457688}
-        rotation: {x: -0.012163751, y: 0.5823722, z: 0.8043109, w: -0.11738448}
+        position: {x: 0.23926699, y: 0.74388766, z: 2.7297595}
+        rotation: {x: 0.9605984, y: 0.06330076, z: 0.2593731, w: -0.07726534}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.0007920712, y: -0.09520769, z: 14.634339}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.14689022, y: 0.92264867, z: 2.669069}
-        rotation: {x: 0.11472058, y: 0.59002256, z: 0.76282483, w: -0.23835137}
+        position: {x: -0.094784945, y: 1.1506162, z: 2.7457688}
+        rotation: {x: -0.012163751, y: 0.5823722, z: 0.8043109, w: -0.11738448}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.05122423, y: 0.01150012, z: 14.346139}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.17510042, y: 0.7652418, z: 2.692315}
-        rotation: {x: 0.19759654, y: -0.1426897, z: 0.9688954, w: 0.042870417}
+        position: {x: -0.14689022, y: 0.92264867, z: 2.669069}
+        rotation: {x: 0.11472058, y: 0.59002256, z: 0.76282483, w: -0.23835137}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.049242973, y: -0.0050508976, z: 14.13681}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: 0.048840422, y: 1.1948189, z: 2.7572742}
-        rotation: {x: -0.4673084, y: 0.5025638, z: -0.5297597, w: 0.4984049}
+        position: {x: -0.17510042, y: 0.7652418, z: 2.692315}
+        rotation: {x: 0.19759654, y: -0.1426897, z: 0.9688954, w: 0.042870417}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.0059507787, y: -0.07622838, z: 14.642043}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.052462373, y: 1.2851868, z: 2.7988553}
-        rotation: {x: -0.44262636, y: 0.5511225, z: -0.4645639, w: 0.53341055}
+        position: {x: 0.048840422, y: 1.1948189, z: 2.7572742}
+        rotation: {x: -0.4673084, y: 0.5025638, z: -0.5297597, w: 0.4984049}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.019881688, y: -0.07688999, z: 14.644456}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.052462373, y: 1.2851868, z: 2.7988553}
+        rotation: {x: -0.44262636, y: 0.5511225, z: -0.4645639, w: 0.53341055}
       motionTrajectoryDataList:
       - position: {x: 0.036626093, y: 0, z: 2.8855307}
         velocity: {x: -0.015202872, y: 0, z: 1.3334656}
@@ -1555,81 +2035,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.4422843
       motionBoneDataList:
-      - position: {x: 0.043418422, y: 0.73761326, z: 4.2123327}
-        rotation: {x: -0.51798946, y: 0.49795756, z: -0.46731904, w: 0.5151098}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.06898381, y: -0.2044797, z: 14.748073}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.03073164, y: 0.7325392, z: 4.214753}
-        rotation: {x: 0.61147845, y: 0.3785807, z: -0.60837895, w: -0.33562797}
+        position: {x: 0.043418422, y: 0.73761326, z: 4.2123327}
+        rotation: {x: -0.51798946, y: 0.49795756, z: -0.46731904, w: 0.5151098}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.06898947, y: -0.20766854, z: 14.739485}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.058386244, y: 0.4464013, z: 4.4278426}
-        rotation: {x: 0.6304795, y: 0.37884173, z: -0.61667335, w: -0.28051507}
+        position: {x: -0.03073164, y: 0.7325392, z: 4.214753}
+        rotation: {x: 0.61147845, y: 0.3785807, z: -0.60837895, w: -0.33562797}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.066593215, y: -0.184865, z: 14.7828245}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.053012982, y: 0.11446667, z: 4.4439764}
-        rotation: {x: 0.64379346, y: 0.49187165, z: -0.49791223, w: -0.30931544}
+        position: {x: -0.058386244, y: 0.4464013, z: 4.4278426}
+        rotation: {x: 0.6304795, y: 0.37884173, z: -0.61667335, w: -0.28051507}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.24684086, y: -0.16490996, z: 14.947443}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.11756856, y: 0.7426874, z: 4.2099123}
-        rotation: {x: 0.4794213, y: 0.48683944, z: -0.42315245, w: -0.59505016}
+        position: {x: -0.053012982, y: 0.11446667, z: 4.4439764}
+        rotation: {x: 0.64379346, y: 0.49187165, z: -0.49791223, w: -0.30931544}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.06897807, y: -0.20129085, z: 14.75666}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.09417178, y: 0.38601893, z: 4.192974}
-        rotation: {x: 0.5013438, y: 0.45379663, z: -0.42347115, w: -0.6028229}
+        position: {x: 0.11756856, y: 0.7426874, z: 4.2099123}
+        rotation: {x: 0.4794213, y: 0.48683944, z: -0.42315245, w: -0.59505016}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.013230443, y: -0.15467465, z: 14.307957}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.049896065, y: 0.12997478, z: 3.9857285}
-        rotation: {x: 0.45960152, y: 0.4383515, z: -0.509078, w: -0.58090806}
+        position: {x: 0.09417178, y: 0.38601893, z: 4.192974}
+        rotation: {x: 0.5013438, y: 0.45379663, z: -0.42347115, w: -0.6028229}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.053501576, y: 0.39065242, z: 13.764135}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.18714672, y: 1.1283611, z: 4.2253895}
-        rotation: {x: 0.75352246, y: -0.16993669, z: 0.03679767, w: 0.6340122}
+        position: {x: 0.049896065, y: 0.12997478, z: 3.9857285}
+        rotation: {x: 0.45960152, y: 0.4383515, z: -0.509078, w: -0.58090806}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.11250347, y: -0.17517924, z: 14.811821}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.23733643, y: 0.8898189, z: 4.1915426}
-        rotation: {x: 0.64546883, y: -0.28422415, z: 0.19748783, w: 0.680871}
+        position: {x: 0.18714672, y: 1.1283611, z: 4.2253895}
+        rotation: {x: 0.75352246, y: -0.16993669, z: 0.03679767, w: 0.6340122}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.030828714, y: -0.17080009, z: 14.934001}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.24999443, y: 0.7464137, z: 4.264944}
-        rotation: {x: 0.9440152, y: 0.13160199, z: 0.28749937, w: 0.09413096}
+        position: {x: 0.23733643, y: 0.8898189, z: 4.1915426}
+        rotation: {x: 0.64546883, y: -0.28422415, z: 0.19748783, w: 0.680871}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.005390644, y: -0.10151744, z: 15.051808}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.09470574, y: 1.1410954, z: 4.209203}
-        rotation: {x: -0.040543973, y: 0.5370291, z: 0.8364566, w: -0.101471886}
+        position: {x: 0.24999443, y: 0.7464137, z: 4.264944}
+        rotation: {x: 0.9440152, y: 0.13160199, z: 0.28749937, w: 0.09413096}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.10387108, y: -0.23475528, z: 14.703574}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.1417678, y: 0.9237987, z: 4.103683}
-        rotation: {x: 0.08478755, y: 0.5455039, z: 0.80009663, w: -0.23469606}
+        position: {x: -0.09470574, y: 1.1410954, z: 4.209203}
+        rotation: {x: -0.040543973, y: 0.5370291, z: 0.8364566, w: -0.101471886}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.070396066, y: -0.21303296, z: 14.600744}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.17017612, y: 0.7647367, z: 4.105996}
-        rotation: {x: 0.17996278, y: -0.24026275, z: 0.95383227, w: 0.009592921}
+        position: {x: -0.1417678, y: 0.9237987, z: 4.103683}
+        rotation: {x: 0.08478755, y: 0.5455039, z: 0.80009663, w: -0.23469606}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.0010514259, y: -0.19757152, z: 14.504986}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: 0.048245344, y: 1.187196, z: 4.2214785}
-        rotation: {x: -0.46797416, y: 0.49863684, z: -0.5276557, w: 0.5039255}
+        position: {x: -0.17017612, y: 0.7647367, z: 4.105996}
+        rotation: {x: 0.17996278, y: -0.24026275, z: 0.95383227, w: 0.009592921}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.12134481, y: -0.20245314, z: 14.762702}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.050474204, y: 1.2774978, z: 4.263301}
-        rotation: {x: -0.44797733, y: 0.5454894, z: -0.46633467, w: 0.53318846}
+        position: {x: 0.048245344, y: 1.187196, z: 4.2214785}
+        rotation: {x: -0.46797416, y: 0.49863684, z: -0.5276557, w: 0.5039255}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.15582673, y: -0.20071864, z: 14.759355}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.050474204, y: 1.2774978, z: 4.263301}
+        rotation: {x: -0.44797733, y: 0.5454894, z: -0.46633467, w: 0.53318846}
       motionTrajectoryDataList:
       - position: {x: 0.03171016, y: 0, z: 4.354798}
         velocity: {x: -0.05308494, y: 0, z: 1.4413071}
@@ -1651,81 +2161,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.3562101
       motionBoneDataList:
-      - position: {x: 0.03652004, y: 0.7171653, z: 5.68714}
-        rotation: {x: -0.51527226, y: 0.49496892, z: -0.4680765, w: 0.52000463}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.23873644, y: -0.020611286, z: 14.020867}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.037630588, y: 0.7117723, z: 5.6887016}
-        rotation: {x: 0.6049248, y: 0.3885747, z: -0.61895823, w: -0.3161751}
+        position: {x: 0.03652004, y: 0.7171653, z: 5.68714}
+        rotation: {x: -0.51527226, y: 0.49496892, z: -0.4680765, w: 0.52000463}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.24073365, y: 0.01966834, z: 14.005022}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.051726922, y: 0.4279148, z: 5.906125}
-        rotation: {x: 0.6124512, y: 0.37166622, z: -0.6484308, w: -0.2574986}
+        position: {x: -0.037630588, y: 0.7117723, z: 5.6887016}
+        rotation: {x: 0.6049248, y: 0.3885747, z: -0.61895823, w: -0.3161751}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.13352975, y: 0.03252536, z: 14.025979}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.028328896, y: 0.09797567, z: 5.9387207}
-        rotation: {x: 0.597336, y: 0.48852596, z: -0.5534837, w: -0.31335035}
+        position: {x: -0.051726922, y: 0.4279148, z: 5.906125}
+        rotation: {x: 0.6124512, y: 0.37166622, z: -0.6484308, w: -0.2574986}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.09535495, y: 0.08901, z: 13.024397}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.11067075, y: 0.7225583, z: 5.6855783}
-        rotation: {x: 0.4388521, y: 0.5181986, z: -0.39436656, w: -0.61915624}
+        position: {x: -0.028328896, y: 0.09797567, z: 5.9387207}
+        rotation: {x: 0.597336, y: 0.48852596, z: -0.5534837, w: -0.31335035}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.2367393, y: -0.060890913, z: 14.036713}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.09284873, y: 0.37055147, z: 5.6237698}
-        rotation: {x: 0.43718874, y: 0.50819594, z: -0.3580727, w: -0.64991325}
+        position: {x: 0.11067075, y: 0.7225583, z: 5.6855783}
+        rotation: {x: 0.4388521, y: 0.5181986, z: -0.39436656, w: -0.61915624}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.027939528, y: -0.11904508, z: 14.6625185}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.055246223, y: 0.16904002, z: 5.362142}
-        rotation: {x: 0.40139127, y: 0.4971862, z: -0.4173278, w: -0.6461648}
+        position: {x: 0.09284873, y: 0.37055147, z: 5.6237698}
+        rotation: {x: 0.43718874, y: 0.50819594, z: -0.3580727, w: -0.64991325}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.24973537, y: 0.799582, z: 14.142714}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.17589638, y: 1.1108432, z: 5.7065716}
-        rotation: {x: 0.74096215, y: -0.16532995, z: 0.060177077, w: 0.6480899}
+        position: {x: 0.055246223, y: 0.16904002, z: 5.362142}
+        rotation: {x: 0.40139127, y: 0.4971862, z: -0.4173278, w: -0.6461648}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.26683375, y: 0.04814744, z: 14.029698}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.23425356, y: 0.8727389, z: 5.6849427}
-        rotation: {x: 0.6190026, y: -0.2719641, z: 0.22195837, w: 0.70257115}
+        position: {x: 0.17589638, y: 1.1108432, z: 5.7065716}
+        rotation: {x: 0.74096215, y: -0.16532995, z: 0.060177077, w: 0.6480899}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.24692953, y: 0.077099204, z: 13.845754}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.24945536, y: 0.73626196, z: 5.770125}
-        rotation: {x: 0.9304892, y: 0.16497535, z: 0.28961444, w: 0.15197784}
+        position: {x: 0.23425356, y: 0.8727389, z: 5.6849427}
+        rotation: {x: 0.6190026, y: -0.2719641, z: 0.22195837, w: 0.70257115}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.17610267, y: -0.019308329, z: 13.647084}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.105092846, y: 1.1176199, z: 5.67956}
-        rotation: {x: -0.10677275, y: 0.53500205, z: 0.83598846, w: -0.059130616}
+        position: {x: 0.24945536, y: 0.73626196, z: 5.770125}
+        rotation: {x: 0.9304892, y: 0.16497535, z: 0.28961444, w: 0.15197784}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.257738, y: -0.08706927, z: 13.990631}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.1347282, y: 0.9024954, z: 5.5637574}
-        rotation: {x: 0.01678177, y: 0.5551845, z: 0.8154902, w: -0.16268033}
+        position: {x: -0.105092846, y: 1.1176199, z: 5.67956}
+        rotation: {x: -0.10677275, y: 0.53500205, z: 0.83598846, w: -0.059130616}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.18692166, y: -0.12003124, z: 14.037318}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.17007098, y: 0.74497956, z: 5.5564947}
-        rotation: {x: 0.09409687, y: -0.30752403, z: 0.9468462, w: 0.0076195598}
+        position: {x: -0.1347282, y: 0.9024954, z: 5.5637574}
+        rotation: {x: 0.01678177, y: 0.5551845, z: 0.8154902, w: -0.16268033}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.16193956, y: -0.12656629, z: 14.068942}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: 0.036110863, y: 1.1669507, z: 5.6977487}
-        rotation: {x: -0.4636016, y: 0.48294175, z: -0.5325362, w: 0.517925}
+        position: {x: -0.17007098, y: 0.74497956, z: 5.5564947}
+        rotation: {x: 0.09409687, y: -0.30752403, z: 0.9468462, w: 0.0076195598}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.287319, y: -0.01347661, z: 14.0008545}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.03489153, y: 1.2574259, z: 5.7392364}
-        rotation: {x: -0.45074916, y: 0.5348907, z: -0.47704116, w: 0.5321177}
+        position: {x: 0.036110863, y: 1.1669507, z: 5.6977487}
+        rotation: {x: -0.4636016, y: 0.48294175, z: -0.5325362, w: 0.517925}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.33685586, y: -0.012434721, z: 13.994112}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.03489153, y: 1.2574259, z: 5.7392364}
+        rotation: {x: -0.45074916, y: 0.5348907, z: -0.47704116, w: 0.5321177}
       motionTrajectoryDataList:
       - position: {x: 0.012798177, y: 0, z: 5.757221}
         velocity: {x: -0.042678546, y: 0, z: 1.3555384}
@@ -1747,81 +2287,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.306486
       motionBoneDataList:
-      - position: {x: 0.012646398, y: 0.71510416, z: 7.0892267}
-        rotation: {x: -0.5010075, y: 0.49883685, z: -0.49191764, w: 0.50810474}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.14539061, y: 0.26741326, z: 12.605934}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.061703954, y: 0.71373916, z: 7.089204}
-        rotation: {x: 0.59237194, y: 0.38314268, z: -0.6328911, w: -0.31897688}
+        position: {x: 0.012646398, y: 0.71510416, z: 7.0892267}
+        rotation: {x: -0.5010075, y: 0.49883685, z: -0.49191764, w: 0.50810474}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.1453894, y: 0.28132617, z: 12.592449}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.0650799, y: 0.43116733, z: 7.308723}
-        rotation: {x: 0.54702157, y: 0.46170875, z: -0.60356385, w: -0.35114616}
+        position: {x: -0.061703954, y: 0.71373916, z: 7.089204}
+        rotation: {x: 0.59237194, y: 0.38314268, z: -0.6328911, w: -0.31897688}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.11555448, y: -0.1030615, z: 11.978354}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.03786439, y: 0.10687667, z: 7.2411604}
-        rotation: {x: 0.5357854, y: 0.5603566, z: -0.4442226, w: -0.44900006}
+        position: {x: -0.0650799, y: 0.43116733, z: 7.308723}
+        rotation: {x: 0.54702157, y: 0.46170875, z: -0.60356385, w: -0.35114616}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.08500386, y: 0.08457482, z: 11.38093}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.08699682, y: 0.7164692, z: 7.0892496}
-        rotation: {x: 0.4809615, y: 0.5003269, z: -0.45111796, w: -0.56110775}
+        position: {x: -0.03786439, y: 0.10687667, z: 7.2411604}
+        rotation: {x: 0.5357854, y: 0.5603566, z: -0.4442226, w: -0.44900006}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.14539175, y: 0.25350034, z: 12.619419}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.09005478, y: 0.35864696, z: 7.0900216}
-        rotation: {x: 0.33363056, y: 0.59050953, z: -0.26606774, w: -0.6849799}
+        position: {x: 0.08699682, y: 0.7164692, z: 7.0892496}
+        rotation: {x: 0.4809615, y: 0.5003269, z: -0.45111796, w: -0.56110775}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.06946623, y: 0.4916787, z: 13.89132}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.08021976, y: 0.24899822, z: 6.7764134}
-        rotation: {x: 0.12876187, y: 0.616212, z: -0.10944736, w: -0.76923674}
+        position: {x: 0.09005478, y: 0.35864696, z: 7.0900216}
+        rotation: {x: 0.33363056, y: 0.59050953, z: -0.26606774, w: -0.6849799}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.017369539, y: 0.27366847, z: 13.9747}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.149213, y: 1.1156579, z: 7.1095414}
-        rotation: {x: 0.765576, y: -0.15773425, z: 0.05101248, w: 0.62162036}
+        position: {x: 0.08021976, y: 0.24899822, z: 6.7764134}
+        rotation: {x: 0.12876187, y: 0.616212, z: -0.10944736, w: -0.76923674}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.123284906, y: 0.2586758, z: 12.61642}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.2095606, y: 0.8804488, z: 7.069518}
-        rotation: {x: 0.6730708, y: -0.2617831, z: 0.19712701, w: 0.66301364}
+        position: {x: 0.149213, y: 1.1156579, z: 7.1095414}
+        rotation: {x: 0.765576, y: -0.15773425, z: 0.05101248, w: 0.62162036}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.17315969, y: 0.33726454, z: 12.254152}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.2318451, y: 0.73433113, z: 7.1348333}
-        rotation: {x: 0.9489529, y: 0.15069193, z: 0.2722004, w: 0.05185081}
+        position: {x: 0.2095606, y: 0.8804488, z: 7.069518}
+        rotation: {x: 0.6730708, y: -0.2617831, z: 0.19712701, w: 0.66301364}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.20388052, y: 0.21291018, z: 11.846943}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.13086665, y: 1.108913, z: 7.0786233}
-        rotation: {x: -0.11983657, y: 0.5441209, z: 0.82784045, w: -0.06520928}
+        position: {x: 0.2318451, y: 0.73433113, z: 7.1348333}
+        rotation: {x: 0.9489529, y: 0.15069193, z: 0.2722004, w: 0.05185081}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.12656257, y: 0.25539398, z: 12.729878}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.15342036, y: 0.89049226, z: 6.9674892}
-        rotation: {x: 0.0020972192, y: 0.56865287, z: 0.80692255, w: -0.15970676}
+        position: {x: -0.13086665, y: 1.108913, z: 7.0786233}
+        rotation: {x: -0.11983657, y: 0.5441209, z: 0.82784045, w: -0.06520928}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.23956731, y: 0.17817795, z: 12.931242}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.18626493, y: 0.73232293, z: 6.963389}
-        rotation: {x: 0.081305355, y: -0.29824138, z: 0.9510217, w: 0.00016242266}
+        position: {x: -0.15342036, y: 0.89049226, z: 6.9674892}
+        rotation: {x: 0.0020972192, y: 0.56865287, z: 0.80692255, w: -0.15970676}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.20236894, y: 0.17520487, z: 13.096013}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: 0.007378963, y: 1.165603, z: 7.097834}
-        rotation: {x: -0.4739095, y: 0.46639442, z: -0.5241037, w: 0.5321671}
+        position: {x: -0.18626493, y: 0.73232293, z: 6.963389}
+        rotation: {x: 0.081305355, y: -0.29824138, z: 0.9510217, w: 0.00016242266}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.12468606, y: 0.2639544, z: 12.678542}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.0012059426, y: 1.2561824, z: 7.1386476}
-        rotation: {x: -0.45844486, y: 0.5301662, z: -0.47578952, w: 0.5313916}
+        position: {x: 0.007378963, y: 1.165603, z: 7.097834}
+        rotation: {x: -0.4739095, y: 0.46639442, z: -0.5241037, w: 0.5321671}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.108696446, y: 0.2560568, z: 12.697654}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.0012059426, y: 1.2561824, z: 7.1386476}
+        rotation: {x: -0.45844486, y: 0.5301662, z: -0.47578952, w: 0.5313916}
       motionTrajectoryDataList:
       - position: {x: 0.00084983, y: 0, z: 7.026044}
         velocity: {x: -0.01866874, y: 0, z: 1.3063526}
@@ -1843,81 +2413,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.3213861
       motionBoneDataList:
-      - position: {x: -0.0018926633, y: 0.7418455, z: 8.34982}
-        rotation: {x: -0.48973247, y: 0.5009415, z: -0.49902838, w: 0.5100886}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.059212428, y: 0.14583588, z: 13.516798}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.076242894, y: 0.7418718, z: 8.348449}
-        rotation: {x: 0.5555588, y: 0.44884938, z: -0.5920159, w: -0.3733711}
+        position: {x: -0.0018926633, y: 0.7418455, z: 8.34982}
+        rotation: {x: -0.48973247, y: 0.5009415, z: -0.49902838, w: 0.5100886}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.05786784, y: 0.15059292, z: 13.48403}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.076635346, y: 0.42086118, z: 8.506558}
-        rotation: {x: 0.5078853, y: 0.5188515, z: -0.56023294, w: -0.39872932}
+        position: {x: -0.076242894, y: 0.7418718, z: 8.348449}
+        rotation: {x: 0.5555588, y: 0.44884938, z: -0.5920159, w: -0.3733711}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.050170273, y: -0.12751728, z: 12.701063}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.046364777, y: 0.11533415, z: 8.379253}
-        rotation: {x: 0.53245944, y: 0.5663677, z: -0.44422454, w: -0.44539788}
+        position: {x: -0.076635346, y: 0.42086118, z: 8.506558}
+        rotation: {x: 0.5078853, y: 0.5188515, z: -0.56023294, w: -0.39872932}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.02728112, y: 0.05642891, z: 12.33202}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.07245765, y: 0.74181926, z: 8.3511915}
-        rotation: {x: 0.5710999, y: 0.41956684, z: -0.5378885, w: -0.45660138}
+        position: {x: -0.046364777, y: 0.11533415, z: 8.379253}
+        rotation: {x: 0.53245944, y: 0.5663677, z: -0.44422454, w: -0.44539788}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.060557052, y: 0.14107883, z: 13.549566}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.08310816, y: 0.40781483, z: 8.479154}
-        rotation: {x: 0.3195032, y: 0.59354365, z: -0.3284035, w: -0.6616458}
+        position: {x: 0.07245765, y: 0.74181926, z: 8.3511915}
+        rotation: {x: 0.5710999, y: 0.41956684, z: -0.5378885, w: -0.45660138}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.027386248, y: 0.50753117, z: 14.255619}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.081956714, y: 0.27636507, z: 8.173883}
-        rotation: {x: 0.08841359, y: 0.63808364, z: -0.24521403, w: -0.7245017}
+        position: {x: 0.08310816, y: 0.40781483, z: 8.479154}
+        rotation: {x: 0.3195032, y: 0.59354365, z: -0.3284035, w: -0.6616458}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.075377226, y: -0.8867791, z: 15.383282}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.13688451, y: 1.1415255, z: 8.371183}
-        rotation: {x: 0.8098038, y: -0.16561338, z: 0.029201172, w: 0.56208324}
+        position: {x: 0.081956714, y: 0.27636507, z: 8.173883}
+        rotation: {x: 0.08841359, y: 0.63808364, z: -0.24521403, w: -0.7245017}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.02130419, y: 0.123194456, z: 13.508596}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.19224463, y: 0.9141753, z: 8.294933}
-        rotation: {x: 0.7519411, y: -0.29643175, z: 0.16113397, w: 0.5663472}
+        position: {x: 0.13688451, y: 1.1415255, z: 8.371183}
+        rotation: {x: 0.8098038, y: -0.16561338, z: 0.029201172, w: 0.56208324}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.13525575, y: 0.27640998, z: 13.101568}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.21145704, y: 0.75562215, z: 8.319528}
-        rotation: {x: 0.94883054, y: 0.08778316, z: 0.27301487, w: -0.13220474}
+        position: {x: 0.19224463, y: 0.9141753, z: 8.294933}
+        rotation: {x: 0.7519411, y: -0.29643175, z: 0.16113397, w: 0.5663472}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.1743105, y: 0.26595592, z: 12.653856}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.1435229, y: 1.1344523, z: 8.351611}
-        rotation: {x: -0.06877267, y: 0.5698496, z: 0.8123238, w: -0.1033049}
+        position: {x: 0.21145704, y: 0.75562215, z: 8.319528}
+        rotation: {x: 0.94883054, y: 0.08778316, z: 0.27301487, w: -0.13220474}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.032504648, y: 0.18135667, z: 13.58058}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.17737709, y: 0.90831006, z: 8.260613}
-        rotation: {x: 0.055729367, y: 0.5879461, z: 0.7806035, w: -0.20462736}
+        position: {x: -0.1435229, y: 1.1344523, z: 8.351611}
+        rotation: {x: -0.06877267, y: 0.5698496, z: 0.8123238, w: -0.1033049}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.12357429, y: 0.0818187, z: 13.944664}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.20650183, y: 0.7498434, z: 8.27299}
-        rotation: {x: 0.14450873, y: -0.2089828, z: 0.9665274, w: 0.03561774}
+        position: {x: -0.17737709, y: 0.90831006, z: 8.260613}
+        rotation: {x: 0.055729367, y: 0.5879461, z: 0.7806035, w: -0.20462736}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.08944169, y: 0.12083292, z: 14.21607}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: -0.005089643, y: 1.1919985, z: 8.365688}
-        rotation: {x: -0.48065472, y: 0.4820867, z: -0.5087978, w: 0.5269616}
+        position: {x: -0.20650183, y: 0.7498434, z: 8.27299}
+        rotation: {x: 0.14450873, y: -0.2089828, z: 0.9665274, w: 0.03561774}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.014634235, y: 0.14538288, z: 13.550425}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: -0.009663702, y: 1.2817881, z: 8.408413}
-        rotation: {x: -0.45285577, y: 0.53534675, z: -0.4644237, w: 0.5409589}
+        position: {x: -0.005089643, y: 1.1919985, z: 8.365688}
+        rotation: {x: -0.48065472, y: 0.4820867, z: -0.5087978, w: 0.5269616}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.013883691, y: 0.1429236, z: 13.557615}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: -0.009663702, y: 1.2817881, z: 8.408413}
+        rotation: {x: -0.45285577, y: 0.53534675, z: -0.4644237, w: 0.5409589}
       motionTrajectoryDataList:
       - position: {x: -0.0036406908, y: 0, z: 8.380516}
         velocity: {x: -0.0030788826, y: 0, z: 1.3213825}
@@ -1939,81 +2539,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.3022676
       motionBoneDataList:
-      - position: {x: -0.007813906, y: 0.7564291, z: 9.7015}
-        rotation: {x: -0.47465163, y: 0.49340972, z: -0.5088499, w: 0.5218471}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.005888613, y: -0.13198256, z: 14.652653}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.08202968, y: 0.75693107, z: 9.696852}
-        rotation: {x: 0.51334524, y: 0.5223256, z: -0.5309452, w: -0.4263216}
+        position: {x: -0.007813906, y: 0.7564291, z: 9.7015}
+        rotation: {x: -0.47465163, y: 0.49340972, z: -0.5088499, w: 0.5218471}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.003324598, y: -0.11087775, z: 14.626322}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.08165237, y: 0.40810946, z: 9.776665}
-        rotation: {x: 0.48477402, y: 0.55585134, z: -0.5238173, w: -0.42619145}
+        position: {x: -0.08202968, y: 0.75693107, z: 9.696852}
+        rotation: {x: 0.51334524, y: 0.5223256, z: -0.5309452, w: -0.4263216}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.05097121, y: -0.20017743, z: 13.89245}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.04909289, y: 0.120977044, z: 9.612455}
-        rotation: {x: 0.531072, y: 0.57463926, z: -0.43292475, w: -0.4475809}
+        position: {x: -0.08165237, y: 0.40810946, z: 9.776665}
+        rotation: {x: 0.48477402, y: 0.55585134, z: -0.5238173, w: -0.42619145}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.06572686, y: 0.12636662, z: 13.442783}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.06640194, y: 0.75592715, z: 9.706148}
-        rotation: {x: 0.6175686, y: 0.36389658, z: -0.5818608, w: -0.38422197}
+        position: {x: -0.04909289, y: 0.120977044, z: 9.612455}
+        rotation: {x: 0.531072, y: 0.57463926, z: -0.43292475, w: -0.4475809}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.00845246, y: -0.15308738, z: 14.678984}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.08036953, y: 0.45856795, z: 9.904716}
-        rotation: {x: 0.47710428, y: 0.47533622, z: -0.48545626, w: -0.5574581}
+        position: {x: 0.06640194, y: 0.75592715, z: 9.706148}
+        rotation: {x: 0.6175686, y: 0.36389658, z: -0.5818608, w: -0.38422197}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.03877558, y: -0.13831228, z: 14.702816}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.07441899, y: 0.18768716, z: 9.712212}
-        rotation: {x: 0.3117533, y: 0.5175829, z: -0.4963333, w: -0.62335503}
+        position: {x: 0.08036953, y: 0.45856795, z: 9.904716}
+        rotation: {x: 0.47710428, y: 0.47533622, z: -0.48545626, w: -0.5574581}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.07253192, y: -0.7475585, z: 16.797571}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.13475409, y: 1.153845, z: 9.722043}
-        rotation: {x: 0.8535169, y: -0.17230842, z: -0.009922493, w: 0.49165118}
+        position: {x: 0.07441899, y: 0.18768716, z: 9.712212}
+        rotation: {x: 0.3117533, y: 0.5175829, z: -0.4963333, w: -0.62335503}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.043253005, y: -0.14761448, z: 14.594526}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.17871906, y: 0.9418163, z: 9.60509}
-        rotation: {x: 0.8220378, y: -0.31248772, z: 0.095317975, w: 0.46639085}
+        position: {x: 0.13475409, y: 1.153845, z: 9.722043}
+        rotation: {x: 0.8535169, y: -0.17230842, z: -0.009922493, w: 0.49165118}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.009595454, y: -0.0021862984, z: 14.3473625}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.194026, y: 0.78221774, z: 9.584913}
-        rotation: {x: 0.9290738, y: 0.0128266215, z: 0.22957551, w: -0.2897463}
+        position: {x: 0.17871906, y: 0.9418163, z: 9.60509}
+        rotation: {x: 0.8220378, y: -0.31248772, z: 0.095317975, w: 0.46639085}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.033156276, y: 0.06304979, z: 14.047785}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.14677337, y: 1.152588, z: 9.709669}
-        rotation: {x: -0.017265253, y: 0.61928165, z: 0.7733483, w: -0.13462906}
+        position: {x: 0.194026, y: 0.78221774, z: 9.584913}
+        rotation: {x: 0.9290738, y: 0.0128266215, z: 0.22957551, w: -0.2897463}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.042333007, y: -0.1176846, z: 14.65621}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.18973452, y: 0.9164919, z: 9.65508}
-        rotation: {x: 0.10891383, y: 0.63588804, z: 0.7283501, w: -0.23084812}
+        position: {x: -0.14677337, y: 1.152588, z: 9.709669}
+        rotation: {x: -0.017265253, y: 0.61928165, z: 0.7733483, w: -0.13462906}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.06037891, y: -0.15013933, z: 14.990196}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.215446, y: 0.7619267, z: 9.694597}
-        rotation: {x: 0.18867567, y: -0.06958176, z: 0.9772704, w: 0.06710468}
+        position: {x: -0.18973452, y: 0.9164919, z: 9.65508}
+        rotation: {x: 0.10891383, y: 0.63588804, z: 0.7283501, w: -0.23084812}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.06281331, y: -0.05897522, z: 15.249548}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: -0.0065530664, y: 1.2065368, z: 9.720731}
-        rotation: {x: -0.48094374, y: 0.4954195, z: -0.505593, w: 0.5173285}
+        position: {x: -0.215446, y: 0.7619267, z: 9.694597}
+        rotation: {x: 0.18867567, y: -0.06958176, z: 0.9772704, w: 0.06710468}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.049402718, y: -0.13179183, z: 14.628782}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: -0.008275333, y: 1.2960805, z: 9.764174}
-        rotation: {x: -0.44470316, y: 0.54592264, z: -0.4584002, w: 0.54228884}
+        position: {x: -0.0065530664, y: 1.2065368, z: 9.720731}
+        rotation: {x: -0.48094374, y: 0.4954195, z: -0.505593, w: 0.5173285}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.0678323, y: -0.13200164, z: 14.629564}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: -0.008275333, y: 1.2960805, z: 9.764174}
+        rotation: {x: -0.44470316, y: 0.54592264, z: -0.4584002, w: 0.54228884}
       motionTrajectoryDataList:
       - position: {x: -0.0026880947, y: 0, z: 9.841987}
         velocity: {x: 0.024744015, y: 0, z: 1.3020325}
@@ -2035,81 +2665,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.3896838
       motionBoneDataList:
-      - position: {x: -0.008402768, y: 0.7432308, z: 11.166765}
-        rotation: {x: -0.45868766, y: 0.4905557, z: -0.52482456, w: 0.5229913}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.115707494, y: -0.19426703, z: 14.727802}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.08236214, y: 0.7458433, z: 11.159484}
-        rotation: {x: 0.483175, y: 0.5844771, z: -0.4581219, w: -0.4637381}
+        position: {x: -0.008402768, y: 0.7432308, z: 11.166765}
+        rotation: {x: -0.45868766, y: 0.4905557, z: -0.52482456, w: 0.5229913}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.114938915, y: -0.20550787, z: 14.732599}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.086749494, y: 0.3880917, z: 11.16591}
-        rotation: {x: 0.45317033, y: 0.6108304, z: -0.46725535, w: -0.45077214}
+        position: {x: -0.08236214, y: 0.7458433, z: 11.159484}
+        rotation: {x: 0.483175, y: 0.5844771, z: -0.4581219, w: -0.4637381}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.032022074, y: -0.18764347, z: 14.32559}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.042520203, y: 0.1336137, z: 10.956734}
-        rotation: {x: 0.51187134, y: 0.60183173, z: -0.42115235, w: -0.44544083}
+        position: {x: -0.086749494, y: 0.3880917, z: 11.16591}
+        rotation: {x: 0.45317033, y: 0.6108304, z: -0.46725535, w: -0.45077214}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.103421584, y: 0.38639307, z: 13.758602}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.0655567, y: 0.7406184, z: 11.1740465}
-        rotation: {x: 0.622694, y: 0.36285886, z: -0.57931983, w: -0.3807551}
+        position: {x: -0.042520203, y: 0.1336137, z: 10.956734}
+        rotation: {x: 0.51187134, y: 0.60183173, z: -0.42115235, w: -0.44544083}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.116475895, y: -0.1830262, z: 14.723005}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.076491974, y: 0.44473672, z: 11.374997}
-        rotation: {x: 0.63358754, y: 0.28542888, z: -0.61423457, w: -0.3739161}
+        position: {x: 0.0655567, y: 0.7406184, z: 11.1740465}
+        rotation: {x: 0.622694, y: 0.36285886, z: -0.57931983, w: -0.3807551}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.02155006, y: -0.24142921, z: 14.637098}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.0671658, y: 0.11293131, z: 11.391969}
-        rotation: {x: 0.5435607, y: 0.28151235, z: -0.61626446, w: -0.49549043}
+        position: {x: 0.076491974, y: 0.44473672, z: 11.374997}
+        rotation: {x: 0.63358754, y: 0.28542888, z: -0.61423457, w: -0.3739161}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: -0.0631699, y: -0.2240932, z: 14.833517}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.13907939, y: 1.1390835, z: 11.181496}
-        rotation: {x: 0.8793524, y: -0.1784066, z: -0.028586283, w: 0.44056064}
+        position: {x: 0.0671658, y: 0.11293131, z: 11.391969}
+        rotation: {x: 0.5435607, y: 0.28151235, z: -0.61626446, w: -0.49549043}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.14898136, y: -0.22853255, z: 14.650784}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.17775951, y: 0.94159764, z: 11.039826}
-        rotation: {x: 0.860546, y: -0.3255986, z: 0.06083455, w: 0.38696948}
+        position: {x: 0.13907939, y: 1.1390835, z: 11.181496}
+        rotation: {x: 0.8793524, y: -0.1784066, z: -0.028586283, w: 0.44056064}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.05571142, y: -0.20285964, z: 14.593973}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.19071037, y: 0.7885227, z: 10.989692}
-        rotation: {x: 0.8996232, y: -0.011140674, z: 0.20165226, w: -0.3871576}
+        position: {x: 0.17775951, y: 0.94159764, z: 11.039826}
+        rotation: {x: 0.860546, y: -0.3255986, z: 0.06083455, w: 0.38696948}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.08257836, y: -0.17130852, z: 14.512863}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.14254007, y: 1.1408195, z: 11.17529}
-        rotation: {x: 0.027508594, y: 0.6621946, z: 0.73487604, w: -0.14387268}
+        position: {x: 0.19071037, y: 0.7885227, z: 10.989692}
+        rotation: {x: 0.8996232, y: -0.011140674, z: 0.20165226, w: -0.3871576}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.15436962, y: -0.17135859, z: 14.717875}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.19577241, y: 0.901478, z: 11.154099}
-        rotation: {x: 0.15669653, y: 0.6840673, z: 0.673484, w: -0.23220152}
+        position: {x: -0.14254007, y: 1.1408195, z: 11.17529}
+        rotation: {x: 0.027508594, y: 0.6621946, z: 0.73487604, w: -0.14387268}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.0937511, y: -0.16638458, z: 14.908066}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.22172733, y: 0.7560292, z: 11.219552}
-        rotation: {x: 0.22300306, y: 0.08865318, z: 0.9657034, w: 0.099134}
+        position: {x: -0.19577241, y: 0.901478, z: 11.154099}
+        rotation: {x: 0.15669653, y: 0.6840673, z: 0.673484, w: -0.23220152}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.054695755, y: -0.09337783, z: 15.036907}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: -0.0016127946, y: 1.1933576, z: 11.183609}
-        rotation: {x: -0.48270527, y: 0.503203, z: -0.5037769, w: 0.5098934}
+        position: {x: -0.22172733, y: 0.7560292, z: 11.219552}
+        rotation: {x: 0.22300306, y: 0.08865318, z: 0.9657034, w: 0.099134}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.16390495, y: -0.19407988, z: 14.678249}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: -0.0014921026, y: 1.2828803, z: 11.227131}
-        rotation: {x: -0.45211366, y: 0.54683733, z: -0.4567243, w: 0.536624}
+        position: {x: -0.0016127946, y: 1.1933576, z: 11.183609}
+        rotation: {x: -0.48270527, y: 0.503203, z: -0.5037769, w: 0.5098934}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0.19236717, y: -0.18753052, z: 14.663458}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: -0.0014921026, y: 1.2828803, z: 11.227131}
+        rotation: {x: -0.45211366, y: 0.54683733, z: -0.4567243, w: 0.536624}
       motionTrajectoryDataList:
       - position: {x: 0.0065827323, y: 0, z: 11.3055105}
         velocity: {x: 0.04826647, y: 0, z: 1.3888454}
@@ -2131,81 +2791,111 @@ MonoBehaviour:
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.3773686
       motionBoneDataList:
-      - position: {x: 0.0031679817, y: 0.7238041, z: 12.639545}
-        rotation: {x: -0.4686554, y: 0.4843862, z: -0.5242416, w: 0.5204834}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanHips
         boneIndex: 1
-      - position: {x: -0.070868246, y: 0.7252925, z: 12.632744}
-        rotation: {x: 0.4583688, y: 0.6001048, z: -0.42298046, w: -0.5008591}
+        position: {x: 0.0031679817, y: 0.7238041, z: 12.639545}
+        rotation: {x: -0.4686554, y: 0.4843862, z: -0.5242416, w: 0.5204834}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanLeftUpLeg
         boneIndex: 3
-      - position: {x: -0.08354729, y: 0.36932737, z: 12.598469}
-        rotation: {x: 0.38625023, y: 0.6496536, z: -0.399497, w: -0.5188095}
+        position: {x: -0.070868246, y: 0.7252925, z: 12.632744}
+        rotation: {x: 0.4583688, y: 0.6001048, z: -0.42298046, w: -0.5008591}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanLeftLeg
         boneIndex: 4
-      - position: {x: -0.05286236, y: 0.17225301, z: 12.332594}
-        rotation: {x: 0.4354386, y: 0.64969313, z: -0.3542582, w: -0.51263374}
+        position: {x: -0.08354729, y: 0.36932737, z: 12.598469}
+        rotation: {x: 0.38625023, y: 0.6496536, z: -0.399497, w: -0.5188095}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanLeftFoot
         boneIndex: 5
-      - position: {x: 0.07720429, y: 0.7223158, z: 12.646347}
-        rotation: {x: 0.63256973, y: 0.3738227, z: -0.55699605, w: -0.38712776}
+        position: {x: -0.05286236, y: 0.17225301, z: 12.332594}
+        rotation: {x: 0.4354386, y: 0.64969313, z: -0.3542582, w: -0.51263374}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanRightUpLeg
         boneIndex: 8
-      - position: {x: 0.07433697, y: 0.4205938, z: 12.838707}
-        rotation: {x: 0.67207336, y: 0.2805832, z: -0.5933795, w: -0.34277052}
+        position: {x: 0.07720429, y: 0.7223158, z: 12.646347}
+        rotation: {x: 0.63256973, y: 0.3738227, z: -0.55699605, w: -0.38712776}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanRightLeg
         boneIndex: 9
-      - position: {x: 0.06084881, y: 0.09052199, z: 12.87532}
-        rotation: {x: 0.5716138, y: 0.32227483, z: -0.57624394, w: -0.48717543}
+        position: {x: 0.07433697, y: 0.4205938, z: 12.838707}
+        rotation: {x: 0.67207336, y: 0.2805832, z: -0.5933795, w: -0.34277052}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanRightFoot
         boneIndex: 10
-      - position: {x: 0.15397753, y: 1.1162302, z: 12.646574}
-        rotation: {x: 0.88176525, y: -0.15233165, z: -0.06402697, w: 0.44179872}
+        position: {x: 0.06084881, y: 0.09052199, z: 12.87532}
+        rotation: {x: 0.5716138, y: 0.32227483, z: -0.57624394, w: -0.48717543}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanRightArm
         boneIndex: 58
-      - position: {x: 0.18333066, y: 0.9213117, z: 12.499224}
-        rotation: {x: 0.87981033, y: -0.27905694, z: 0.016126934, w: 0.38444915}
+        position: {x: 0.15397753, y: 1.1162302, z: 12.646574}
+        rotation: {x: 0.88176525, y: -0.15233165, z: -0.06402697, w: 0.44179872}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanRightForeArm
         boneIndex: 59
-      - position: {x: 0.1989682, y: 0.77139187, z: 12.440978}
-        rotation: {x: 0.88443345, y: -0.028248787, z: 0.13775438, w: -0.44497585}
+        position: {x: 0.18333066, y: 0.9213117, z: 12.499224}
+        rotation: {x: 0.87981033, y: -0.27905694, z: 0.016126934, w: 0.38444915}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanRightHand
         boneIndex: 60
-      - position: {x: -0.1271031, y: 1.1236837, z: 12.647078}
-        rotation: {x: 0.04735759, y: 0.68778485, z: 0.71082294, w: -0.13942869}
+        position: {x: 0.1989682, y: 0.77139187, z: 12.440978}
+        rotation: {x: 0.88443345, y: -0.028248787, z: 0.13775438, w: -0.44497585}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanLeftArm
         boneIndex: 34
-      - position: {x: -0.1863973, y: 0.88483953, z: 12.644906}
-        rotation: {x: 0.17321402, y: 0.71317536, z: 0.64455116, w: -0.21431705}
+        position: {x: -0.1271031, y: 1.1236837, z: 12.647078}
+        rotation: {x: 0.04735759, y: 0.68778485, z: 0.71082294, w: -0.13942869}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanLeftForeArm
         boneIndex: 35
-      - position: {x: -0.21625775, y: 0.7466914, z: 12.723243}
-        rotation: {x: 0.22211772, y: 0.1629916, z: 0.9528998, w: 0.12680605}
+        position: {x: -0.1863973, y: 0.88483953, z: 12.644906}
+        rotation: {x: 0.17321402, y: 0.71317536, z: 0.64455116, w: -0.21431705}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanLeftHand
         boneIndex: 36
-      - position: {x: 0.0147776995, y: 1.1739496, z: 12.651434}
-        rotation: {x: -0.48725566, y: 0.50992733, z: -0.5075222, w: 0.4949519}
+        position: {x: -0.21625775, y: 0.7466914, z: 12.723243}
+        rotation: {x: 0.22211772, y: 0.1629916, z: 0.9528998, w: 0.12680605}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanNeck
         boneIndex: 15
-      - position: {x: 0.017744614, y: 1.2641273, z: 12.693477}
-        rotation: {x: -0.4593948, y: 0.5471514, z: -0.46117088, w: 0.5262159}
+        position: {x: 0.0147776995, y: 1.1739496, z: 12.651434}
+        rotation: {x: -0.48725566, y: 0.50992733, z: -0.5075222, w: 0.4949519}
+      - localPosition: {x: 0, y: 0, z: 0}
+        localRotation: {x: 0, y: 0, z: 0, w: 0}
         velocity: {x: 0, y: 0, z: 0}
         boneName: EthanHead
         boneIndex: 16
+        position: {x: 0.017744614, y: 1.2641273, z: 12.693477}
+        rotation: {x: -0.4593948, y: 0.5471514, z: -0.46117088, w: 0.5262159}
       motionTrajectoryDataList:
       - position: {x: 0.016327422, y: 0, z: 12.703221}
         velocity: {x: 0.019561406, y: 0, z: 1.3772297}

@@ -41,7 +41,6 @@ public class MotionMatchingBakeDebugEditor : Editor
                             Transform bone = joints[motionBoneData.boneIndex];
                             if (bone)
                             {
-                                //Vector3 bonePosition = bone.transform.TransformPoint(motionBoneData.position);
                                 Vector3 bonePosition = motionBoneData.position;
                                 Handles.color = Color.green;
                                 Handles.SphereHandleCap(0, bonePosition, Quaternion.identity, size, EventType.Repaint);

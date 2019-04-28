@@ -33,8 +33,6 @@ public class MotionMatcher : MonoBehaviour
 
     public string AcquireMatchedMotion(float velocity, Vector3 direction, float acceleration, float brake)
     {
-        return bestMotionName;
-
         if (currentComputeTime >= motionMatcherSettings.ComputeMotionsBestCostGap)
         {
             currentComputeTime = 0;
@@ -71,8 +69,8 @@ public class MotionMatcher : MonoBehaviour
             Transform bone = motionOwner.Find(captureBone);
             currentMotionFrameData.motionBoneDataList[j] = new MotionBoneData();
             MotionBoneData motionBoneData = currentMotionFrameData.motionBoneDataList[j];
-            motionBoneData.position = bone.position;
-            motionBoneData.rotation = bone.rotation;
+            motionBoneData.localPosition = bone.localPosition;
+            motionBoneData.localRotation = bone.localRotation;
             //motionBoneData.velocity = velocity;
         }
     }
