@@ -22,12 +22,9 @@ public class MotionMatchingBakeEditor : EditorWindow
     private Dictionary<string, int> frameSkips = new Dictionary<string, int>();
     private Dictionary<string, bool> bakeAnims = new Dictionary<string, bool>();
 
-    HashSet<string> positionPathHash = new HashSet<string>();
-    HashSet<string> rotationPathHash = new HashSet<string>();
     Dictionary<string, int> bonesMap = new Dictionary<string, int>();
     Transform[] joints = null;
-    const string positionPath = "m_LocalPosition";
-    const string rotationPath = "m_LocalRotation";
+
     public static string RootBoneName = "EthanSkeleton";
     const string MotionMatcherSettingsPath = "Assets/Resources/MotionMatcherSettings.asset";
 
@@ -310,31 +307,6 @@ public class MotionMatchingBakeEditor : EditorWindow
         }
     }
 
-    private void InitAnimationClipHashPath(AnimationClip clip)
-    {
-        positionPathHash.Clear();
-        rotationPathHash.Clear();
-        EditorCurveBinding[] curveBindings = AnimationUtility.GetCurveBindings(clip);
-        foreach (EditorCurveBinding item in curveBindings)
-        {
-            string path = item.path;
-            string propertyName = item.propertyName;
-            if (propertyName.Length > positionPath.Length)
-            {
-                if (propertyName.IndexOf(positionPath) >= 0)
-                {
-                    positionPathHash.Remove(path);
-                    positionPathHash.Add(path);
-                }
-                else if (propertyName.IndexOf(rotationPath) >= 0)
-                {
-                    rotationPathHash.Remove(path);
-                    rotationPathHash.Add(path);
-                }
-            }
-        }
-    }
-
     private void InitAnimationBones(GameObject animationTarget)
     {
         bonesMap.Clear();
@@ -419,7 +391,6 @@ public class MotionMatchingBakeEditor : EditorWindow
         for (int x = 0; x < clips.Count; x++)
         {
             AnimationClip animClip = clips[x];
-            InitAnimationClipHashPath(animClip);
 
             if (bakeAnims.ContainsKey(animClip.name) && bakeAnims[animClip.name] == false)
             {
@@ -476,45 +447,6 @@ public class MotionMatchingBakeEditor : EditorWindow
                 float bakeDelta = Mathf.Clamp01(((float)i / bakeFrames));
                 EditorUtility.DisplayProgressBar("Baking Animation", string.Format("Processing: {0} Frame: {1}", animClip.name, i), bakeDelta);
                 float animationTime = bakeDelta * animClip.length;
-
-                //foreach (string path in positionPathHash)
-                //{
-                //    string boneName = path.Substring(path.LastIndexOf("/") + 1);
-                //    if (bonesMap.ContainsKey(boneName))
-                //    {
-                //        Transform child = joints[bonesMap[boneName]];
-                //        float postionX = GetAnimationClipCurve(animClip, path, positionPath + ".x", bakeDelta);
-                //        float postionY = GetAnimationClipCurve(animClip, path, positionPath + ".y", bakeDelta);
-                //        float postionZ = GetAnimationClipCurve(animClip, path, positionPath + ".z", bakeDelta);
-                //        child.localPosition = new Vector3(postionX, postionY, postionZ);
-                //    }
-                //}
-
-                //foreach (string path in rotationPathHash)
-                //{
-                //    string boneName = path.Substring(path.LastIndexOf("/") + 1);
-                //    if (bonesMap.ContainsKey(boneName))
-                //    {
-                //        Transform child = joints[bonesMap[boneName]];
-                //        float rotationX = GetAnimationClipCurve(animClip, path, rotationPath + ".x", bakeDelta);
-                //        float rotationY = GetAnimationClipCurve(animClip, path, rotationPath + ".y", bakeDelta);
-                //        float rotationZ = GetAnimationClipCurve(animClip, path, rotationPath + ".z", bakeDelta);
-                //        float rotationW = GetAnimationClipCurve(animClip, path, rotationPath + ".w", bakeDelta);
-                //        Quaternion rotation = new Quaternion(rotationX, rotationY, rotationZ, rotationW);
-                //        float r = rotationX * rotationX + rotationY * rotationY + rotationZ * rotationZ + rotationW * rotationW;
-                //        if (r >= .1f)
-                //        {
-                //            r = 1.0f / Mathf.Sqrt(r);
-                //            rotation.x *= r;
-                //            rotation.y *= r;
-                //            rotation.z *= r;
-                //            rotation.w *= r;
-                //        }
-
-                //        child.localRotation = rotation;
-                //    }
-                //}
-
                 MotionFrameData motionFrameData = motionData.motionFrameDataList[frame];
                 MotionFrameData lastMotionFrameData = frame > 0 ? motionData.motionFrameDataList[frame - 1] : null;
 
