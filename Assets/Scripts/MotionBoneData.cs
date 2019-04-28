@@ -9,4 +9,8 @@ public class MotionBoneData
     public Quaternion rotation;
     //Bone Velocity
     public Vector3 velocity;
+
+    //Debug
+    public string boneName;
+    public int boneIndex;
 }

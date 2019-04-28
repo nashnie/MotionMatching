@@ -28,7 +28,7 @@ public class MotionMatchingBakeEditor : EditorWindow
     Transform[] joints = null;
     const string positionPath = "m_LocalPosition";
     const string rotationPath = "m_LocalRotation";
-    const string RootBoneName = "EthanSkeleton";
+    public static string RootBoneName = "EthanSkeleton";
     const string MotionMatcherSettingsPath = "Assets/Resources/MotionMatcherSettings.asset";
 
     [SerializeField]
@@ -526,6 +526,10 @@ public class MotionMatchingBakeEditor : EditorWindow
             animCount++;
         }
 
+        //string TargetPath = Application.dataPath + "/Resources/" + sampleGO.name + "_MotionField1.asset";
+        //AssetDatabase.DeleteAsset(TargetPath);
+        //AssetDatabase.CreateAsset(meshAnimationList, TargetPath);
+
         AssetDatabase.CreateAsset(meshAnimationList, assetFolder + sampleGO.name + "_MotionField.asset");
 
         GameObject.DestroyImmediate(sampleGO);
@@ -803,21 +807,26 @@ public class MotionMatchingBakeEditor : EditorWindow
 
     private void CaptureBoneSnapShot(AnimationClip animClip, MotionFrameData motionFrameData, MotionFrameData lastMotionFrameData, GameObject sampleGO, float bakeFrames, float CurrentFrame)
     {
-        for (int k = 0; k < bonesMap.Count; k++)
+        int index = 0;
+        foreach (string boneName in bonesMap.Keys)
         {
-            Transform child = joints[k];
-            MotionBoneData motionBoneData = motionFrameData.motionBoneDataList[k];
+            int boneIndex = bonesMap[boneName];
+            Transform child = joints[boneIndex];
+            MotionBoneData motionBoneData = motionFrameData.motionBoneDataList[index];
             motionBoneData.position = child.localPosition;
             motionBoneData.rotation = child.localRotation;
             motionBoneData.velocity = Vector3.zero;
+            motionBoneData.boneName = child.name;
+            motionBoneData.boneIndex = boneIndex;
 
             //calc velocity
             if (lastMotionFrameData != null)
             {
-                MotionBoneData lastMotionBoneData = lastMotionFrameData.motionBoneDataList[k];
+                MotionBoneData lastMotionBoneData = lastMotionFrameData.motionBoneDataList[index];
                 float frameSkipsTimeStep = frameSkips[animClip.name] / (float)fps;
                 lastMotionBoneData.velocity = (motionBoneData.position - lastMotionBoneData.position) / frameSkipsTimeStep;
             }
+            index++;
         }
     }
 

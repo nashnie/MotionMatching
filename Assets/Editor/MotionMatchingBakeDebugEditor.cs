@@ -22,6 +22,9 @@ public class MotionMatchingBakeDebugEditor : Editor
         currentMotionsData = motionMatcher.motionsData;
         if (currentMotionsData)
         {
+            Transform child = motionMatcher.transform.Find(MotionMatchingBakeEditor.RootBoneName);
+            Transform[] joints = child.GetComponentsInChildren<Transform>();
+
             for (int i = 0; i < currentMotionsData.motionDataList.Length; i++)
             {
                 MotionData motionData = currentMotionsData.motionDataList[i];
@@ -35,8 +38,13 @@ public class MotionMatchingBakeDebugEditor : Editor
                         for (int k = 0; k < motionFrameData.motionBoneDataList.Length; k++)
                         {
                             MotionBoneData motionBoneData = motionFrameData.motionBoneDataList[k];
-                            Handles.color = Color.green;
-                            Handles.SphereHandleCap(0, motionBoneData.position, motionBoneData.rotation * Quaternion.LookRotation(Vector3.right), size, EventType.Repaint);
+                            Transform bone = joints[motionBoneData.boneIndex];
+                            if (bone)
+                            {
+                                Vector3 bonePosition = bone.transform.TransformPoint(motionBoneData.position);
+                                Handles.color = Color.green;
+                                Handles.SphereHandleCap(0, bonePosition, Quaternion.identity, size, EventType.Repaint);
+                            }
                         }
 
                         for (int l = 0; l < motionFrameData.motionTrajectoryDataList.Length; l++)
@@ -45,6 +53,8 @@ public class MotionMatchingBakeDebugEditor : Editor
                             Handles.color = Color.red;
                             Handles.SphereHandleCap(0, motionTrajectoryData.position, Quaternion.identity, size, EventType.Repaint);
                         }
+
+                        break;
                     }
                 }         
             }
