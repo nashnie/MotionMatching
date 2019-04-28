@@ -41,7 +41,8 @@ public class MotionMatchingBakeDebugEditor : Editor
                             Transform bone = joints[motionBoneData.boneIndex];
                             if (bone)
                             {
-                                Vector3 bonePosition = bone.transform.TransformPoint(motionBoneData.position);
+                                //Vector3 bonePosition = bone.transform.TransformPoint(motionBoneData.position);
+                                Vector3 bonePosition = motionBoneData.position;
                                 Handles.color = Color.green;
                                 Handles.SphereHandleCap(0, bonePosition, Quaternion.identity, size, EventType.Repaint);
                             }
@@ -50,11 +51,9 @@ public class MotionMatchingBakeDebugEditor : Editor
                         for (int l = 0; l < motionFrameData.motionTrajectoryDataList.Length; l++)
                         {
                             MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[l];
-                            Handles.color = Color.red;
+                            Handles.color = Color.yellow;
                             Handles.SphereHandleCap(0, motionTrajectoryData.position, Quaternion.identity, size, EventType.Repaint);
                         }
-
-                        break;
                     }
                 }         
             }

@@ -477,43 +477,43 @@ public class MotionMatchingBakeEditor : EditorWindow
                 EditorUtility.DisplayProgressBar("Baking Animation", string.Format("Processing: {0} Frame: {1}", animClip.name, i), bakeDelta);
                 float animationTime = bakeDelta * animClip.length;
 
-                foreach (string path in positionPathHash)
-                {
-                    string boneName = path.Substring(path.LastIndexOf("/") + 1);
-                    if (bonesMap.ContainsKey(boneName))
-                    {
-                        Transform child = joints[bonesMap[boneName]];
-                        float postionX = GetAnimationClipCurve(animClip, path, positionPath + ".x", bakeDelta);
-                        float postionY = GetAnimationClipCurve(animClip, path, positionPath + ".y", bakeDelta);
-                        float postionZ = GetAnimationClipCurve(animClip, path, positionPath + ".z", bakeDelta);
-                        child.localPosition = new Vector3(postionX, postionY, postionZ);
-                    }
-                }
+                //foreach (string path in positionPathHash)
+                //{
+                //    string boneName = path.Substring(path.LastIndexOf("/") + 1);
+                //    if (bonesMap.ContainsKey(boneName))
+                //    {
+                //        Transform child = joints[bonesMap[boneName]];
+                //        float postionX = GetAnimationClipCurve(animClip, path, positionPath + ".x", bakeDelta);
+                //        float postionY = GetAnimationClipCurve(animClip, path, positionPath + ".y", bakeDelta);
+                //        float postionZ = GetAnimationClipCurve(animClip, path, positionPath + ".z", bakeDelta);
+                //        child.localPosition = new Vector3(postionX, postionY, postionZ);
+                //    }
+                //}
 
-                foreach (string path in rotationPathHash)
-                {
-                    string boneName = path.Substring(path.LastIndexOf("/") + 1);
-                    if (bonesMap.ContainsKey(boneName))
-                    {
-                        Transform child = joints[bonesMap[boneName]];
-                        float rotationX = GetAnimationClipCurve(animClip, path, rotationPath + ".x", bakeDelta);
-                        float rotationY = GetAnimationClipCurve(animClip, path, rotationPath + ".y", bakeDelta);
-                        float rotationZ = GetAnimationClipCurve(animClip, path, rotationPath + ".z", bakeDelta);
-                        float rotationW = GetAnimationClipCurve(animClip, path, rotationPath + ".w", bakeDelta);
-                        Quaternion rotation = new Quaternion(rotationX, rotationY, rotationZ, rotationW);
-                        float r = rotationX * rotationX + rotationY * rotationY + rotationZ * rotationZ + rotationW * rotationW;
-                        if (r >= .1f)
-                        {
-                            r = 1.0f / Mathf.Sqrt(r);
-                            rotation.x *= r;
-                            rotation.y *= r;
-                            rotation.z *= r;
-                            rotation.w *= r;
-                        }
+                //foreach (string path in rotationPathHash)
+                //{
+                //    string boneName = path.Substring(path.LastIndexOf("/") + 1);
+                //    if (bonesMap.ContainsKey(boneName))
+                //    {
+                //        Transform child = joints[bonesMap[boneName]];
+                //        float rotationX = GetAnimationClipCurve(animClip, path, rotationPath + ".x", bakeDelta);
+                //        float rotationY = GetAnimationClipCurve(animClip, path, rotationPath + ".y", bakeDelta);
+                //        float rotationZ = GetAnimationClipCurve(animClip, path, rotationPath + ".z", bakeDelta);
+                //        float rotationW = GetAnimationClipCurve(animClip, path, rotationPath + ".w", bakeDelta);
+                //        Quaternion rotation = new Quaternion(rotationX, rotationY, rotationZ, rotationW);
+                //        float r = rotationX * rotationX + rotationY * rotationY + rotationZ * rotationZ + rotationW * rotationW;
+                //        if (r >= .1f)
+                //        {
+                //            r = 1.0f / Mathf.Sqrt(r);
+                //            rotation.x *= r;
+                //            rotation.y *= r;
+                //            rotation.z *= r;
+                //            rotation.w *= r;
+                //        }
 
-                        child.localRotation = rotation;
-                    }
-                }
+                //        child.localRotation = rotation;
+                //    }
+                //}
 
                 MotionFrameData motionFrameData = motionData.motionFrameDataList[frame];
                 MotionFrameData lastMotionFrameData = frame > 0 ? motionData.motionFrameDataList[frame - 1] : null;
@@ -807,14 +807,39 @@ public class MotionMatchingBakeEditor : EditorWindow
 
     private void CaptureBoneSnapShot(AnimationClip animClip, MotionFrameData motionFrameData, MotionFrameData lastMotionFrameData, GameObject sampleGO, float bakeFrames, float CurrentFrame)
     {
+        float frameSkipsTimeStep = frameSkips[animClip.name] / (float)fps;
+        float bakeDelta = CurrentFrame / bakeFrames;
+        float animationTime = bakeDelta * animClip.length;
+        if (requiresAnimator)
+        {
+            float normalizedTime = animationTime / animClip.length;
+            animator.Play(animClip.name, 0, normalizedTime);
+            animator.Update(frameSkipsTimeStep);
+        }
+        else
+        {
+            GameObject sampleObject = sampleGO;
+            Animation legacyAnimation = sampleObject.GetComponentInChildren<Animation>();
+            if (animator && animator.gameObject != sampleObject)
+            {
+                sampleObject = animator.gameObject;
+            }
+            else if (legacyAnimation && legacyAnimation.gameObject != sampleObject)
+            {
+                sampleObject = legacyAnimation.gameObject;
+            }
+            animClip.SampleAnimation(sampleObject, animationTime);
+        }
+
+
         int index = 0;
         foreach (string boneName in bonesMap.Keys)
         {
             int boneIndex = bonesMap[boneName];
             Transform child = joints[boneIndex];
             MotionBoneData motionBoneData = motionFrameData.motionBoneDataList[index];
-            motionBoneData.position = child.localPosition;
-            motionBoneData.rotation = child.localRotation;
+            motionBoneData.position = child.position;
+            motionBoneData.rotation = child.rotation;
             motionBoneData.velocity = Vector3.zero;
             motionBoneData.boneName = child.name;
             motionBoneData.boneIndex = boneIndex;
@@ -822,8 +847,7 @@ public class MotionMatchingBakeEditor : EditorWindow
             //calc velocity
             if (lastMotionFrameData != null)
             {
-                MotionBoneData lastMotionBoneData = lastMotionFrameData.motionBoneDataList[index];
-                float frameSkipsTimeStep = frameSkips[animClip.name] / (float)fps;
+                MotionBoneData lastMotionBoneData = lastMotionFrameData.motionBoneDataList[index];      
                 lastMotionBoneData.velocity = (motionBoneData.position - lastMotionBoneData.position) / frameSkipsTimeStep;
             }
             index++;
