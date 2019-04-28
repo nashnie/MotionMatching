@@ -7,16 +7,16 @@ using UnityEditor.Animations;
 /// <summary>
 /// Nash
 /// </summary>
-public class MotionMatcherBakeEditor : EditorWindow
+public class MotionMatchingBakeEditor : EditorWindow
 {
     [MenuItem("Tools/BakeMotion")]
     static void MakeWindow()
     {
-        window = GetWindow(typeof(MotionMatcherBakeEditor)) as MotionMatcherBakeEditor;
+        window = GetWindow(typeof(MotionMatchingBakeEditor)) as MotionMatchingBakeEditor;
         window.oColor = GUI.contentColor;
     }
 
-    private static MotionMatcherBakeEditor window;
+    private static MotionMatchingBakeEditor window;
     private Color oColor;
     private Vector2 scrollpos;
     private Dictionary<string, int> frameSkips = new Dictionary<string, int>();

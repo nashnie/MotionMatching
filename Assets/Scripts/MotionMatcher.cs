@@ -14,8 +14,8 @@ public class MotionMatcher : MonoBehaviour
     private MotionFrameData currentMotionFrameData;
     private Transform motionOwner;
 
-    private int bestMotionFrameIndex = -1;
-    private string bestMotionName = "";
+    public int bestMotionFrameIndex = -1;
+    public string bestMotionName = "HumanoidIdle";
 
     private float currentComputeTime;
 
@@ -33,6 +33,8 @@ public class MotionMatcher : MonoBehaviour
 
     public string AcquireMatchedMotion(float velocity, Vector3 direction, float acceleration, float brake)
     {
+        return bestMotionName;
+
         if (currentComputeTime >= motionMatcherSettings.ComputeMotionsBestCostGap)
         {
             currentComputeTime = 0;
