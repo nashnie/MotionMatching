@@ -1,6 +1,6 @@
 # MotionMatching
 1. 解决什么问题？
-![](/images/anim-state-machine.jpg)<br>
+![](/images/anim-state-machine.png)<br>
 让人头疼的状态机，维护成本非常高，这还不是最复杂的状态机。<br>
 
 2. 怎么解决？
