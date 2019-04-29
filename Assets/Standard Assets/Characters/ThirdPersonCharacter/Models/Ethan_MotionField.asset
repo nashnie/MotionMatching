@@ -123,22 +123,28 @@ MonoBehaviour:
         position: {x: -0.006800354, y: 1.3287572, z: 0.042940546}
         rotation: {x: -0.5345546, y: 0.5205092, z: -0.4780922, w: 0.46341127}
       motionTrajectoryDataList:
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
@@ -249,22 +255,28 @@ MonoBehaviour:
         position: {x: 0.008082228, y: 1.3286794, z: 0.03930922}
         rotation: {x: -0.53721684, y: 0.52910393, z: -0.4718259, w: 0.45697653}
       motionTrajectoryDataList:
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
@@ -375,22 +387,28 @@ MonoBehaviour:
         position: {x: 0.024421643, y: 1.3276224, z: 0.038489193}
         rotation: {x: -0.5421704, y: 0.53828114, z: -0.46488982, w: 0.44741789}
       motionTrajectoryDataList:
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
@@ -501,22 +519,28 @@ MonoBehaviour:
         position: {x: 0.03895118, y: 1.3257184, z: 0.039109692}
         rotation: {x: -0.54478, y: 0.5568697, z: -0.44896108, w: 0.43765935}
       motionTrajectoryDataList:
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
@@ -627,22 +651,28 @@ MonoBehaviour:
         position: {x: 0.04585706, y: 1.3259237, z: 0.03584882}
         rotation: {x: -0.5517948, y: 0.5726206, z: -0.44163635, w: 0.41543442}
       motionTrajectoryDataList:
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
@@ -753,22 +783,28 @@ MonoBehaviour:
         position: {x: 0.041897994, y: 1.325994, z: 0.032819487}
         rotation: {x: -0.56950754, y: 0.5834953, z: -0.42766953, w: 0.39024833}
       motionTrajectoryDataList:
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
@@ -879,22 +915,28 @@ MonoBehaviour:
         position: {x: 0.025579475, y: 1.3262101, z: 0.029943472}
         rotation: {x: -0.58050835, y: 0.5835354, z: -0.42082873, w: 0.3813137}
       motionTrajectoryDataList:
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
@@ -1005,22 +1047,28 @@ MonoBehaviour:
         position: {x: 0.004478799, y: 1.3262215, z: 0.029251069}
         rotation: {x: -0.5366062, y: 0.53993046, z: -0.47869426, w: 0.4374714}
       motionTrajectoryDataList:
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
@@ -1131,22 +1179,28 @@ MonoBehaviour:
         position: {x: -0.01564454, y: 1.325937, z: 0.03205292}
         rotation: {x: -0.5224818, y: 0.5157955, z: -0.48563522, w: 0.47447512}
       motionTrajectoryDataList:
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
@@ -1257,22 +1311,28 @@ MonoBehaviour:
         position: {x: -0.0327193, y: 1.3256972, z: 0.03620034}
         rotation: {x: -0.52846134, y: 0.5130827, z: -0.47968704, w: 0.47683942}
       motionTrajectoryDataList:
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
@@ -1383,22 +1443,28 @@ MonoBehaviour:
         position: {x: -0.039848063, y: 1.3257306, z: 0.04079578}
         rotation: {x: -0.5381445, y: 0.51766187, z: -0.4762444, w: 0.4643471}
       motionTrajectoryDataList:
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
@@ -1509,22 +1575,28 @@ MonoBehaviour:
         position: {x: -0.032914862, y: 1.326741, z: 0.042505927}
         rotation: {x: -0.5509279, y: 0.52601844, z: -0.4659472, w: 0.4501964}
       motionTrajectoryDataList:
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 0
@@ -1635,22 +1707,28 @@ MonoBehaviour:
         position: {x: -0.01176125, y: 1.3285055, z: 0.04285088}
         rotation: {x: -0.545376, y: 0.5270736, z: -0.4688068, w: 0.452746}
       motionTrajectoryDataList:
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
-      - position: {x: 0, y: 0, z: 0}
+      - localPosition: {x: 0, y: 0, z: 0}
+        position: {x: 0, y: 0, z: 0}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
   - motionName: HumanoidWalk
@@ -1763,22 +1841,28 @@ MonoBehaviour:
         position: {x: 0.0474861, y: 1.2763023, z: 0.09102693}
         rotation: {x: -0.44716567, y: 0.5530219, z: -0.47151676, w: 0.521423}
       motionTrajectoryDataList:
-      - position: {x: 0.025140636, y: 0, z: 0.06382036}
+      - localPosition: {x: 0.025140636, y: 0, z: 0.06382036}
+        position: {x: 0.025140636, y: 0, z: 0.06382036}
         velocity: {x: 0.022867657, y: 0, z: 1.3330574}
         direction: {x: 0.01715177, y: 0, z: 0.9998529}
-      - position: {x: 0.027427401, y: 0, z: 0.1971261}
+      - localPosition: {x: 0.027427401, y: 0, z: 0.1971261}
+        position: {x: 0.027427401, y: 0, z: 0.1971261}
         velocity: {x: -0.0005185293, y: 0, z: 0.8727705}
         direction: {x: -0.00059411867, y: 0, z: 0.9999998}
-      - position: {x: 0.027271843, y: 0, z: 0.45895725}
+      - localPosition: {x: 0.027271843, y: 0, z: 0.45895725}
+        position: {x: 0.027271843, y: 0, z: 0.45895725}
         velocity: {x: -0.019152965, y: 0, z: 0.5593687}
         direction: {x: -0.034220267, y: 0, z: 0.99941427}
-      - position: {x: 0.01769536, y: 0, z: 0.7386416}
+      - localPosition: {x: 0.01769536, y: 0, z: 0.7386416}
+        position: {x: 0.01769536, y: 0, z: 0.7386416}
         velocity: {x: -0.0031063892, y: 0, z: 0.37539023}
         direction: {x: -0.00827481, y: 0, z: 0.9999658}
-      - position: {x: 0.015520887, y: 0, z: 1.0014148}
+      - localPosition: {x: 0.015520887, y: 0, z: 1.0014148}
+        position: {x: 0.015520887, y: 0, z: 1.0014148}
         velocity: {x: 0.009257341, y: 0, z: 0.40681052}
         direction: {x: 0.022750013, y: 0, z: 0.9997412}
-      - position: {x: 0.024778228, y: 0, z: 1.4082253}
+      - localPosition: {x: 0.024778228, y: 0, z: 1.4082253}
+        position: {x: 0.024778228, y: 0, z: 1.4082253}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.2849174
@@ -1889,22 +1973,28 @@ MonoBehaviour:
         position: {x: 0.04599625, y: 1.2851868, z: 1.5688714}
         rotation: {x: -0.4426264, y: 0.5511224, z: -0.46456385, w: 0.53341055}
       motionTrajectoryDataList:
-      - position: {x: 0.027050857, y: 0, z: 1.5415319}
+      - localPosition: {x: 0.0019102208, y: 0, z: 1.4777116}
+        position: {x: 0.027050857, y: 0, z: 1.5415319}
         velocity: {x: 0.013647154, y: 0, z: 1.2848449}
         direction: {x: 0.010621036, y: 0, z: 0.9999436}
-      - position: {x: 0.028415572, y: 0, z: 1.6700164}
+      - localPosition: {x: 0.0032749362, y: 0, z: 1.606196}
+        position: {x: 0.028415572, y: 0, z: 1.6700164}
         velocity: {x: -0.02276256, y: 0, z: 0.9249238}
         direction: {x: -0.02460275, y: 0, z: 0.99969727}
-      - position: {x: 0.021586804, y: 0, z: 1.9474936}
+      - localPosition: {x: -0.003553832, y: 0, z: 1.8836732}
+        position: {x: 0.021586804, y: 0, z: 1.9474936}
         velocity: {x: -0.012269579, y: 0, z: 0.5323777}
         direction: {x: -0.023040636, y: 0, z: 0.9997345}
-      - position: {x: 0.015452014, y: 0, z: 2.2136824}
+      - localPosition: {x: -0.009688621, y: 0, z: 2.149862}
+        position: {x: 0.015452014, y: 0, z: 2.2136824}
         velocity: {x: 0.0030952746, y: 0, z: 0.3747729}
         direction: {x: 0.008258785, y: 0, z: 0.9999659}
-      - position: {x: 0.017618706, y: 0, z: 2.4760234}
+      - localPosition: {x: -0.007521929, y: 0, z: 2.412203}
+        position: {x: 0.017618706, y: 0, z: 2.4760234}
         velocity: {x: 0.009069473, y: 0, z: 0.4099133}
         direction: {x: 0.02211993, y: 0, z: 0.9997553}
-      - position: {x: 0.026688179, y: 0, z: 2.8859367}
+      - localPosition: {x: 0.0015475433, y: 0, z: 2.8221164}
+        position: {x: 0.026688179, y: 0, z: 2.8859367}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.3335522
@@ -2015,22 +2105,28 @@ MonoBehaviour:
         position: {x: 0.042242266, y: 1.2774978, z: 3.0479326}
         rotation: {x: -0.44797733, y: 0.5454894, z: -0.46633467, w: 0.53318846}
       motionTrajectoryDataList:
-      - position: {x: 0.028031016, y: 0, z: 3.0145679}
+      - localPosition: {x: 0.0009801593, y: 0, z: 1.4730359}
+        position: {x: 0.028031016, y: 0, z: 3.0145679}
         velocity: {x: -0.015202854, y: 0, z: 1.3334656}
         direction: {x: -0.011400268, y: 0, z: 0.99993503}
-      - position: {x: 0.02651073, y: 0, z: 3.1479144}
+      - localPosition: {x: -0.0005401261, y: 0, z: 1.6063825}
+        position: {x: 0.02651073, y: 0, z: 3.1479144}
         velocity: {x: -0.031921566, y: 0, z: 0.93228096}
         direction: {x: -0.03422023, y: 0, z: 0.9994143}
-      - position: {x: 0.01693426, y: 0, z: 3.4275987}
+      - localPosition: {x: -0.010116596, y: 0, z: 1.8860668}
+        position: {x: 0.01693426, y: 0, z: 3.4275987}
         velocity: {x: -0.004348945, y: 0, z: 0.52554655}
         direction: {x: -0.008274807, y: 0, z: 0.9999657}
-      - position: {x: 0.014759788, y: 0, z: 3.690372}
+      - localPosition: {x: -0.012291068, y: 0, z: 2.14884}
+        position: {x: 0.014759788, y: 0, z: 3.690372}
         velocity: {x: 0.010430102, y: 0, z: 0.38441047}
         direction: {x: 0.02712274, y: 0, z: 0.9996321}
-      - position: {x: 0.02206086, y: 0, z: 3.9594593}
+      - localPosition: {x: -0.0049899966, y: 0, z: 2.4179273}
+        position: {x: 0.02206086, y: 0, z: 3.9594593}
         velocity: {x: 0.0056070164, y: 0, z: 0.3995142}
         direction: {x: 0.014033204, y: 0, z: 0.99990153}
-      - position: {x: 0.027667876, y: 0, z: 4.3589735}
+      - localPosition: {x: 0.00061701983, y: 0, z: 2.8174415}
+        position: {x: 0.027667876, y: 0, z: 4.3589735}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.4422843
@@ -2141,22 +2237,28 @@ MonoBehaviour:
         position: {x: 0.029687665, y: 1.2574259, z: 4.5324063}
         rotation: {x: -0.45074916, y: 0.5348907, z: -0.47704116, w: 0.5321177}
       motionTrajectoryDataList:
-      - position: {x: 0.0261441, y: 0, z: 4.4923725}
+      - localPosition: {x: -0.0018869154, y: 0, z: 1.4778047}
+        position: {x: 0.0261441, y: 0, z: 4.4923725}
         velocity: {x: -0.05308496, y: 0, z: 1.4413071}
         direction: {x: -0.036806166, y: 0, z: 0.9993224}
-      - position: {x: 0.020835605, y: 0, z: 4.636503}
+      - localPosition: {x: -0.0071954112, y: 0, z: 1.6219354}
+        position: {x: 0.020835605, y: 0, z: 4.636503}
         velocity: {x: -0.02044871, y: 0, z: 0.88729537}
         direction: {x: -0.023039997, y: 0, z: 0.9997345}
-      - position: {x: 0.014700991, y: 0, z: 4.902692}
+      - localPosition: {x: -0.013330025, y: 0, z: 1.888124}
+        position: {x: 0.014700991, y: 0, z: 4.902692}
         velocity: {x: 0.004333386, y: 0, z: 0.52468204}
         direction: {x: 0.00825879, y: 0, z: 0.9999659}
-      - position: {x: 0.016867684, y: 0, z: 5.165033}
+      - localPosition: {x: -0.011163332, y: 0, z: 2.150465}
+        position: {x: 0.016867684, y: 0, z: 5.165033}
         velocity: {x: 0.009689834, y: 0, z: 0.3951536}
         direction: {x: 0.02451432, y: 0, z: 0.9996995}
-      - position: {x: 0.023650568, y: 0, z: 5.4416404}
+      - localPosition: {x: -0.004380448, y: 0, z: 2.4270725}
+        position: {x: 0.023650568, y: 0, z: 5.4416404}
         velocity: {x: 0.002131341, y: 0, z: 0.39513636}
         direction: {x: 0.0053938595, y: 0, z: 0.99998546}
-      - position: {x: 0.025781909, y: 0, z: 5.8367767}
+      - localPosition: {x: -0.0022491068, y: 0, z: 2.822209}
+        position: {x: 0.025781909, y: 0, z: 5.8367767}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.3562053
@@ -2267,22 +2369,28 @@ MonoBehaviour:
         position: {x: 0.009298368, y: 1.2561824, z: 6.0181627}
         rotation: {x: -0.45844486, y: 0.5301662, z: -0.47578952, w: 0.5313916}
       motionTrajectoryDataList:
-      - position: {x: 0.020528167, y: 0, z: 5.9811406}
+      - localPosition: {x: -0.005615933, y: 0, z: 1.4887681}
+        position: {x: 0.020528167, y: 0, z: 5.9811406}
         velocity: {x: -0.042678546, y: 0, z: 1.3555336}
         direction: {x: -0.031469088, y: 0, z: 0.9995047}
-      - position: {x: 0.016260313, y: 0, z: 6.116694}
+      - localPosition: {x: -0.0098837875, y: 0, z: 1.6243215}
+        position: {x: 0.016260313, y: 0, z: 6.116694}
         velocity: {x: -0.0072480454, y: 0, z: 0.8759101}
         direction: {x: -0.008274591, y: 0, z: 0.9999658}
-      - position: {x: 0.014085899, y: 0, z: 6.379467}
+      - localPosition: {x: -0.012058201, y: 0, z: 1.8870945}
+        position: {x: 0.014085899, y: 0, z: 6.379467}
         velocity: {x: 0.014602145, y: 0, z: 0.5381746}
         direction: {x: 0.027122745, y: 0, z: 0.9996321}
-      - position: {x: 0.021386972, y: 0, z: 6.6485543}
+      - localPosition: {x: -0.0047571287, y: 0, z: 2.1561818}
+        position: {x: 0.021386972, y: 0, z: 6.6485543}
         velocity: {x: 0.006061162, y: 0, z: 0.3871836}
         direction: {x: 0.015652573, y: 0, z: 0.99987745}
-      - position: {x: 0.025629785, y: 0, z: 6.919583}
+      - localPosition: {x: -0.00051431544, y: 0, z: 2.4272103}
+        position: {x: 0.025629785, y: 0, z: 6.919583}
         velocity: {x: -0.0054640565, y: 0, z: 0.4059615}
         direction: {x: -0.013458324, y: 0, z: 0.9999094}
-      - position: {x: 0.020165728, y: 0, z: 7.3255444}
+      - localPosition: {x: -0.005978372, y: 0, z: 2.8331718}
+        position: {x: 0.020165728, y: 0, z: 7.3255444}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.3064812
@@ -2393,22 +2501,28 @@ MonoBehaviour:
         position: {x: 0.0058995504, y: 1.2817881, z: 7.5005364}
         rotation: {x: -0.45285577, y: 0.53534675, z: -0.4644237, w: 0.5409589}
       motionTrajectoryDataList:
-      - position: {x: 0.01605075, y: 0, z: 7.462573}
+      - localPosition: {x: -0.004477417, y: 0, z: 1.4814324}
+        position: {x: 0.01605075, y: 0, z: 7.462573}
         velocity: {x: -0.018666852, y: 0, z: 1.3063478}
         direction: {x: -0.014287883, y: 0, z: 0.9998979}
-      - position: {x: 0.014184065, y: 0, z: 7.593208}
+      - localPosition: {x: -0.0063441023, y: 0, z: 1.6120672}
+        position: {x: 0.014184065, y: 0, z: 7.593208}
         velocity: {x: 0.007222301, y: 0, z: 0.87447006}
         direction: {x: 0.008258779, y: 0, z: 0.9999659}
-      - position: {x: 0.016350755, y: 0, z: 7.855549}
+      - localPosition: {x: -0.004177412, y: 0, z: 1.8744082}
+        position: {x: 0.016350755, y: 0, z: 7.855549}
         velocity: {x: 0.013565768, y: 0, z: 0.553215}
         direction: {x: 0.024514321, y: 0, z: 0.9996995}
-      - position: {x: 0.02313364, y: 0, z: 8.132156}
+      - localPosition: {x: 0.0026054718, y: 0, z: 2.1510158}
+        position: {x: 0.02313364, y: 0, z: 8.132156}
         velocity: {x: 0.0052165985, y: 0, z: 0.37398612}
         direction: {x: 0.013947285, y: 0, z: 0.9999027}
-      - position: {x: 0.026785258, y: 0, z: 8.393947}
+      - localPosition: {x: 0.0062570907, y: 0, z: 2.412806}
+        position: {x: 0.026785258, y: 0, z: 8.393947}
         velocity: {x: -0.011096653, y: 0, z: 0.41303062}
         direction: {x: -0.026856724, y: 0, z: 0.9996393}
-      - position: {x: 0.015688606, y: 0, z: 8.806977}
+      - localPosition: {x: -0.004839562, y: 0, z: 2.8258367}
+        position: {x: 0.015688606, y: 0, z: 8.806977}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.3213861
@@ -2519,22 +2633,28 @@ MonoBehaviour:
         position: {x: 0.009563773, y: 1.2960805, z: 8.977918}
         rotation: {x: -0.44470316, y: 0.54592264, z: -0.4584002, w: 0.54228884}
       motionTrajectoryDataList:
-      - position: {x: 0.013835029, y: 0, z: 8.938665}
+      - localPosition: {x: -0.0022157216, y: 0, z: 1.4760923}
+        position: {x: 0.013835029, y: 0, z: 8.938665}
         velocity: {x: -0.0030772295, y: 0, z: 1.3213825}
         direction: {x: -0.002328789, y: 0, z: 0.9999973}
-      - position: {x: 0.013527306, y: 0, z: 9.070804}
+      - localPosition: {x: -0.0025234446, y: 0, z: 1.6082306}
+        position: {x: 0.013527306, y: 0, z: 9.070804}
         velocity: {x: 0.024336997, y: 0, z: 0.89695925}
         direction: {x: 0.027122797, y: 0, z: 0.9996321}
-      - position: {x: 0.020828405, y: 0, z: 9.339891}
+      - localPosition: {x: 0.004777655, y: 0, z: 1.8773184}
+        position: {x: 0.020828405, y: 0, z: 9.339891}
         velocity: {x: 0.008485593, y: 0, z: 0.54205704}
         direction: {x: 0.015652511, y: 0, z: 0.9998775}
-      - position: {x: 0.025071202, y: 0, z: 9.61092}
+      - localPosition: {x: 0.009020451, y: 0, z: 2.148347}
+        position: {x: 0.025071202, y: 0, z: 9.61092}
         velocity: {x: -0.0002222322, y: 0, z: 0.3740447}
         direction: {x: -0.00059413264, y: 0, z: 0.9999998}
-      - position: {x: 0.02491564, y: 0, z: 9.872751}
+      - localPosition: {x: 0.008864889, y: 0, z: 2.4101782}
+        position: {x: 0.02491564, y: 0, z: 9.872751}
         velocity: {x: -0.011443832, y: 0, z: 0.41032028}
         direction: {x: -0.027879156, y: 0, z: 0.99961126}
-      - position: {x: 0.013471807, y: 0, z: 10.2830715}
+      - localPosition: {x: -0.002578943, y: 0, z: 2.8204985}
+        position: {x: 0.013471807, y: 0, z: 10.2830715}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.3022676
@@ -2645,22 +2765,28 @@ MonoBehaviour:
         position: {x: 0.014719242, y: 1.2828803, z: 10.456094}
         rotation: {x: -0.45211366, y: 0.54683733, z: -0.4567243, w: 0.536624}
       motionTrajectoryDataList:
-      - position: {x: 0.013160324, y: 0, z: 10.415357}
+      - localPosition: {x: -0.000674705, y: 0, z: 1.4766912}
+        position: {x: 0.013160324, y: 0, z: 10.415357}
         velocity: {x: 0.024744049, y: 0, z: 1.3020325}
         direction: {x: 0.01900074, y: 0, z: 0.99981946}
-      - position: {x: 0.015634729, y: 0, z: 10.54556}
+      - localPosition: {x: 0.0017996999, y: 0, z: 1.6068945}
+        position: {x: 0.015634729, y: 0, z: 10.54556}
         velocity: {x: 0.022609556, y: 0, z: 0.922025}
         direction: {x: 0.02451426, y: 0, z: 0.9996995}
-      - position: {x: 0.022417596, y: 0, z: 10.822167}
+      - localPosition: {x: 0.008582567, y: 0, z: 1.883502}
+        position: {x: 0.022417596, y: 0, z: 10.822167}
         velocity: {x: 0.0073032416, y: 0, z: 0.52358055}
         direction: {x: 0.013947292, y: 0, z: 0.99990267}
-      - position: {x: 0.026069216, y: 0, z: 11.083958}
+      - localPosition: {x: 0.012234188, y: 0, z: 2.1452923}
+        position: {x: 0.026069216, y: 0, z: 11.083958}
         velocity: {x: -0.009755325, y: 0, z: 0.3963961}
         direction: {x: -0.024602594, y: 0, z: 0.9996973}
-      - position: {x: 0.01924049, y: 0, z: 11.361435}
+      - localPosition: {x: 0.0054054605, y: 0, z: 2.4227695}
+        position: {x: 0.01924049, y: 0, z: 11.361435}
         velocity: {x: -0.006443089, y: 0, z: 0.39832878}
         direction: {x: -0.016173188, y: 0, z: 0.9998692}
-      - position: {x: 0.0127974, y: 0, z: 11.759764}
+      - localPosition: {x: -0.0010376284, y: 0, z: 2.8210983}
+        position: {x: 0.0127974, y: 0, z: 11.759764}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.3896838
@@ -2771,22 +2897,28 @@ MonoBehaviour:
         position: {x: 0.026758946, y: 1.2641273, z: 11.933592}
         rotation: {x: -0.45939478, y: 0.5471514, z: -0.46117085, w: 0.52621585}
       motionTrajectoryDataList:
-      - position: {x: 0.015234647, y: 0, z: 11.89003}
+      - localPosition: {x: 0.0020743236, y: 0, z: 1.4746733}
+        position: {x: 0.015234647, y: 0, z: 11.89003}
         velocity: {x: 0.04826637, y: 0, z: 1.3888454}
         direction: {x: 0.034731906, y: 0, z: 0.9993967}
-      - position: {x: 0.020061284, y: 0, z: 12.028914}
+      - localPosition: {x: 0.0069009606, y: 0, z: 1.6135578}
+        position: {x: 0.020061284, y: 0, z: 12.028914}
         velocity: {x: 0.014143443, y: 0, z: 0.9034284}
         direction: {x: 0.015653383, y: 0, z: 0.9998775}
-      - position: {x: 0.024304317, y: 0, z: 12.299943}
+      - localPosition: {x: 0.011143994, y: 0, z: 1.8845863}
+        position: {x: 0.024304317, y: 0, z: 12.299943}
         velocity: {x: -0.00031113625, y: 0, z: 0.52366257}
         direction: {x: -0.00059415394, y: 0, z: 0.99999976}
-      - position: {x: 0.02414875, y: 0, z: 12.561774}
+      - localPosition: {x: 0.010988425, y: 0, z: 2.1464176}
+        position: {x: 0.02414875, y: 0, z: 12.561774}
         velocity: {x: -0.013680743, y: 0, z: 0.39955005}
         direction: {x: -0.03422032, y: 0, z: 0.99941427}
-      - position: {x: 0.014572229, y: 0, z: 12.841459}
+      - localPosition: {x: 0.0014119055, y: 0, z: 2.4261026}
+        position: {x: 0.014572229, y: 0, z: 12.841459}
         velocity: {x: 0.00029993616, y: 0, z: 0.3929758}
         direction: {x: 0.00076324306, y: 0, z: 0.9999997}
-      - position: {x: 0.014872165, y: 0, z: 13.234435}
+      - localPosition: {x: 0.0017118417, y: 0, z: 2.8190784}
+        position: {x: 0.014872165, y: 0, z: 13.234435}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}
     - velocity: 1.377359
@@ -2897,21 +3029,27 @@ MonoBehaviour:
         position: {x: 0.043983504, y: 1.2550243, z: 13.40589}
         rotation: {x: -0.46180642, y: 0.5457732, z: -0.47163686, w: 0.5161644}
       motionTrajectoryDataList:
-      - position: {x: 0.019624058, y: 0, z: 13.373599}
+      - localPosition: {x: 0.004389411, y: 0, z: 1.4835691}
+        position: {x: 0.019624058, y: 0, z: 13.373599}
         velocity: {x: 0.019561537, y: 0, z: 1.3772202}
         direction: {x: 0.014202205, y: 0, z: 0.99989915}
-      - position: {x: 0.021580212, y: 0, z: 13.511321}
+      - localPosition: {x: 0.0063455645, y: 0, z: 1.6212912}
+        position: {x: 0.021580212, y: 0, z: 13.511321}
         velocity: {x: 0.012172261, y: 0, z: 0.87263423}
         direction: {x: 0.013947513, y: 0, z: 0.9999027}
-      - position: {x: 0.02523189, y: 0, z: 13.773111}
+      - localPosition: {x: 0.009997243, y: 0, z: 1.8830814}
+        position: {x: 0.02523189, y: 0, z: 13.773111}
         velocity: {x: -0.013657454, y: 0, z: 0.5549545}
         direction: {x: -0.024602594, y: 0, z: 0.9996973}
-      - position: {x: 0.018403163, y: 0, z: 14.050589}
+      - localPosition: {x: 0.0031685159, y: 0, z: 2.1605587}
+        position: {x: 0.018403163, y: 0, z: 14.050589}
         velocity: {x: -0.008763966, y: 0, z: 0.38026947}
         direction: {x: -0.023040608, y: 0, z: 0.9997345}
-      - position: {x: 0.012268387, y: 0, z: 14.316777}
+      - localPosition: {x: -0.0029662605, y: 0, z: 2.4267473}
+        position: {x: 0.012268387, y: 0, z: 14.316777}
         velocity: {x: 0.0069933906, y: 0, z: 0.4012251}
         direction: {x: 0.017427446, y: 0, z: 0.9998481}
-      - position: {x: 0.019261777, y: 0, z: 14.718002}
+      - localPosition: {x: 0.00402713, y: 0, z: 2.8279724}
+        position: {x: 0.019261777, y: 0, z: 14.718002}
         velocity: {x: 0, y: 0, z: 0}
         direction: {x: 0, y: 0, z: 0}

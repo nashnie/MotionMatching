@@ -38,7 +38,7 @@ public class MotionMatcher : MonoBehaviour
             currentComputeTime = 0;
             CapturePlayingMotionSnapShot(velocity, direction, acceleration, brake);
             ComputeMotionsBestCost();
-            Debug.LogFormat("AcquireMatchedMotion velocity {0} bestMotionName {1} ", velocity, bestMotionName);
+            Debug.LogFormat("AcquireMatchedMotion velocity {0} bestMotionName {1} direction {2}", velocity, bestMotionName, direction);
         }
 
         return bestMotionName;
@@ -50,16 +50,18 @@ public class MotionMatcher : MonoBehaviour
         currentMotionFrameData.velocity = velocity;
         currentMotionFrameData.motionTrajectoryDataList = new MotionTrajectoryData[motionMatcherSettings.predictionTrajectoryTimeList.Length];
         float LastPredictionTrajectoryTime = 0;
+        Vector3 LastPredictionPosition = Vector3.zero;
         for (int i = 0; i < motionMatcherSettings.predictionTrajectoryTimeList.Length; i++)
         {
             float predictionTrajectoryTime = motionMatcherSettings.predictionTrajectoryTimeList[i];
             float deltaTime = predictionTrajectoryTime - LastPredictionTrajectoryTime;
             currentMotionFrameData.motionTrajectoryDataList[i] = new MotionTrajectoryData();
             MotionTrajectoryData motionTrajectoryData = currentMotionFrameData.motionTrajectoryDataList[i];
-            motionTrajectoryData.position = velocity * direction * deltaTime;
+            motionTrajectoryData.localPosition = LastPredictionPosition + velocity * direction * deltaTime;
             motionTrajectoryData.velocity = velocity * direction;
             motionTrajectoryData.direction = direction;
             LastPredictionTrajectoryTime = predictionTrajectoryTime;
+            LastPredictionPosition = motionTrajectoryData.position;
         }
 
         currentMotionFrameData.motionBoneDataList = new MotionBoneData[motionMatcherSettings.captureBoneList.Length];
@@ -106,7 +108,7 @@ public class MotionMatcher : MonoBehaviour
                     MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[l];
                     MotionTrajectoryData currentMotionTrajectoryData = currentMotionFrameData.motionTrajectoryDataList[l];
 
-                    float trajectoryPosCost = Vector3.SqrMagnitude(motionTrajectoryData.position - currentMotionTrajectoryData.position);
+                    float trajectoryPosCost = Vector3.SqrMagnitude(motionTrajectoryData.localPosition - currentMotionTrajectoryData.localPosition);
                     float trajectoryVelCost = Vector3.SqrMagnitude(motionTrajectoryData.velocity - currentMotionTrajectoryData.velocity);
                     float trajectoryDirCost = Vector3.Dot(motionTrajectoryData.direction, currentMotionTrajectoryData.direction);
                     trajectorysCost += trajectoryPosCost * motionCostFactorSettings.predictionTrajectoryPosFactor + trajectoryVelCost * motionCostFactorSettings.predictionTrajectoryRotFactor + trajectoryDirCost * motionCostFactorSettings.predictionTrajectoryDirFactor;

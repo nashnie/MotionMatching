@@ -450,7 +450,7 @@ public class MotionMatchingBakeEditor : EditorWindow
                 MotionFrameData lastMotionFrameData = frame > 0 ? motionData.motionFrameDataList[frame - 1] : null;
 
                 CaptureBoneSnapShot(animClip, motionFrameData, lastMotionFrameData, sampleGO, bakeFrames, i);
-                CaptureTrajectorySnapShot(animClip, motionFrameData, sampleGO, bakeFrames, i);
+                CaptureTrajectorySnapShot(animClip, motionFrameData, lastMotionFrameData, sampleGO, bakeFrames, i);
 
                 frame++;
             }
@@ -787,8 +787,17 @@ public class MotionMatchingBakeEditor : EditorWindow
         }
     }
 
-    private void CaptureTrajectorySnapShot(AnimationClip animClip, MotionFrameData motionFrameData, GameObject sampleGO, float bakeFrames, float CurrentFrame)
+    private void CaptureTrajectorySnapShot(AnimationClip animClip, MotionFrameData motionFrameData, MotionFrameData lastMotionFrameData, GameObject sampleGO, float bakeFrames, float CurrentFrame)
     {
+        Vector3 lastMotionFrameDataRootPosition;
+        if (lastMotionFrameData != null)
+        {
+            lastMotionFrameDataRootPosition = lastMotionFrameData.motionTrajectoryDataList[0].position;
+        }
+        else
+        {
+            lastMotionFrameDataRootPosition = Vector3.zero;
+        }
         float lastFrameTime = 0;
         for (int i = 0; i < predictionTrajectoryTimeList.Length; i++)
         {
@@ -825,8 +834,10 @@ public class MotionMatchingBakeEditor : EditorWindow
             }
             MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[i];
             motionTrajectoryData.position = animator.transform.position;
+            motionTrajectoryData.localPosition = motionTrajectoryData.position - lastMotionFrameDataRootPosition;
             motionTrajectoryData.velocity = Vector3.zero;
             motionTrajectoryData.direction = Vector3.zero;
+
             MotionTrajectoryData lastMotionTrajectoryData = null;
             if (i > 0)
             {
