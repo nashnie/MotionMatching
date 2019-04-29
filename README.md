@@ -1,7 +1,7 @@
 # MotionMatching
 
 ### 解决什么问题？
-![MotionMatching](/images/anim-state-machine.png)<br>
+![MotionMatching](/Images/anim-state-machine.png)<br>
 让人头疼的状态机，维护成本非常高，这还不是最复杂的状态机。<br>
 
 ### 怎么解决？
