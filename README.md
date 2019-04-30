@@ -7,7 +7,15 @@
 
 ### 怎么解决？
 根据玩家输入包括速度、方向、跳跃等和玩家当前骨骼位置、旋转、速度等对比离线烘焙的所有动画骨骼以及根据 RootMotion 预测的坐标数据，选择最匹配的一个**动画帧**播放。
+![MM](/Images/motionmatching.gif)<br>
 
-育碧分享了部分技术细节<br>
+### Conclusion
+**Motion Matching is a simple idea, that helps us reason about movement description and control.**
+**It’s also a new type of animation system, with three advantages:**
+1. High quality
+2. Controllable responsiveness
+3. Minimal manual work
+
+For more details<br>
 [MotionMatching pdf](https://twvideo01.ubm-us.net/o1/vault/gdc2016/Presentations/Clavet_Simon_MotionMatching.pdf)<br>
 [MotionMatching video](https://www.gdcvault.com/play/1023280/Motion-Matching-and-The-Road)<br>
