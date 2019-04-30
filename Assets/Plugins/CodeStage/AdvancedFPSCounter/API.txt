@@ -1,2 +1,0 @@
-Please, check out latest Advanced FPS Counter API Docs here:
-http://codestage.net/uas_files/afps/api/
