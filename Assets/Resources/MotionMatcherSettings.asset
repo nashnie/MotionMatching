@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b938fc225c8761e42852c4efed1ac2c6, type: 3}
   m_Name: MotionMatcherSettings
   m_EditorClassIdentifier: 
+  ComputeMotionsBestCostGap: 1
   predictionTrajectoryTimeList:
   - 0
   - 0.1

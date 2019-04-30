@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float m_GroundCheckDistance = 0.1f;
     [SerializeField] AnimationClip[] animationClips;
     private MotionMatcher motionMatcher;
-    private string matchedMotionName;
+    private string matchedMotionName = "HumanoidIdle";
 
     Rigidbody m_Rigidbody;
     Animator m_Animator;
@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     Vector3 m_CapsuleCenter;
     CapsuleCollider m_Capsule;
     bool m_Crouching;
-
+    float fps = 30.0f;
 
     void Start()
     {
@@ -125,16 +125,18 @@ public class PlayerController : MonoBehaviour
     {
         // update the animator parameters
         //m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
-        string matchedMotionName = motionMatcher.AcquireMatchedMotion(move.magnitude, move.normalized, 0f, 0f);
+        float normalizedTime = m_Animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+        normalizedTime = normalizedTime - Mathf.FloorToInt(normalizedTime);
+        string matchedMotionName = motionMatcher.AcquireMatchedMotion(this.matchedMotionName, move.magnitude, move.normalized, 0f, 0f, normalizedTime);
         if (this.matchedMotionName != matchedMotionName)
         {
             this.matchedMotionName = matchedMotionName;
-            float normalizedTime = 0.0f;//TODO frame index
-            m_Animator.Play(matchedMotionName, 0, normalizedTime);
+            //float bestMotionFrameIndex = motionMatcher.bestMotionFrameIndex;
+            float bestMotionFrameIndex = 0;
+            float bestMotionTime = bestMotionFrameIndex / (m_Animator.GetCurrentAnimatorStateInfo(0).length * fps);
+            m_Animator.Play(matchedMotionName, 0, bestMotionTime);
         }
-
     }
-
 
     void HandleAirborneMovement()
     {

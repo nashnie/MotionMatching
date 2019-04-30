@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bonePosFactor: 0
   boneRotFactor: 0
-  boneVelFactor: 0
+  boneVelFactor: 1
   rootMotionVelFactor: 0
-  predictionTrajectoryPosFactor: 1
+  predictionTrajectoryPosFactor: 35
   predictionTrajectoryRotFactor: 0
   predictionTrajectoryDirFactor: 0

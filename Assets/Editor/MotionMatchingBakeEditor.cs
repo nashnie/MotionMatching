@@ -781,7 +781,7 @@ public class MotionMatchingBakeEditor : EditorWindow
             if (lastMotionFrameData != null)
             {
                 MotionBoneData lastMotionBoneData = lastMotionFrameData.motionBoneDataList[index];      
-                lastMotionBoneData.velocity = (motionBoneData.position - lastMotionBoneData.position) / frameSkipsTimeStep;
+                lastMotionBoneData.velocity = (motionBoneData.localPosition - lastMotionBoneData.localPosition) / frameSkipsTimeStep;
             }
             index++;
         }
@@ -835,21 +835,15 @@ public class MotionMatchingBakeEditor : EditorWindow
             MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[i];
             motionTrajectoryData.position = animator.transform.position;
             motionTrajectoryData.localPosition = motionTrajectoryData.position - lastMotionFrameDataRootPosition;
+            motionTrajectoryData.direction = motionTrajectoryData.localPosition.normalized;
+            //TODO
             motionTrajectoryData.velocity = Vector3.zero;
-            motionTrajectoryData.direction = Vector3.zero;
-
-            MotionTrajectoryData lastMotionTrajectoryData = null;
-            if (i > 0)
-            {
-                lastMotionTrajectoryData = motionFrameData.motionTrajectoryDataList[i - 1];
-                lastMotionTrajectoryData.velocity = (motionTrajectoryData.position - lastMotionTrajectoryData.position) / PredictionTrajectoryTime;
-                lastMotionTrajectoryData.direction = lastMotionTrajectoryData.velocity.normalized;
-            }
         }
 
         if (motionFrameData.motionTrajectoryDataList.Length > 0)
         {
-            Vector3 velocity = motionFrameData.motionTrajectoryDataList[0].velocity;
+            float animationSkipTime = frameSkips[animClip.name] / (float)fps;
+            Vector3 velocity = (motionFrameData.motionTrajectoryDataList[0].position - lastMotionFrameDataRootPosition) / animationSkipTime;
             motionFrameData.velocity = velocity.magnitude;
         }
   
