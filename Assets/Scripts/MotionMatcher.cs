@@ -33,6 +33,8 @@ public class MotionMatcher : MonoBehaviour
 
     public string AcquireMatchedMotion(float velocity, Vector3 direction, float acceleration, float brake)
     {
+        //velocity = 1.0f;
+        //direction = Vector3.forward;
         if (currentComputeTime >= motionMatcherSettings.ComputeMotionsBestCostGap)
         {
             currentComputeTime = 0;
@@ -61,7 +63,7 @@ public class MotionMatcher : MonoBehaviour
             motionTrajectoryData.velocity = velocity * direction;
             motionTrajectoryData.direction = direction;
             LastPredictionTrajectoryTime = predictionTrajectoryTime;
-            LastPredictionPosition = motionTrajectoryData.position;
+            LastPredictionPosition = motionTrajectoryData.localPosition;
         }
 
         currentMotionFrameData.motionBoneDataList = new MotionBoneData[motionMatcherSettings.captureBoneList.Length];

@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets.CrossPlatformInput;
 
 [RequireComponent(typeof(PlayerController))]
 public class PlayerInputController : MonoBehaviour
 {
+    public Text inputText;
     private PlayerController m_Character; // A reference to the ThirdPersonCharacter on the object
     private Transform m_Cam;                  // A reference to the main camera in the scenes transform
     private Vector3 m_CamForward;             // The current forward direction of the camera
@@ -73,6 +75,15 @@ public class PlayerInputController : MonoBehaviour
         m_Character.Move(playerInput);
 
         m_Character.Move(m_Move, crouch, m_Jump);
+        inputText.text = "Input";
+        inputText.text += "\n";
+        inputText.text += " Velocity : " + m_Move.magnitude.ToString();
+        inputText.text += "\n";
+        inputText.text += " Direction : " + m_Move.normalized;
+        inputText.text += "\n";
+        inputText.text += crouch ? " crouch: True" : " crouch: False";
+        inputText.text += "\n";
+        inputText.text += m_Jump ? " jump: True" : " jump: False";
 
         m_Jump = false;
     }
