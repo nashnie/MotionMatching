@@ -12,6 +12,7 @@ public class MotionData
     public void Clear()
     {
         motionName = "";
+        motionMainEntryType = MotionMainEntryType.none;
         motionFrameDataList = null;
     }
 }
