@@ -56,7 +56,7 @@ public class MotionMatcher : MonoBehaviour
 
     public string AcquireMatchedMotion(string motionName, float velocity, Vector3 direction, float acceleration, float brake, float normalizedTime, bool crouch)
     {
-        //velocity = 1.0f;
+        //velocity = .3f;
         //direction = Vector3.forward;
         //crouch = true;
         if (currentComputeTime >= motionMatcherSettings.ComputeMotionsBestCostGap)
