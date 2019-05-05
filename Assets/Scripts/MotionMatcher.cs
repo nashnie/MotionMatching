@@ -36,6 +36,11 @@ public class MotionMatcher : MonoBehaviour
         currentComputeTime += Time.deltaTime;
     }
 
+    public string AcquireMatchedMotion(PlayerInput playerInput)
+    {
+        return bestMotionName;
+    }
+
     public string AcquireMatchedMotion(string motionName, float velocity, Vector3 direction, float acceleration, float brake, float normalizedTime)
     {
         //velocity = 1.0f;
