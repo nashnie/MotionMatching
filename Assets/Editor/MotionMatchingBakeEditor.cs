@@ -61,6 +61,8 @@ public class MotionMatchingBakeEditor : EditorWindow
 
     public float[] predictionTrajectoryTimeList;
     public string[] captureBoneList;
+    public string crouchTag = "CrouchIdle";
+    public string standTag = "Idle";
 
     private void OnEnable()
     {
@@ -304,6 +306,8 @@ public class MotionMatchingBakeEditor : EditorWindow
         {
             predictionTrajectoryTimeList = motionMatcherSettings.predictionTrajectoryTimeList;
             captureBoneList = motionMatcherSettings.captureBoneList;
+            crouchTag = motionMatcherSettings.CrouchTag;
+            standTag = motionMatcherSettings.StandTag;
         }
     }
 
@@ -436,6 +440,9 @@ public class MotionMatchingBakeEditor : EditorWindow
         int animCount = 0;
         for (int j = 0; j < clips.Count; j++)
         {
+            //Vector3.zero, Quaternion.identity
+            sampleGO.transform.position = Vector3.zero;
+            sampleGO.transform.rotation = Quaternion.identity;
             AnimationClip animClip = clips[j];
             MotionData motionData = meshAnimationList.motionDataList[j];
             int bakeFrames = Mathf.CeilToInt(animClip.length * fps);
@@ -789,15 +796,6 @@ public class MotionMatchingBakeEditor : EditorWindow
 
     private void CaptureTrajectorySnapShot(AnimationClip animClip, MotionFrameData motionFrameData, MotionFrameData lastMotionFrameData, GameObject sampleGO, float bakeFrames, float CurrentFrame)
     {
-        Vector3 lastMotionFrameDataRootPosition;
-        if (lastMotionFrameData != null)
-        {
-            lastMotionFrameDataRootPosition = lastMotionFrameData.motionTrajectoryDataList[0].position;
-        }
-        else
-        {
-            lastMotionFrameDataRootPosition = Vector3.zero;
-        }
         float lastFrameTime = 0;
         for (int i = 0; i < predictionTrajectoryTimeList.Length; i++)
         {
@@ -834,7 +832,7 @@ public class MotionMatchingBakeEditor : EditorWindow
             }
             MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[i];
             motionTrajectoryData.position = animator.transform.position;
-            motionTrajectoryData.localPosition = motionTrajectoryData.position - lastMotionFrameDataRootPosition;
+            motionTrajectoryData.localPosition = motionTrajectoryData.position - Vector3.zero;
             motionTrajectoryData.direction = motionTrajectoryData.localPosition.normalized;
             //TODO
             motionTrajectoryData.velocity = Vector3.zero;
@@ -842,8 +840,7 @@ public class MotionMatchingBakeEditor : EditorWindow
 
         if (motionFrameData.motionTrajectoryDataList.Length > 0)
         {
-            float animationSkipTime = frameSkips[animClip.name] / (float)fps;
-            Vector3 velocity = (motionFrameData.motionTrajectoryDataList[0].position - lastMotionFrameDataRootPosition) / animationSkipTime;
+            Vector3 velocity = (motionFrameData.motionTrajectoryDataList[motionFrameData.motionTrajectoryDataList.Length - 1].position) / animClip.length;
             motionFrameData.velocity = velocity.magnitude;
         }
   

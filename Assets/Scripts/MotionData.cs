@@ -5,8 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class MotionData
 {
-    public MotionMainEntryType motionMainEntryType;
     public string motionName;
+    public MotionMainEntryType motionMainEntryType;
     public MotionFrameData[] motionFrameDataList;
 
     public void Clear()

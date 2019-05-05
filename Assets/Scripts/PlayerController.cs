@@ -127,7 +127,7 @@ public class PlayerController : MonoBehaviour
         //m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
         float normalizedTime = m_Animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
         normalizedTime = normalizedTime - Mathf.FloorToInt(normalizedTime);
-        string matchedMotionName = motionMatcher.AcquireMatchedMotion(this.matchedMotionName, move.magnitude, move.normalized, 0f, 0f, normalizedTime);
+        string matchedMotionName = motionMatcher.AcquireMatchedMotion(this.matchedMotionName, move.magnitude, move.normalized, 0f, 0f, normalizedTime, m_Crouching);
         if (this.matchedMotionName != matchedMotionName)
         {
             this.matchedMotionName = matchedMotionName;

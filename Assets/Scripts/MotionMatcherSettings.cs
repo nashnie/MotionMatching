@@ -25,4 +25,10 @@ public class MotionMatcherSettings : ScriptableObject
                                         "EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand",
                                         "EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck",
                                         "EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead" };
+
+    [Tooltip("CrouchTag")]
+    public string CrouchTag = "HumanoidCrouchIdle";
+
+    [Tooltip("StandTag")]
+    public string StandTag = "HumanoidIdle";
 }
