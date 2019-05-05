@@ -77,9 +77,9 @@ public class PlayerInputController : MonoBehaviour
         m_Character.Move(m_Move, crouch, m_Jump);
         inputText.text = "Input";
         inputText.text += "\n";
-        inputText.text += " Velocity : " + m_Move.magnitude.ToString();
+        inputText.text += " velocity : " + m_Move.magnitude.ToString();
         inputText.text += "\n";
-        inputText.text += " Direction : " + m_Move.normalized;
+        inputText.text += " direction : " + m_Move.normalized;
         inputText.text += "\n";
         inputText.text += crouch ? " crouch: True" : " crouch: False";
         inputText.text += "\n";
