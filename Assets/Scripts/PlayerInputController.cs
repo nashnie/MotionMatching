@@ -92,9 +92,9 @@ public class PlayerInputController : MonoBehaviour
         inputText.text += "\n";
         inputText.text += " direction : " + m_Move.normalized;
         inputText.text += "\n";
-        inputText.text += crouch ? " crouch: True" : " crouch: False";
+        inputText.text += crouch ? " crouch : true" : " crouch : false";
         inputText.text += "\n";
-        inputText.text += m_Jump ? " jump: True" : " jump: False";
+        inputText.text += m_Jump ? " jump : true" : " jump : false";
 
         m_Jump = false;
     }
