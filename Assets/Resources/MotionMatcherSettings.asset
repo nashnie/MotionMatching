@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b938fc225c8761e42852c4efed1ac2c6, type: 3}
   m_Name: MotionMatcherSettings
   m_EditorClassIdentifier: 
-  ComputeMotionsBestCostGap: 1
+  ComputeMotionsBestCostGap: 0.1
+  EnableDebugText: 0
   predictionTrajectoryTimeList:
   - 0
   - 0.1
@@ -36,3 +37,5 @@ MonoBehaviour:
   - EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand
   - EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck
   - EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead
+  CrouchTag: HumanoidCrouchIdle
+  StandTag: HumanoidIdle

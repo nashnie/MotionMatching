@@ -794,13 +794,13 @@ public class MotionMatchingBakeEditor : EditorWindow
         }
     }
 
-    private void CaptureTrajectorySnapShot(AnimationClip animClip, MotionFrameData motionFrameData, MotionFrameData lastMotionFrameData, GameObject sampleGO, float bakeFrames, float CurrentFrame)
+    private void CaptureTrajectorySnapShot(AnimationClip animClip, MotionFrameData motionFrameData, MotionFrameData lastMotionFrameData, GameObject sampleGO, float bakeFrames, float currentFrame)
     {
         float lastFrameTime = 0;
         for (int i = 0; i < predictionTrajectoryTimeList.Length; i++)
         {
             float PredictionTrajectoryTime = predictionTrajectoryTimeList[i];
-            float bakeDelta = CurrentFrame / bakeFrames;
+            float bakeDelta = currentFrame / bakeFrames;
             EditorUtility.DisplayProgressBar("Baking Animation", string.Format("Processing: {0} Frame: {1}", animClip.name, i), bakeDelta);
             float animationTime = bakeDelta * animClip.length + (PredictionTrajectoryTime * fps / bakeFrames) * animClip.length;
             if (requiresAnimator)
@@ -838,11 +838,11 @@ public class MotionMatchingBakeEditor : EditorWindow
             motionTrajectoryData.velocity = Vector3.zero;
         }
 
-        if (motionFrameData.motionTrajectoryDataList.Length > 0)
-        {
-            Vector3 velocity = (motionFrameData.motionTrajectoryDataList[motionFrameData.motionTrajectoryDataList.Length - 1].position) / animClip.length;
-            motionFrameData.velocity = velocity.magnitude;
-        }
-  
+        float currentClipTime = predictionTrajectoryTimeList[predictionTrajectoryTimeList.Length - 1];
+        MotionTrajectoryData firstMotionTrajectoryData = motionFrameData.motionTrajectoryDataList[0];
+        MotionTrajectoryData lastMotionTrajectoryData = motionFrameData.motionTrajectoryDataList[motionFrameData.motionTrajectoryDataList.Length - 1];   
+        Vector3 offset = lastMotionTrajectoryData.position - firstMotionTrajectoryData.position;
+        Vector3 velocity = offset / currentClipTime;
+        motionFrameData.velocity = velocity.magnitude;
     }
 }

@@ -63,10 +63,21 @@ public class PlayerInputController : MonoBehaviour
             // we use world-relative directions in the case of no main camera
             m_Move = v * Vector3.forward + h * Vector3.right;
         }
+
+        m_Move = m_Move.normalized;
+
 #if !MOBILE_INPUT
         // walk speed multiplier
         if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 0.5f;
 #endif
+        if (crouch)
+        {
+            m_Move *= 0.45f;
+        }
+        else
+        {
+            m_Move *= 1.4f;
+        }
 
         // pass all parameters to the character control script
         PlayerInput playerInput = new PlayerInput();

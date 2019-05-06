@@ -8,6 +8,9 @@ public class MotionMatcherSettings : ScriptableObject
     [Tooltip("PredictionTime")]
     public float ComputeMotionsBestCostGap = 0.1f;
 
+    [Tooltip("EnableDebugText")]
+    public bool EnableDebugText = false;
+
     [Tooltip("PredictionTime")]
     public float[] predictionTrajectoryTimeList = { 0, 0.1f, 0.3f, 0.5f, 0.7f, 1.0f };
 

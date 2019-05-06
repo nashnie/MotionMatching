@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MotionDebugData
 {
-    public int bestMotionFrameIndex = -1;
-    public string bestMotionName = "HumanoidIdle";
+    public int motionFrameIndex = -1;
+    public string motionName = "";
 
     public float bonePosCost;
     public float boneRotCost;
