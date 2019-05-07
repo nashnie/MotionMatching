@@ -12,7 +12,7 @@ Crouch、Stand、Idle、Walk、CrouchWalk等匹配。<br>
 更多feature开发中...<br>
 1. Motion turn.
 2. Multi-thread acceleration match calculation.
-3. ...
+3. Compress baked motion field.
 
 ### Conclusion
 **Motion Matching is a simple idea, that helps us reason about movement description and control.**
