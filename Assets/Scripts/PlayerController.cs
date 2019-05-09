@@ -81,7 +81,6 @@ public class PlayerController : MonoBehaviour
         UpdateAnimator(move);
     }
 
-
     void ScaleCapsuleForCrouching(bool crouch)
     {
         if (m_IsGrounded && crouch)
@@ -120,14 +119,36 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
     void UpdateAnimator(Vector3 move)
     {
         // update the animator parameters
         //m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
+
+        //m_ForwardAmount
+        //m_TurnAmount
+        //m_Crouching
+
         float normalizedTime = m_Animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
         normalizedTime = normalizedTime - Mathf.FloorToInt(normalizedTime);
-        string matchedMotionName = motionMatcher.AcquireMatchedMotion(this.matchedMotionName, move.magnitude, move.normalized, 0f, 0f, normalizedTime, m_Crouching);
+        PlayerInput playerInput = new PlayerInput();
+        if (m_ForwardAmount >= 1)
+        {
+            playerInput.velocity = move.magnitude;
+            playerInput.direction = move.normalized;
+            playerInput.angularVelocity = 0.0f;
+        }
+        else
+        {
+            playerInput.velocity = 0.0f;
+            playerInput.direction = Vector3.zero;
+            playerInput.angularVelocity = Mathf.Lerp(m_StationaryTurnSpeed, m_MovingTurnSpeed, m_ForwardAmount) * m_TurnAmount;
+        }
+
+        playerInput.acceleration = 0.0f;
+        playerInput.brake = 0.0f;
+        playerInput.crouch = m_Crouching;
+
+        string matchedMotionName = motionMatcher.AcquireMatchedMotion(playerInput, this.matchedMotionName, normalizedTime);
         if (this.matchedMotionName != matchedMotionName)
         {
             this.matchedMotionName = matchedMotionName;
@@ -149,7 +170,6 @@ public class PlayerController : MonoBehaviour
         m_GroundCheckDistance = m_Rigidbody.velocity.y < 0 ? m_OrigGroundCheckDistance : 0.01f;
     }
 
-
     void HandleGroundedMovement(bool crouch, bool jump)
     {
         // check whether conditions are right to allow a jump:
@@ -166,8 +186,8 @@ public class PlayerController : MonoBehaviour
     void ApplyExtraTurnRotation()
     {
         // help the character turn faster (this is in addition to root rotation in the animation)
-        float turnSpeed = Mathf.Lerp(m_StationaryTurnSpeed, m_MovingTurnSpeed, m_ForwardAmount);
-        transform.Rotate(0, m_TurnAmount * turnSpeed * Time.deltaTime, 0);
+        //float turnSpeed = Mathf.Lerp(m_StationaryTurnSpeed, m_MovingTurnSpeed, m_ForwardAmount);
+        //transform.Rotate(0, m_TurnAmount * turnSpeed * Time.deltaTime, 0);
     }
 
 

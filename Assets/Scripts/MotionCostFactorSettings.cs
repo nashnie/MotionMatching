@@ -21,7 +21,7 @@ public class MotionCostFactorSettings : ScriptableObject
     public float predictionTrajectoryPosFactor = 2.0f;
 
     [Tooltip("")]
-    public float predictionTrajectoryRotFactor = 2.0f;
+    public float predictionTrajectoryVelFactor = 2.0f;
 
     [Tooltip("")]
     public float predictionTrajectoryDirFactor = 1.0f;

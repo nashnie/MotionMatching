@@ -7,6 +7,7 @@ public class MotionFrameData
 {
     //RootMotion Velocity
     public float velocity;
+    public float angularVelocity;
     public MotionBoneData[] motionBoneDataList;
     public MotionTrajectoryData[] motionTrajectoryDataList;
 

@@ -10,4 +10,11 @@ public struct PlayerInput
     public float turn;
     public bool jump;
     public bool crouch;
+
+    public Vector3 direction;
+
+    public float angularVelocity;
+
+    public float m_TurnAmount;
+    public float m_ForwardAmount;
 }

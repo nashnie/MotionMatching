@@ -832,8 +832,8 @@ public class MotionMatchingBakeEditor : EditorWindow
             }
             MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[i];
             motionTrajectoryData.position = animator.transform.position;
-            motionTrajectoryData.localPosition = motionTrajectoryData.position - Vector3.zero;
-            motionTrajectoryData.direction = motionTrajectoryData.localPosition.normalized;
+            motionTrajectoryData.localPosition = motionTrajectoryData.position;
+            motionTrajectoryData.direction = animator.transform.forward;
             //TODO
             motionTrajectoryData.velocity = Vector3.zero;
         }

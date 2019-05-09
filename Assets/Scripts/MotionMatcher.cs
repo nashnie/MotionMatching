@@ -44,19 +44,14 @@ public class MotionMatcher : MonoBehaviour
         currentComputeTime += Time.deltaTime;
     }
 
-    public string AcquireMatchedMotion(PlayerInput playerInput)
+    public string AcquireMatchedMotion(PlayerInput playerInput, string motionName, float normalizedTime)
     {
-        if (playerInput.crouch)
-        {
-        }
-        else
-        {
-        }
-        return bestMotionName;
-    }
+        float velocity = playerInput.velocity;
+        Vector3 direction = playerInput.direction;
+        float acceleration = playerInput.acceleration;
+        float brake = playerInput.brake;
+        bool crouch = playerInput.crouch;
 
-    public string AcquireMatchedMotion(string motionName, float velocity, Vector3 direction, float acceleration, float brake, float normalizedTime, bool crouch)
-    {
         if (currentComputeTime >= motionMatcherSettings.ComputeMotionsBestCostGap)
         {
             currentComputeTime = 0;
@@ -69,7 +64,7 @@ public class MotionMatcher : MonoBehaviour
                 motionMainEntryType = crouch ? MotionMainEntryType.crouch : MotionMainEntryType.stand;
             }
             lastVelocity = velocity;
-            CapturePlayingMotionSnapShot(motionName, velocity, direction, acceleration, brake, normalizedTime, motionMainEntryType);
+            CapturePlayingMotionSnapShot(playerInput, motionName, normalizedTime, motionMainEntryType);
             if (motionMatcherSettings.EnableDebugText)
             {
                 AddDebugContent("Cost", true);
@@ -122,25 +117,30 @@ public class MotionMatcher : MonoBehaviour
         return motionFrameData;
     }
 
-    private void CapturePlayingMotionSnapShot(string motionName, float velocity, Vector3 direction, float acceleration, float brake, float normalizedTime, MotionMainEntryType motionMainEntryType)
+    private void CapturePlayingMotionSnapShot(PlayerInput playerInput, string motionName, float normalizedTime, MotionMainEntryType motionMainEntryType)
     {
+        float velocity = playerInput.velocity;
+        float angularVelocity = playerInput.angularVelocity;
+        Vector3 direction = playerInput.direction;
+        float acceleration = playerInput.acceleration;
+        float brake = playerInput.brake;
+  
         MotionFrameData bakedMotionFrameData = AcquireBakedMotionFrameData(motionName, normalizedTime, motionMainEntryType);
         currentMotionFrameData.velocity = velocity;
         currentMotionFrameData.motionBoneDataList = bakedMotionFrameData.motionBoneDataList;
         currentMotionFrameData.motionTrajectoryDataList = new MotionTrajectoryData[motionMatcherSettings.predictionTrajectoryTimeList.Length];
-        float LastPredictionTrajectoryTime = 0;
-        Vector3 LastPredictionPosition = Vector3.zero;
+
         for (int i = 0; i < motionMatcherSettings.predictionTrajectoryTimeList.Length; i++)
         {
             float predictionTrajectoryTime = motionMatcherSettings.predictionTrajectoryTimeList[i];
-            float deltaTime = predictionTrajectoryTime - LastPredictionTrajectoryTime;
             currentMotionFrameData.motionTrajectoryDataList[i] = new MotionTrajectoryData();
             MotionTrajectoryData motionTrajectoryData = currentMotionFrameData.motionTrajectoryDataList[i];
-            motionTrajectoryData.localPosition = LastPredictionPosition + velocity * direction * deltaTime;
+            motionTrajectoryData.localPosition = velocity * direction * predictionTrajectoryTime;
             motionTrajectoryData.velocity = velocity * direction;
-            motionTrajectoryData.direction = direction;
-            LastPredictionTrajectoryTime = predictionTrajectoryTime;
-            LastPredictionPosition = motionTrajectoryData.localPosition;
+            if (Mathf.Abs(playerInput.angularVelocity) > 0)
+            {
+                motionTrajectoryData.direction = Quaternion.Euler(0, playerInput.angularVelocity * predictionTrajectoryTime, 0) * Vector3.forward;
+            }
         }
     }
 
@@ -205,7 +205,7 @@ public class MotionMatcher : MonoBehaviour
                     MotionTrajectoryData currentMotionTrajectoryData = currentMotionFrameData.motionTrajectoryDataList[l];
 
                     trajectoryPosCost += Vector3.SqrMagnitude(motionTrajectoryData.localPosition - currentMotionTrajectoryData.localPosition) * motionCostFactorSettings.predictionTrajectoryPosFactor;
-                    trajectoryVelCost += Vector3.SqrMagnitude(motionTrajectoryData.velocity - currentMotionTrajectoryData.velocity) * motionCostFactorSettings.predictionTrajectoryRotFactor;
+                    //trajectoryVelCost += Vector3.SqrMagnitude(motionTrajectoryData.velocity - currentMotionTrajectoryData.velocity) * motionCostFactorSettings.predictionTrajectoryVelFactor;
                     trajectoryDirCost += Vector3.Dot(motionTrajectoryData.direction, currentMotionTrajectoryData.direction) * motionCostFactorSettings.predictionTrajectoryDirFactor;
                     //AddDebugContent("trajectoryPosCost: " + trajectoryPosCost);
                     //AddDebugContent("trajectoryVelCost: " + trajectoryVelCost);
