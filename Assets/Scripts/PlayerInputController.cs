@@ -72,18 +72,14 @@ public class PlayerInputController : MonoBehaviour
 #endif
         if (crouch)
         {
-            m_Move *= 0.45f;
+            m_Move *= 1.0f;
         }
         else
         {
-            m_Move *= 1.4f;
+            m_Move *= 2.0f;
         }
 
         // pass all parameters to the character control script
-        PlayerInput playerInput = new PlayerInput();
-        playerInput.jump = m_Jump;
-        playerInput.crouch = crouch;
-        m_Character.Move(playerInput);
 
         m_Character.Move(m_Move, crouch, m_Jump);
         inputText.text = "Input";

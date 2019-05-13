@@ -37,6 +37,24 @@ public class MotionMatcher : MonoBehaviour
         motionOwner = this.transform;
         currentComputeTime = motionMatcherSettings.ComputeMotionsBestCostGap;
         motionDebugDataList = new List<MotionDebugData>();
+
+        //HumanoidCrouchIdle 动画有问题，只能通过这种方式临时处理一下
+        for (int i = 0; i < motionsData.motionDataList.Length; i++)
+        {
+            MotionData motionData = motionsData.motionDataList[i];
+            if (motionData.motionName.Contains("HumanoidCrouchIdle"))
+            {
+                for (int j = 0; j < motionData.motionFrameDataList.Length; j++)
+                {
+                    MotionFrameData motionFrameData = motionData.motionFrameDataList[j];
+                    for (int k = 0; k < motionFrameData.motionTrajectoryDataList.Length; k++)
+                    {
+                        MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[k];
+                        motionTrajectoryData.localPosition = Vector3.zero;
+                    }
+                }
+            }
+        }
     }
 
     private void Update()
@@ -46,6 +64,10 @@ public class MotionMatcher : MonoBehaviour
 
     public string AcquireMatchedMotion(PlayerInput playerInput, string motionName, float normalizedTime)
     {
+        //playerInput.crouch = true;
+        //playerInput.direction = Vector3.forward;
+        //playerInput.velocity = 0.65f;
+
         float velocity = playerInput.velocity;
         Vector3 direction = playerInput.direction;
         float acceleration = playerInput.acceleration;

@@ -14,6 +14,9 @@ public class DebugUIView : MonoBehaviour
     public Text rightCostText;
     public Button hideCostTextContainerBtn;
 
+    private MotionFrameData currentMotionFrameData;
+    private MotionFrameData targetMotionFrameData;
+
 
     // Start is called before the first frame update
     void Start()
@@ -52,8 +55,8 @@ public class DebugUIView : MonoBehaviour
 
         MotionData[] motionDataList = playerMotionMatcher.motionsData.motionDataList;
         MotionData motionData = motionDataList[arg0];
-        MotionFrameData motionFrameData = motionData.motionFrameDataList[0];
-        MotionFrameData currentMotionFrameData = playerMotionMatcher.currentMotionFrameData;
+        targetMotionFrameData = motionData.motionFrameDataList[0];
+        currentMotionFrameData = playerMotionMatcher.currentMotionFrameData;
 
         MotionDebugData motionDebugData = new MotionDebugData();
 
@@ -71,9 +74,9 @@ public class DebugUIView : MonoBehaviour
 
         float rootMotionCost = 0f;
 
-        for (int k = 0; k < motionFrameData.motionBoneDataList.Length; k++)
+        for (int k = 0; k < targetMotionFrameData.motionBoneDataList.Length; k++)
         {
-            MotionBoneData motionBoneData = motionFrameData.motionBoneDataList[k];
+            MotionBoneData motionBoneData = targetMotionFrameData.motionBoneDataList[k];
             MotionBoneData currentMotionBoneData = currentMotionFrameData.motionBoneDataList[k];
             float BonePosCost = Vector3.SqrMagnitude(motionBoneData.localPosition - currentMotionBoneData.localPosition);
             Quaternion BonePosError = Quaternion.Inverse(motionBoneData.localRotation) * currentMotionBoneData.localRotation;
@@ -93,9 +96,9 @@ public class DebugUIView : MonoBehaviour
 
         AddDebugContent("bonesTotalCost: " + bonesCost);
 
-        for (int l = 0; l < motionFrameData.motionTrajectoryDataList.Length; l++)
+        for (int l = 0; l < targetMotionFrameData.motionTrajectoryDataList.Length; l++)
         {
-            MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[l];
+            MotionTrajectoryData motionTrajectoryData = targetMotionFrameData.motionTrajectoryDataList[l];
             MotionTrajectoryData currentMotionTrajectoryData = currentMotionFrameData.motionTrajectoryDataList[l];
 
             trajectoryPosCost += Vector3.SqrMagnitude(motionTrajectoryData.localPosition - currentMotionTrajectoryData.localPosition) * playerMotionMatcher.motionCostFactorSettings.predictionTrajectoryPosFactor;
@@ -112,9 +115,12 @@ public class DebugUIView : MonoBehaviour
         motionDebugData.trajectoryDirCost = trajectoryDirCost;
         motionDebugData.trajectorysCost = trajectorysCost;
 
+        AddDebugContent("trajectoryPosCost: " + trajectoryPosCost);
+        AddDebugContent("trajectoryVelCost: " + trajectoryVelCost);
+        AddDebugContent("trajectoryDirCost: " + trajectoryDirCost);
         AddDebugContent("trajectorysToatalCost: " + trajectorysCost);
 
-        rootMotionCost = Mathf.Abs(motionFrameData.velocity - currentMotionFrameData.velocity) * playerMotionMatcher.motionCostFactorSettings.rootMotionVelFactor;
+        rootMotionCost = Mathf.Abs(targetMotionFrameData.velocity - currentMotionFrameData.velocity) * playerMotionMatcher.motionCostFactorSettings.rootMotionVelFactor;
         motionDebugData.rootMotionCost = rootMotionCost;
         AddDebugContent("rootMotionCost: " + rootMotionCost);
 
@@ -129,5 +135,29 @@ public class DebugUIView : MonoBehaviour
     {
         rightCostText.text += content;
         rightCostText.text += "\n";
+    }
+
+    private void OnDrawGizmos()
+    {
+        Vector3 baseLocation = playerMotionMatcher.transform.position;
+        if (currentMotionFrameData != null)
+        {
+            Gizmos.color = Color.yellow;       
+            for (int i = 0; i < currentMotionFrameData.motionTrajectoryDataList.Length; i++)
+            {
+                MotionTrajectoryData motionTrajectoryData = currentMotionFrameData.motionTrajectoryDataList[i];
+                Gizmos.DrawSphere(motionTrajectoryData.localPosition + baseLocation, 0.05f);
+            }
+        }
+
+        if (targetMotionFrameData != null)
+        {
+            Gizmos.color = Color.red;
+            for (int i = 0; i < targetMotionFrameData.motionTrajectoryDataList.Length; i++)
+            {
+                MotionTrajectoryData motionTrajectoryData = targetMotionFrameData.motionTrajectoryDataList[i];
+                Gizmos.DrawSphere(motionTrajectoryData.localPosition + baseLocation, 0.05f);
+            }
+        }
     }
 }
