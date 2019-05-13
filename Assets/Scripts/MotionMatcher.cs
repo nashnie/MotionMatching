@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Threading;
 
 /// <summary>
 /// Nash
@@ -30,6 +31,8 @@ public class MotionMatcher : MonoBehaviour
     private bool bCrouch = false;
     private float lastVelocity = 0f;
     public List<MotionDebugData> motionDebugDataList;
+
+    private Thread motionThread;
 
     void Start()
     {
@@ -77,6 +80,7 @@ public class MotionMatcher : MonoBehaviour
         if (currentComputeTime >= motionMatcherSettings.ComputeMotionsBestCostGap)
         {
             currentComputeTime = 0;
+            
             motionDebugDataList.Clear();
 
             MotionMainEntryType motionMainEntryType = MotionMainEntryType.none;

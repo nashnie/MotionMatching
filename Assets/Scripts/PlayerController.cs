@@ -105,8 +105,8 @@ public class PlayerController : MonoBehaviour
             //float bestMotionFrameIndex = motionMatcher.bestMotionFrameIndex;
             float bestMotionFrameIndex = 0;
             float bestMotionTime = bestMotionFrameIndex / (m_Animator.GetCurrentAnimatorStateInfo(0).length * fps);
-            m_Animator.Play(matchedMotionName, 0, bestMotionTime);
-
+            //m_Animator.Play(matchedMotionName, 0, bestMotionTime);
+            m_Animator.CrossFade(matchedMotionName, 0.1f);
             Debug.Log("Play matchedMotionName " + matchedMotionName);
         }
     }

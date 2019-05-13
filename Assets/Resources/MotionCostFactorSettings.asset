@@ -17,5 +17,5 @@ MonoBehaviour:
   boneVelFactor: 1
   rootMotionVelFactor: 10
   predictionTrajectoryPosFactor: 100
-  predictionTrajectoryRotFactor: 0
-  predictionTrajectoryDirFactor: 0
+  predictionTrajectoryVelFactor: 2
+  predictionTrajectoryDirFactor: 1000
