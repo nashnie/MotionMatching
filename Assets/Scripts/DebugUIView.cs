@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Assertions;
+using System;
 
 public class DebugUIView : MonoBehaviour
 {
     public MotionMatcher playerMotionMatcher;
     public Dropdown motionDropdown;
+    public GameObject costTextContainer;
+    public Text leftCostText;
+    public Text rightCostText;
+    public Button hideCostTextContainerBtn;
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,21 +30,104 @@ public class DebugUIView : MonoBehaviour
             Dropdown.OptionData optionData = new Dropdown.OptionData();
             optionData.text = motionData.motionName + "_" + 1;
             options.Add(optionData);
-
-            //for (int j = 0; j < motionData.motionFrameDataList.Length; j++)
-            //{
-            //    MotionFrameData motionFrameData = motionData.motionFrameDataList[j];
-            //    Dropdown.OptionData optionData = new Dropdown.OptionData();
-            //    optionData.text = motionData.motionName + "_" + (j + 1);
-            //    options.Add(optionData);
-            //}
         }
         motionDropdown.AddOptions(options);
+        motionDropdown.onValueChanged.AddListener(onDropdownChanged);
+        hideCostTextContainerBtn.onClick.AddListener(onHideCostTextContainer);
+        costTextContainer.SetActive(false);
+        hideCostTextContainerBtn.gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void onHideCostTextContainer()
     {
-        
+        hideCostTextContainerBtn.gameObject.SetActive(false);
+        costTextContainer.SetActive(false);
+        rightCostText.text = "";
+    }
+
+    private void onDropdownChanged(int arg0)
+    {
+        costTextContainer.SetActive(true);
+        hideCostTextContainerBtn.gameObject.SetActive(true);
+
+        MotionData[] motionDataList = playerMotionMatcher.motionsData.motionDataList;
+        MotionData motionData = motionDataList[arg0];
+        MotionFrameData motionFrameData = motionData.motionFrameDataList[0];
+        MotionFrameData currentMotionFrameData = playerMotionMatcher.currentMotionFrameData;
+
+        MotionDebugData motionDebugData = new MotionDebugData();
+
+        AddDebugContent("----------------------" + motionData.motionName);
+
+        float motionCost = 0f;
+        float bonesCost = 0f;
+        float bonePosCost = 0f;
+        float boneRotCost = 0f;
+
+        float trajectoryPosCost = 0f;
+        float trajectoryVelCost = 0f;
+        float trajectoryDirCost = 0f;
+        float trajectorysCost = 0f;
+
+        float rootMotionCost = 0f;
+
+        for (int k = 0; k < motionFrameData.motionBoneDataList.Length; k++)
+        {
+            MotionBoneData motionBoneData = motionFrameData.motionBoneDataList[k];
+            MotionBoneData currentMotionBoneData = currentMotionFrameData.motionBoneDataList[k];
+            float BonePosCost = Vector3.SqrMagnitude(motionBoneData.localPosition - currentMotionBoneData.localPosition);
+            Quaternion BonePosError = Quaternion.Inverse(motionBoneData.localRotation) * currentMotionBoneData.localRotation;
+            float BoneRotCost = Mathf.Abs(BonePosError.x) + Mathf.Abs(BonePosError.y) + Mathf.Abs(BonePosError.z) + (1 - Mathf.Abs(BonePosError.w));
+            //float BoneVelocityCost = Vector3.SqrMagnitude(motionBoneData.velocity - currentMotionBoneData.velocity);
+            bonePosCost += BonePosCost * playerMotionMatcher.motionCostFactorSettings.bonePosFactor;
+            boneRotCost += BoneRotCost * playerMotionMatcher.motionCostFactorSettings.boneRotFactor/* + BoneVelocityCost * motionCostFactorSettings.boneVelFactor*/;
+            //AddDebugContent("BonePosCost: " + BonePosCost);
+            //AddDebugContent("BoneRotCost: " + BoneRotCost);
+            //AddDebugContent("BoneVelocityCost: " + BoneVelocityCost);
+        }
+
+        bonesCost = bonePosCost + boneRotCost;
+        motionDebugData.bonePosCost = bonePosCost;
+        motionDebugData.boneRotCost = boneRotCost;
+        motionDebugData.bonesCost = bonesCost;
+
+        AddDebugContent("bonesTotalCost: " + bonesCost);
+
+        for (int l = 0; l < motionFrameData.motionTrajectoryDataList.Length; l++)
+        {
+            MotionTrajectoryData motionTrajectoryData = motionFrameData.motionTrajectoryDataList[l];
+            MotionTrajectoryData currentMotionTrajectoryData = currentMotionFrameData.motionTrajectoryDataList[l];
+
+            trajectoryPosCost += Vector3.SqrMagnitude(motionTrajectoryData.localPosition - currentMotionTrajectoryData.localPosition) * playerMotionMatcher.motionCostFactorSettings.predictionTrajectoryPosFactor;
+            //trajectoryVelCost += Vector3.SqrMagnitude(motionTrajectoryData.velocity - currentMotionTrajectoryData.velocity) * motionCostFactorSettings.predictionTrajectoryVelFactor;
+            trajectoryDirCost += Vector3.Dot(motionTrajectoryData.direction, currentMotionTrajectoryData.direction) * playerMotionMatcher.motionCostFactorSettings.predictionTrajectoryDirFactor;
+            //AddDebugContent("trajectoryPosCost: " + trajectoryPosCost);
+            //AddDebugContent("trajectoryVelCost: " + trajectoryVelCost);
+            //AddDebugContent("trajectoryDirCost: " + trajectoryDirCost);
+        }
+
+        trajectorysCost = trajectoryPosCost + trajectoryVelCost + trajectoryDirCost;
+        motionDebugData.trajectoryPosCost = trajectoryPosCost;
+        motionDebugData.trajectoryVelCost = trajectoryVelCost;
+        motionDebugData.trajectoryDirCost = trajectoryDirCost;
+        motionDebugData.trajectorysCost = trajectorysCost;
+
+        AddDebugContent("trajectorysToatalCost: " + trajectorysCost);
+
+        rootMotionCost = Mathf.Abs(motionFrameData.velocity - currentMotionFrameData.velocity) * playerMotionMatcher.motionCostFactorSettings.rootMotionVelFactor;
+        motionDebugData.rootMotionCost = rootMotionCost;
+        AddDebugContent("rootMotionCost: " + rootMotionCost);
+
+        motionCost = bonesCost + trajectorysCost + rootMotionCost;
+        motionDebugData.motionCost = motionCost;
+
+        AddDebugContent("motionTotalCost: " + motionCost);
+    }
+
+
+    private void AddDebugContent(string content)
+    {
+        rightCostText.text += content;
+        rightCostText.text += "\n";
     }
 }

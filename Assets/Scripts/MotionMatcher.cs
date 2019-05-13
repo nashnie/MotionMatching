@@ -14,7 +14,7 @@ public class MotionMatcher : MonoBehaviour
     public MotionMatcherSettings motionMatcherSettings;
     public MotionCostFactorSettings motionCostFactorSettings;
 
-    private MotionFrameData currentMotionFrameData;
+    public MotionFrameData currentMotionFrameData;
     private Transform motionOwner;
 
     public int bestMotionFrameIndex = -1;
