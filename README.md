@@ -1,5 +1,9 @@
 # MotionMatching
 
+推荐大家优先学习研究下UE的motion-symphony，这个插件不管是管线成熟度以及性能优化（KMeans算法等）都做得很不错。
+我这个插件已经不维护了，感谢大家的认可。
+https://www.unrealengine.com/marketplace/en-US/product/motion-symphony
+
 ### 想解决什么问题？
 这是一个普通的动画状态机。<br>
 ![anim-state-machine](/Images/anim-state-machine.png)<br>
